@@ -1,0 +1,15 @@
+interface:
+  display_name: 文献調査オーケストレーター
+  short_description: 反復的な物語の設計から、根拠を追跡できる文献調査を作成します
+  default_prompt: $survey-orchestrator を使い、ストーリーライン・プロットを反復的に改訂しながら、
+    根拠を追跡できる文献調査を実施してください。図の設計前に原図の採否を判断し、
+    受け渡し前に読者向けの内容を質的にレビューしてください。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

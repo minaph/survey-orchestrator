@@ -1,0 +1,19 @@
+.devbox/
+.venv/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Keep downloaded papers, raw CLI logs, and workspace copies local.
+/tmp/
+/evaluations/**/*.jsonl
+/evaluations/**/*.ndjson
+/evaluations/**/*.log
+/evaluations/luna-plot-study/corpus/papers/
+/evaluations/luna-plot-study/corpus/text/
+/evaluations/luna-plot-study/run-*/workspace/
+/evaluations/**/source_pdfs/
+/evaluations/luna-single-slide/case-2/outputs/build/Mescheder2019CVPR.pdf
+/evaluations/luna-single-slide/case-2/outputs/deliverables/sources/Mescheder2019CVPR.pdf

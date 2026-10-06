@@ -1,0 +1,210 @@
+{
+  "source": "../../tmp/MIRU2026_tutorial_share.pdf",
+  "source_title": "三次元データ処理の動向",
+  "source_sha256": "401ce069de52865899ff14cea3036be789ee90632054e46bf9d135aca9688567",
+  "source_pages": 122,
+  "page_size_pt": [
+    960,
+    540
+  ],
+  "purpose": "提供資料からの抜粋・分析用参考例",
+  "original_papers_verified": false,
+  "transform": "提供PDFの図領域を矩形で切り抜き。原図の再描画・数値の再集計なし。",
+  "excerpts": [
+    {
+      "file": "p074-srt-method.png",
+      "source_page": 74,
+      "crop_pixels_at_120_dpi": [
+        26,
+        434,
+        740,
+        340
+      ],
+      "render_dpi": 180,
+      "description": "SRTの方法図と入出力ラベル",
+      "sha256": "5b5068b180c94de27564169f4d9496fce31162de4f452ec4b5d225de85ee8c01"
+    },
+    {
+      "file": "p074-srt-results.png",
+      "source_page": 74,
+      "crop_pixels_at_120_dpi": [
+        794,
+        421,
+        758,
+        350
+      ],
+      "render_dpi": 180,
+      "description": "入力視点・近傍予測・遠方予測の例",
+      "sha256": "5340c2e53c132e3f0a287d3514f969f21d0907dd0f1f1a0bb2419f5e640c7c93"
+    },
+    {
+      "file": "p024-deepsdf-comparison.png",
+      "source_page": 24,
+      "crop_pixels_at_120_dpi": [
+        54,
+        354,
+        824,
+        426
+      ],
+      "render_dpi": 180,
+      "description": "椅子のGround-truth・Our Result・既存手法比較、四ラベル全体を保持",
+      "sha256": "fca604378e41365d3c62ff2bdc5eadb6ad086a15f4789883338f5dba1af4098e"
+    },
+    {
+      "file": "p025-deepsdf-interpolation.png",
+      "source_page": 25,
+      "crop_pixels_at_120_dpi": [
+        158,
+        315,
+        1274,
+        474
+      ],
+      "render_dpi": 180,
+      "description": "椅子と車の形状補間例",
+      "sha256": "ae03ed3399a68b846aea9ed22ab13ccdb93627dd3a2bf9cba360bf80b2eca410"
+    },
+    {
+      "file": "p051-triangle-splatting.png",
+      "source_page": 51,
+      "crop_pixels_at_120_dpi": [
+        34,
+        526,
+        771,
+        284
+      ],
+      "render_dpi": 180,
+      "description": "二つの式の挙動と三角形表示の比較",
+      "sha256": "fc183c258a2d21815f6d6e28825226fd501cbdfaf070af398cbb37f11a94eedd"
+    },
+    {
+      "file": "p051-mesh-sharing.png",
+      "source_page": 51,
+      "crop_pixels_at_120_dpi": [
+        900,
+        534,
+        650,
+        269
+      ],
+      "render_dpi": 180,
+      "description": "Triangle SplattingとMeshSplattingの頂点共有比較",
+      "sha256": "208149f10b253f529a7e541d7629cce2dd326fa2493a57376109dec43c37528d"
+    },
+    {
+      "file": "p040-hash-encoding.png",
+      "source_page": 40,
+      "crop_pixels_at_120_dpi": [
+        502,
+        349,
+        1095,
+        426
+      ],
+      "render_dpi": 180,
+      "description": "複数解像度符号化の流れ。原資料の右端までを採用",
+      "sha256": "78012b4591d5b55e0c6eec7319bd3d408e0a6ceeca00da3134e99a04730fa4f3"
+    },
+    {
+      "file": "p050-surface-binding.png",
+      "source_page": 50,
+      "crop_pixels_at_120_dpi": [
+        51,
+        538,
+        221,
+        271
+      ],
+      "render_dpi": 180,
+      "description": "Gaussianを三角形に束縛する図。帰属はPDF頁と記載書誌に限定",
+      "sha256": "3f74e975a5522292501dacb5445284a766193b23071957d3d0e0c94e9b39ff6c"
+    },
+    {
+      "file": "p013-compute-loss.png",
+      "source_page": 13,
+      "crop_pixels_at_120_dpi": [
+        913,
+        476,
+        319,
+        307
+      ],
+      "render_dpi": 180,
+      "description": "訓練計算量とLossの関係",
+      "sha256": "8e10c271a06affb2354119d1d9a2dc7a7c9cc2094feb9e03ae21253e21e28e0f"
+    },
+    {
+      "file": "p013-data-loss.png",
+      "source_page": 13,
+      "crop_pixels_at_120_dpi": [
+        1250,
+        474,
+        337,
+        309
+      ],
+      "render_dpi": 180,
+      "description": "訓練データ量とLossの関係",
+      "sha256": "469a1aa92b4d6568f46c8f7f48a962c8d04275b619affb394123300cdd31747a"
+    },
+    {
+      "file": "p054-training-test.png",
+      "source_page": 54,
+      "crop_pixels_at_120_dpi": [
+        82,
+        483,
+        1132,
+        294
+      ],
+      "render_dpi": 180,
+      "description": "訓練・テスト視点のGTと予測、PSNR25.4/10.7のラベル全体を保持",
+      "sha256": "29f5fa7fd2a17bae5c8166ee8295eef9cfc26ec5b0753fe00118a669e487d8f1"
+    },
+    {
+      "file": "p054-ambiguity.png",
+      "source_page": 54,
+      "crop_pixels_at_120_dpi": [
+        1220,
+        483,
+        338,
+        300
+      ],
+      "render_dpi": 180,
+      "description": "Shape-Radiance Ambiguityの図",
+      "sha256": "62f864a8baff4dde1e2b086bc08ef30e2010bbf585a8f996fbc40ad7afed083d"
+    },
+    {
+      "file": "p104-gen3r.png",
+      "source_page": 104,
+      "crop_pixels_at_120_dpi": [
+        27,
+        514,
+        798,
+        270
+      ],
+      "render_dpi": 180,
+      "description": "Gen3Rとして紹介された方法図",
+      "sha256": "886ab619f656fa8aaea351c71e83a0d6215c2911a012f6571f1d8f01b0c51298"
+    },
+    {
+      "file": "p104-cupid.png",
+      "source_page": 104,
+      "crop_pixels_at_120_dpi": [
+        848,
+        514,
+        724,
+        270
+      ],
+      "render_dpi": 180,
+      "description": "CUPIDとして紹介された方法図",
+      "sha256": "e4117eb9bb553b997a960c7b01d9a57a4095202e8f0703086fb59731617d76c1"
+    },
+    {
+      "file": "p093-vggt-synthetic-probe.png",
+      "source_page": 93,
+      "crop_pixels_at_120_dpi": [
+        322,
+        429,
+        303,
+        201
+      ],
+      "render_dpi": 180,
+      "description": "VGGTの合成データに限定した代表パネル。層別Sampson errorの軸・凡例を保持",
+      "sha256": "7b226d520d02c3ebb0d163b6713311812bacdf5624637daa07112f298ddb81fb"
+    }
+  ]
+}

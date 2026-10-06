@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.0/.schema/devbox.schema.json",
+  "packages": {
+    "python": {
+      "version":        "3.12",
+      "disable_plugin": true
+    }
+  },
+  "shell": {
+    "init_hook": [
+      "if [ -f .venv/bin/activate ]; then . .venv/bin/activate; fi"
+    ],
+    "scripts": {
+      "setup": "sh scripts/setup_python_env.sh",
+      "check-env": ".venv/bin/python scripts/check_evaluation_environment.py",
+      "test": "test -d tests && .venv/bin/python -m unittest discover -s tests"
+    }
+  }
+}

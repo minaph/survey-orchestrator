@@ -1,0 +1,8 @@
+# Runtime dependencies for PDF/HTML figure extraction and PPTX/PDF inspection.
+PyMuPDF==1.26.7
+Pillow==12.0.0
+python-pptx==1.0.2
+# Pin python-pptx's transitive dependencies as well.
+lxml==6.0.2
+typing_extensions==4.15.0
+XlsxWriter==3.2.9

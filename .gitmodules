@@ -1,0 +1,3 @@
+[submodule "skills/japanese-font-rendering"]
+	path = skills/japanese-font-rendering
+	url = https://github.com/minaph/japanese-font-rendering.git
