@@ -1,0 +1,220 @@
+{
+  "recorded_at": "2026-10-06T17:21:06.053781+00:00",
+  "outputs_role": "監査バックアップ。途中生成物や後から制作担当が削除したファイルも保持。正式成果は各caseのfinal_filesに列挙し、Reviewerの対象PDFはreview_pdfのsha256で固定。",
+  "cases": [
+    {
+      "case_id": 1,
+      "completion_log": "case-1/recovery-1.events.jsonl",
+      "status": "completed",
+      "exec_exit_code": 0,
+      "review_pdf": {
+        "path": "case-1/outputs/slide.pdf",
+        "sha256": "72bbbb7ec70d9925068d6c55527fd794a208e263327b4ea4894d0da67d912302"
+      },
+      "final_files": [
+        {
+          "path": "case-1/outputs/slide.svg",
+          "bytes": 7253,
+          "sha256": "6fb2e0a59ce23f05a5fb6b74f2dd592d33a43449e47e09b47da510a648d8781d"
+        },
+        {
+          "path": "case-1/outputs/slide.png",
+          "bytes": 558194,
+          "sha256": "1470a2d2819308b8c0ebb583fde36a5bb8e916fcc3b5d45e836d9ce8b25586d2"
+        },
+        {
+          "path": "case-1/outputs/slide.pdf",
+          "bytes": 566931,
+          "sha256": "72bbbb7ec70d9925068d6c55527fd794a208e263327b4ea4894d0da67d912302"
+        },
+        {
+          "path": "case-1/outputs/build_slide.py",
+          "bytes": 7525,
+          "sha256": "2c69ce06c05c7eada9638436c38a6615ddf286d828bd07d0c6b416c53523f817"
+        },
+        {
+          "path": "case-1/outputs/build_pdf.swift",
+          "bytes": 943,
+          "sha256": "89988d4fdd7bca25331d1031525635e4f874ff0c70b132087fb9c524f1736835"
+        },
+        {
+          "path": "case-1/outputs/sources_and_figures.md",
+          "bytes": 4542,
+          "sha256": "7e4ac3476355cc5d4a8506d59c33616fbd5b63d2762933180409be608cccfc7f"
+        },
+        {
+          "path": "case-1/outputs/process_record.md",
+          "bytes": 6825,
+          "sha256": "0040bcc49bb9b9d1d44477944d5afdd53ab980518009c99129d851d120176491"
+        },
+        {
+          "path": "case-1/outputs/SHA256SUMS.txt",
+          "bytes": 2335,
+          "sha256": "1e3480796903bb2413aa50f2ef5389d1dc20c3a81f2dbbc895388f093402c173"
+        },
+        {
+          "path": "case-1/outputs/final.txt",
+          "bytes": 2490,
+          "sha256": "5368f7284dbcd120beec0eaa3f72136a3e60b5e7ec3643579334cd41c4f841c5"
+        },
+        {
+          "path": "case-1/outputs/figures/hunyuan_fig1_crop.png",
+          "bytes": 275864,
+          "sha256": "0c2d396189002bf4261ba80058e94cd349f1f845ac063b1d3e5d33edad1f61fc"
+        },
+        {
+          "path": "case-1/outputs/figures/seed3d_fig1_crop.png",
+          "bytes": 243111,
+          "sha256": "a73ade587b72cc6a58cae3aafb66da81767a7cd967b34251452d59fc623f77b3"
+        },
+        {
+          "path": "case-1/outputs/figures/shap_e_fig1_crop.png",
+          "bytes": 128401,
+          "sha256": "3813e0a5fd0ce1eb126e9147130ff0a9d5d2e217e60e3801359db27a167e76e9"
+        },
+        {
+          "path": "case-1/outputs/figures/trellis_fig1_crop.png",
+          "bytes": 383007,
+          "sha256": "059ad02c65c93e9926bf3821032782186449af7ee70fc3e6a950018ad1d87a25"
+        }
+      ],
+      "retained_input_and_validation_files": "case-1/outputs/audit/"
+    },
+    {
+      "case_id": 2,
+      "completion_log": "case-2/recovery-1.events.jsonl",
+      "status": "completed",
+      "exec_exit_code": 0,
+      "review_pdf": {
+        "path": "case-2/outputs/deliverables/occupancy-network-transition.pdf",
+        "sha256": "974602c237b91dc83a37ecc87729be31b20c5eb05268a63a47e3afdbb8dd1be4"
+      },
+      "final_files": [
+        {
+          "path": "case-2/outputs/deliverables/README.txt",
+          "bytes": 652,
+          "sha256": "d042bf09f2d744777432295d4bdd77e4c0fb76d022060cbac95857a979f6544f"
+        },
+        {
+          "path": "case-2/outputs/deliverables/checksums.sha256",
+          "bytes": 669,
+          "sha256": "eeeb3265181a7775a487bb565e9e009dcdeb5628167bab9ef2d9fefbbf85056d"
+        },
+        {
+          "path": "case-2/outputs/deliverables/export_pdf.swift",
+          "bytes": 710,
+          "sha256": "346c83287f317dd7788e1cbb9f79f2b503e3c66aa9d0e5d0e76b5b09e5bd1959"
+        },
+        {
+          "path": "case-2/outputs/deliverables/figures/figure-source.txt",
+          "bytes": 766,
+          "sha256": "46e88dcb47b57a8a7e3f0a0f9c366448f740a62b502f77e44398315fc2abc71f"
+        },
+        {
+          "path": "case-2/outputs/deliverables/figures/occupancy-networks-figure-1.png",
+          "bytes": 109024,
+          "sha256": "6654e0491c1fae5db7ea6069d6a360a26605595a0b070912f1ba2c0caebb6a6b"
+        },
+        {
+          "path": "case-2/outputs/deliverables/occupancy-network-transition.pdf",
+          "bytes": 525174,
+          "sha256": "974602c237b91dc83a37ecc87729be31b20c5eb05268a63a47e3afdbb8dd1be4"
+        },
+        {
+          "path": "case-2/outputs/deliverables/occupancy-network-transition.png",
+          "bytes": 569712,
+          "sha256": "2dbc862bdb33798e1c5798f1e77f696e105d07c3e81e67ecbb61c5c3d9fb2d8b"
+        },
+        {
+          "path": "case-2/outputs/deliverables/occupancy-network-transition.pptx",
+          "bytes": 119874,
+          "sha256": "4c80e9b23453bcb1dac28118f6f816f7612e9c891dec673f6ec71c3744df6cbb"
+        },
+        {
+          "path": "case-2/outputs/deliverables/occupancy_transition.mjs",
+          "bytes": 4587,
+          "sha256": "38e2ce54c9390c0325c54c91ff9cee36d76a5f3446009972bb62f905fe5a55e2"
+        },
+        {
+          "path": "case-2/outputs/deliverables/process-record.txt",
+          "bytes": 4394,
+          "sha256": "0195340b8fe4280bea9d04dc898bcad6564fb45c767d0928650700e25b911bfc"
+        },
+        {
+          "path": "case-2/outputs/deliverables/sources/Mescheder2019CVPR.pdf",
+          "bytes": 1052557,
+          "sha256": "427980d804230db85f4d74ac152b20faf8c8a7ddab3649dc01e449c432670f90"
+        },
+        {
+          "path": "case-2/outputs/deliverables/sources/occupancy-networks.bib",
+          "bytes": 605,
+          "sha256": "bbc2ccd603ae2ef3d429a3a2354bc458d8ec6e971b2ce9c7acf4d68251affa96"
+        },
+        {
+          "path": "case-2/outputs/final.txt",
+          "bytes": 2287,
+          "sha256": "a445e96bdffacb186594871b9fbdf46fc6c7eca24a892a4b6eabbd91ab5d2176"
+        }
+      ],
+      "retained_input_and_validation_files": "Listed in final_files or retained as audit backups under outputs/"
+    },
+    {
+      "case_id": 3,
+      "completion_log": "case-3/recovery-1.events.jsonl",
+      "status": "completed",
+      "exec_exit_code": 0,
+      "review_pdf": {
+        "path": "case-3/outputs/slide.pdf",
+        "sha256": "f82ff262101f24fe29bbca261f752bfccfc32f6695b5c3429285063fcc24fe46"
+      },
+      "final_files": [
+        {
+          "path": "case-3/outputs/slide.svg",
+          "bytes": 154811,
+          "sha256": "dd821b853a62ee9d3cbe4dd6ead8cbb75b128de3d583ef6ef0d6d0e54b53176f"
+        },
+        {
+          "path": "case-3/outputs/slide.png",
+          "bytes": 247995,
+          "sha256": "35cce826e0d5630cc46f2ee745cd2e6ef6b515909d2570d03e357a42d3f53c66"
+        },
+        {
+          "path": "case-3/outputs/slide.pdf",
+          "bytes": 278621,
+          "sha256": "f82ff262101f24fe29bbca261f752bfccfc32f6695b5c3429285063fcc24fe46"
+        },
+        {
+          "path": "case-3/outputs/slide_source.py",
+          "bytes": 4495,
+          "sha256": "0a70a54ea51cbc53e2222aeba6d9066f8612e5ca5688c8111033b4a70a588bb2"
+        },
+        {
+          "path": "case-3/outputs/sources.md",
+          "bytes": 3674,
+          "sha256": "051d9b073f3e83db5a630141245f48d8e29e161c05c9c147eed505baab925710"
+        },
+        {
+          "path": "case-3/outputs/slide_plot.md",
+          "bytes": 1197,
+          "sha256": "42678204e34bab5b346985354c3d44df04859c02cc26be096255dc0d1ab590c1"
+        },
+        {
+          "path": "case-3/outputs/production_log.md",
+          "bytes": 4049,
+          "sha256": "294f85c86cffc55ea8e1ac76a91e2f14c48d9aaa5738f2fc952ecc1a7ae91f41"
+        },
+        {
+          "path": "case-3/outputs/final.txt",
+          "bytes": 1873,
+          "sha256": "ce6facafe4f1a23144ac136d34fb2bd8e7deabb4cdb66c528b5d903040ea37f4"
+        },
+        {
+          "path": "case-3/outputs/figures/mescheder-fig1.png",
+          "bytes": 110424,
+          "sha256": "7b88058efe0a2b76c17d479e69cced29b7567d09826aafbb52f6752a4c3f9601"
+        }
+      ],
+      "retained_input_and_validation_files": "Listed in final_files or retained as audit backups under outputs/"
+    }
+  ]
+}

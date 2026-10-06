@@ -1,0 +1,845 @@
+{
+  "recorded_at": "2026-10-06T17:09:21.200545+00:00",
+  "frozen_files": [
+    {
+      "path": "SKILL.md",
+      "snapshot_sha256": "f4ef89d0799c5ebcd6879a0011c2aae31c94f19d402703002d1c09c025394f93",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "agents/openai.yaml",
+      "snapshot_sha256": "fcdc57dafab1c8bf3c44ffc378a50eb9a5fa28da9c1aeb613046d87f746a543c",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/icon.svg",
+      "snapshot_sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/README.md",
+      "snapshot_sha256": "ce672e4e0525e62f5c3106ec86934f7b7f777c41d44757646b43e6d891adccf8",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-compute-loss.png",
+      "snapshot_sha256": "8e10c271a06affb2354119d1d9a2dc7a7c9cc2094feb9e03ae21253e21e28e0f",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-data-loss.png",
+      "snapshot_sha256": "469a1aa92b4d6568f46c8f7f48a962c8d04275b619affb394123300cdd31747a",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p024-deepsdf-comparison.png",
+      "snapshot_sha256": "fca604378e41365d3c62ff2bdc5eadb6ad086a15f4789883338f5dba1af4098e",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p025-deepsdf-interpolation.png",
+      "snapshot_sha256": "ae03ed3399a68b846aea9ed22ab13ccdb93627dd3a2bf9cba360bf80b2eca410",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p040-hash-encoding.png",
+      "snapshot_sha256": "78012b4591d5b55e0c6eec7319bd3d408e0a6ceeca00da3134e99a04730fa4f3",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p050-surface-binding.png",
+      "snapshot_sha256": "3f74e975a5522292501dacb5445284a766193b23071957d3d0e0c94e9b39ff6c",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-mesh-sharing.png",
+      "snapshot_sha256": "208149f10b253f529a7e541d7629cce2dd326fa2493a57376109dec43c37528d",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-triangle-splatting.png",
+      "snapshot_sha256": "fc183c258a2d21815f6d6e28825226fd501cbdfaf070af398cbb37f11a94eedd",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-ambiguity.png",
+      "snapshot_sha256": "62f864a8baff4dde1e2b086bc08ef30e2010bbf585a8f996fbc40ad7afed083d",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-training-test.png",
+      "snapshot_sha256": "29f5fa7fd2a17bae5c8166ee8295eef9cfc26ec5b0753fe00118a669e487d8f1",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-method.png",
+      "snapshot_sha256": "5b5068b180c94de27564169f4d9496fce31162de4f452ec4b5d225de85ee8c01",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-results.png",
+      "snapshot_sha256": "5340c2e53c132e3f0a287d3514f969f21d0907dd0f1f1a0bb2419f5e640c7c93",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p093-vggt-synthetic-probe.png",
+      "snapshot_sha256": "7b226d520d02c3ebb0d163b6713311812bacdf5624637daa07112f298ddb81fb",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-cupid.png",
+      "snapshot_sha256": "e4117eb9bb553b997a960c7b01d9a57a4095202e8f0703086fb59731617d76c1",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-gen3r.png",
+      "snapshot_sha256": "886ab619f656fa8aaea351c71e83a0d6215c2911a012f6571f1d8f01b0c51298",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/miru-reference-excerpts/provenance.json",
+      "snapshot_sha256": "40b8848ef8ff5aa8c531b5bd4837ddd1bde3113889e274604aadddd879a27c5b",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "assets/survey-slide-templates.html",
+      "snapshot_sha256": "e01327475d0598439c52edb10797818b5f71ada76ea5cb76eafbb38d888e76f5",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/design-resource-map.md",
+      "snapshot_sha256": "614ab6ff39547d7e56c2257afe3551a379372a96d2ffa718a28132870d297673",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/evidence-model.md",
+      "snapshot_sha256": "3884a6ab4e1eb2f0fc08942ecdc81f18093b688fb9dd3ac56e9a42880229c8e9",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/evidence-visual-contract.md",
+      "snapshot_sha256": "7e89d7af995057cab006f35b3364646ff0fc10d3199ee3c70bedaf4f8e25274f",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/figure-extraction.md",
+      "snapshot_sha256": "dbc4089e457130c0af6f4dc26c959aff888b17df34a64f93fe8ab1abefeff432",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/hci-stance-attribution.md",
+      "snapshot_sha256": "dab3fe9f4ef989724bf319c09960db7dcadd1c07274e594ab125014b79af63fe",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/incident-log.md",
+      "snapshot_sha256": "436832382745039dcdf9eed45c05f6ae72753d66045571d9e1bfc9f4593f9c16",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/management-workflow.md",
+      "snapshot_sha256": "48648a012bc6ddd2d4fd98b3df0be9305e09d382ca190d5f664a64b7811af33b",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/miru-style-profile.md",
+      "snapshot_sha256": "1ba3e12234c2d8c56e7dcea5018e6f2d839e6c15dadb8baa855c3dc48cf652ac",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/presentation-build-contract.md",
+      "snapshot_sha256": "16224fb9db845cfbc543006e8c999336fc2b8cd7621ffd90977c85114690560c",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/reconstruction-review.md",
+      "snapshot_sha256": "81e42e9f32c9cf1e7bf85b09a841ff07044b22ca0073739b664b21288cffb4a8",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/reference-analysis.md",
+      "snapshot_sha256": "3fcf42c48cf19e4b7bae9a292f676a2386a0c09da1e7f1e085e5ab5b90e3eb10",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/research-slide-writing.md",
+      "snapshot_sha256": "85428a5abc870c53561ce8cdaad6b21718ab0ac4907a2af995ec727d5a0f3e25",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/review-rubric.md",
+      "snapshot_sha256": "4d104d4983fbe64a38b8b6bd320318e8cc48611d2713635ccc1c4264b6c1ccac",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/rrm.md",
+      "snapshot_sha256": "caba13e616a954e8bf1b5e2a3d8775840f804a9b6548d64f5c8dc307e46bdd40",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/storyline-plot.md",
+      "snapshot_sha256": "a605e0fd5e7c4430e461a65e1b19506500175fafda5f76745218a51c14329f6a",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/survey-design-analysis.md",
+      "snapshot_sha256": "ead5b35990612bde1007e0b84edb161054a71c0c680379a60db189478554ae95",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/survey-methods.md",
+      "snapshot_sha256": "2abb0f7c00ef9b5a6f40d0ae4774582a391b3db576d93cc8ddd918cec02ffc91",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/survey-slide-templates.md",
+      "snapshot_sha256": "6609e64f81af6a495e5ea0dbf80b618b9b4f4bfae915c9035d433d5b5cca9555",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/verification.md",
+      "snapshot_sha256": "99d76ff392e2777b500ab12e8840c88f6b87196847758e1d491a5533a21d0719",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "references/visual-review.md",
+      "snapshot_sha256": "e25d4ab7600afd6f85f19c93aa3a8c44dd6a02defca34349731ba4e02ebc3187",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/__pycache__/check_deck_quality.cpython-314.pyc",
+      "snapshot_sha256": "f30d26bdcd48abbfb0d1c6c93653ee3312497617b02fc8c81440d6eae31041d3",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/__pycache__/check_evidence_visual_contract.cpython-314.pyc",
+      "snapshot_sha256": "a9bc490b1a764bb973a2e74f76f811d48e24f043a4abb58e175ddfcac91910d6",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/__pycache__/check_review_record.cpython-314.pyc",
+      "snapshot_sha256": "948eb90745458f627d6e52fb35dce51ce907904fe137552c10b723b02e2064dd",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/__pycache__/check_storyline_plot.cpython-314.pyc",
+      "snapshot_sha256": "ef9383756c60a9f53ea30444d590753ffb75f043658d54f2cb72c043f755ff6e",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/__pycache__/manifest_visuals.cpython-314.pyc",
+      "snapshot_sha256": "d219771601cc24dbe85c9d177a08669a5d454eed6a5ada499fe7ea46582dd677",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/check_deck_quality.py",
+      "snapshot_sha256": "11e1d14e0700463fed60d1650599d892192d47a0fe37ec7548c614ed8a94aad8",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/check_evidence_visual_contract.py",
+      "snapshot_sha256": "3b8e19b23dccef3e12fb6dbd1242a5f1e0a19e97a3e076e9c40ffc84ca3f068c",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/check_review_record.py",
+      "snapshot_sha256": "a2e01e78ff7fc60abd4917e6ed4b288ab007da633b0300159547fce7192975fe",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/check_storyline_plot.py",
+      "snapshot_sha256": "d50f7ddd4d90be9c7c85aeab6d8ae3ba2b0f76575fe28c217218f83a84b75338",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/extract_source_figure.py",
+      "snapshot_sha256": "84f4854d1911be385a988684fd4c9cbdc208bd3de93eb89f2ae118a26d3c405c",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "path": "scripts/manifest_visuals.py",
+      "snapshot_sha256": "7971f41548b0e3fd7769f2b4c617c32565a4f210993b9fd4cbeea8b3c8ff13cb",
+      "case_hash_match": {
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    }
+  ],
+  "case3_reference_restore_observation": {
+    "model_statement": "参照先Markdown自体は復元されていない",
+    "observed_correction": "referencesを含む固定版52ファイルを元と同じ作業rootに復元済み。復旧後のCase3は参照先の存在確認や読み直しを実行していない。SKILL.mdと選択的glob出力だけから未復元と推測した可能性がある。",
+    "original_log_evidence": {
+      "path": "case-3/events.jsonl",
+      "lines": [
+        9,
+        15,
+        16
+      ],
+      "facts": [
+        "pwdは元作業root",
+        "cat references/... が成功して参照本文を出力"
+      ]
+    },
+    "recovery_log_evidence": {
+      "path": "case-3/recovery-1.events.jsonl",
+      "lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "facts": [
+        "同じpwdで選択的globを実行",
+        "glob対象にreferences/*.mdを含めていない",
+        "cat SKILL.md は成功",
+        "referencesへのcat/ls失敗は記録なし"
+      ]
+    },
+    "production_log_unchanged": true
+  },
+  "process_evidence": {
+    "case-3": {
+      "primary_source_reading": {
+        "log": "case-3/events.jsonl",
+        "web_events": [
+          {
+            "line": 22,
+            "id": "exec-07054771-59a9-4bfc-8689-0546f6b8cf7b",
+            "query": "site:openaccess.thecvf.com DeepSDF Learning Continuous Signed Distance Functions for Shape Representation CVPR 2019 ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "site:openaccess.thecvf.com DeepSDF Learning Continuous Signed Distance Functions for Shape Representation CVPR 2019",
+                "site:openaccess.thecvf.com Occupancy Networks Learning 3D Reconstruction in Function Space CVPR 2019",
+                "site:openaccess.thecvf.com Learning Implicit Fields for Generative Shape Modeling CVPR 2019"
+              ]
+            }
+          },
+          {
+            "line": 24,
+            "id": "exec-eb7e1c7a-2a6d-4c57-9c5f-ffa146767981",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 38,
+            "id": "exec-0d6a44d5-71a1-48f2-be68-8d1597199ecc",
+            "query": "\"Learning Implicit Fields for Generative Shape Modeling\" \"Figure 2\" IM-NET ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "\"Learning Implicit Fields for Generative Shape Modeling\" \"Figure 2\" IM-NET",
+                "\"DeepSDF\" \"zero level set\" Figure 2 continuous signed distance CVPR 2019",
+                "\"Occupancy Networks\" \"Figure 1\" continuous decision boundary CVPR 2019"
+              ]
+            }
+          }
+        ],
+        "recovery_log": "case-3/recovery-1.events.jsonl",
+        "recovery_lines": [
+          13,
+          16
+        ],
+        "note": "本人の一次資料探索/参照履歴と復旧後CVF PDF取得。本文読解の質や要約の正確性は別Reviewerが確認。"
+      },
+      "figure_selection": {
+        "log": "case-3/recovery-1.events.jsonl",
+        "lines": [
+          14,
+          18,
+          20,
+          22,
+          24
+        ],
+        "note": "本人が独自模式図から原著図利用へ方針更新。候補ページの描画、切り抜き仕様の試行と更新を観測。"
+      },
+      "summary_and_evaluation": {
+        "artifacts": [
+          "case-3/outputs/sources.md",
+          "case-3/outputs/slide_plot.md",
+          "case-3/outputs/production_log.md"
+        ],
+        "note": "3モデルの要約、値の違い、用途、定量比較を行わない境界は本人記録。独立なG4-Pレビューの実行ログは確認できない。"
+      },
+      "render_and_revision": {
+        "log": "case-3/recovery-1.events.jsonl",
+        "lines": [
+          26,
+          28,
+          32,
+          35,
+          37
+        ],
+        "note": "生成コード更新、librsvg PDF/PNG生成、PDF文字抽出、納品PDFのpdftoppm再描画の成功を観測。実表示/目視は本人production_log/finalの申告で、JSONLにview_image呼出しは露出していない。"
+      },
+      "completion": {
+        "log": "case-3/recovery-1.events.jsonl",
+        "lines": [
+          40,
+          41
+        ],
+        "exec_exit_code": 0,
+        "content_intervention": false
+      }
+    },
+    "case-1": {
+      "primary_source_reading": {
+        "log": "case-1/events.jsonl",
+        "web_events": [
+          {
+            "line": 49,
+            "id": "exec-7479a0c1-b745-4814-9a5a-88d971ec5141",
+            "query": "Shap-E Generating Conditional 3D Implicit Functions arXiv ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "Shap-E Generating Conditional 3D Implicit Functions arXiv",
+                "Structured 3D Latents for Scalable and Versatile 3D Generation arXiv",
+                "Hunyuan3D 2.0 Scaling Diffusion Models for High Resolution Textured 3D Assets Generation arXiv",
+                "Seed3D 1.0 From Images to High-Fidelity Simulation-Ready 3D Assets arXiv"
+              ]
+            }
+          },
+          {
+            "line": 53,
+            "id": "exec-fcda473e-9a45-4a00-a5a5-1558e9f648ec",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 60,
+            "id": "exec-ad35a4b6-c6b1-4cf4-91cd-12baf5aec515",
+            "query": "https://arxiv.org/pdf/2305.02463",
+            "action": {
+              "type": "open_page",
+              "url": "https://arxiv.org/pdf/2305.02463"
+            }
+          },
+          {
+            "line": 62,
+            "id": "exec-ef7f4d5e-8606-48d5-bbcd-88b93c103d9a",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 64,
+            "id": "exec-c276b148-fcf6-459c-b996-c2ba1f64be09",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 66,
+            "id": "exec-e89fb847-59b0-46f5-a60e-7c3f81859e96",
+            "query": "Shap-E Generating Conditional 3D Implicit Functions Figure 1 ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "Shap-E Generating Conditional 3D Implicit Functions Figure 1",
+                "TRELLIS Structured 3D Latents Figure 1",
+                "Hunyuan3D 2.0 Figure 1 output examples",
+                "Seed3D 1.0 figure single image 3D output"
+              ]
+            }
+          }
+        ],
+        "recovery_log": "case-1/recovery-1.events.jsonl",
+        "recovery_lines": [
+          11,
+          13,
+          16
+        ],
+        "note": "元web探索履歴と復旧後4件PDF取得/全文抽出/Figure1所在探索。本文の意味理解は独立検証対象。"
+      },
+      "figure_selection": {
+        "log": "case-1/recovery-1.events.jsonl",
+        "lines": [
+          14,
+          16,
+          20,
+          26,
+          30
+        ],
+        "note": "4論文のFigure1についてページ描画と切抜きを観測。各論文で別番号の候補図を比較した証拠は確認できない。4点の役割と採用理由はsources_and_figures/process_recordの自己申告。"
+      },
+      "summary_and_evaluation": {
+        "artifacts": [
+          "case-1/outputs/sources_and_figures.md",
+          "case-1/outputs/process_record.md"
+        ],
+        "note": "制作者独自の比較軸と評価条件差の留保が保存文面に存在。G4-P goは完成後作成されたprocess_recordの自己申告で、制作前独立レビューの直接ログではない。"
+      },
+      "render_and_revision": {
+        "log": "case-1/recovery-1.events.jsonl",
+        "lines": [
+          28,
+          32,
+          34,
+          36,
+          38,
+          40,
+          41,
+          53,
+          60
+        ],
+        "note": "build_slide.pyのadd/update、PNG/PDF再生成、CoreGraphics PDFへの移行、再描画/geometry/4画像参照の検証を観測。初期file_changeは本文差分を含まないため文言before/afterは復元できない。目視は本人の申告。"
+      },
+      "verification_limit": {
+        "log": "case-1/recovery-1.events.jsonl",
+        "line": 60,
+        "artifact": "case-1/outputs/audit/deck-check.json",
+        "note": "正式チェッカーstatus=fail。manifest未指定とPyMuPDF unavailable。複合コマンドのexit0は判定合格を意味しない。"
+      },
+      "completion": {
+        "log": "case-1/recovery-1.events.jsonl",
+        "lines": [
+          65,
+          66
+        ],
+        "exec_exit_code": 0,
+        "content_intervention": false
+      }
+    },
+    "case-2": {
+      "primary_source_reading": {
+        "log": "case-2/events.jsonl",
+        "web_events": [
+          {
+            "line": 25,
+            "id": "exec-6db8edfe-6b00-43ee-b61c-b9fec2c0f597",
+            "query": "Mescheder Occupancy Networks Learning 3D Reconstruction in Function Space CVPR 2019 pdf ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "Mescheder Occupancy Networks Learning 3D Reconstruction in Function Space CVPR 2019 pdf",
+                "site:openaccess.thecvf.com Mescheder Occupancy Networks CVPR 2019"
+              ]
+            }
+          },
+          {
+            "line": 27,
+            "id": "exec-70c60e85-3e20-45fd-b625-857b64a9eb58",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 29,
+            "id": "exec-89292026-61f9-4cdb-b1f6-e7c5da3ec3c7",
+            "query": "arxiv 1812.03828 figure 1 occupancy networks voxel mesh surface implicit shape function ...",
+            "action": {
+              "type": "search",
+              "queries": [
+                "arxiv 1812.03828 figure 1 occupancy networks voxel mesh surface implicit shape function",
+                "Occupancy Networks figure 1 explicit representations voxels meshes implicit continuous decision boundary figure 1"
+              ]
+            }
+          },
+          {
+            "line": 35,
+            "id": "exec-eacb3ea9-a3ba-41ae-9d53-b164081a5a19",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 56,
+            "id": "exec-f9ff3dc6-c860-4688-b5ff-7fdd06a60366",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          },
+          {
+            "line": 58,
+            "id": "exec-1c29618c-07da-438c-9bc6-99e5c6074470",
+            "query": "",
+            "action": {
+              "type": "other"
+            }
+          }
+        ],
+        "recovery_log": "case-2/recovery-1.events.jsonl",
+        "recovery_lines": [
+          11,
+          13,
+          15,
+          17
+        ],
+        "note": "初回web探索と復旧後CVF PDF取得/ページ描画を観測。Abstract/§3.1/§3.3照合は本人process-recordの申告。"
+      },
+      "figure_selection": {
+        "log": "case-2/recovery-1.events.jsonl",
+        "lines": [
+          17,
+          20,
+          43
+        ],
+        "note": "Figure1の切抜き取得と原図への方針更新は直接。4表現の関係が目的に適合するという採用理由は本人process-recordの記録。他番号候補図との比較記録は確認できない。"
+      },
+      "summary_and_evaluation": {
+        "artifacts": [
+          "case-2/outputs/deliverables/process-record.txt",
+          "case-2/outputs/deliverables/occupancy_transition.mjs"
+        ],
+        "note": "格子/点/頂点と占有関数を対比しメッシュ抽出を説明する文面を保存。独立したG4-Pレビューの直接ログは確認できない。"
+      },
+      "render_and_revision": {
+        "log": "case-2/recovery-1.events.jsonl",
+        "lines": [
+          19,
+          22,
+          24,
+          37,
+          41,
+          45,
+          47,
+          50,
+          54,
+          56,
+          58
+        ],
+        "note": "PPTX/PNG生成、画像PDF→960x540ptへの変換、文字サイズ拡大（タイトル44→48、強調24/26/28→32、本文20/21→22のsource値）、出力先設定の可搬化を直接観測。意味を変える文言修正は確認できない。"
+      },
+      "verification": {
+        "log": "case-2/recovery-1.events.jsonl",
+        "lines": [
+          27,
+          39,
+          41,
+          47,
+          56
+        ],
+        "note": "初回numpy不足を本人が導入して回復。slides_test PASS、1slide、15objects、1picture、Sources付きnotes、object_bounds PASSを観測。目視は本人申告。"
+      },
+      "completion": {
+        "log": "case-2/recovery-1.events.jsonl",
+        "lines": [
+          59,
+          60
+        ],
+        "exec_exit_code": 0,
+        "content_intervention": false
+      }
+    }
+  },
+  "final_snapshot_hash_recheck": {
+    "recorded_at": "2026-10-06T17:21:06.053781+00:00",
+    "files_per_case": 52,
+    "mismatches": []
+  }
+}

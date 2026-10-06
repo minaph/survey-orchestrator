@@ -1,0 +1,17 @@
+指定論文に基づき、明示的表現（voxel・point・mesh）から、占有関数の境界で表面を表す Occupancy Networks への移行を説明する、日本語・16:9の1枚を制作しました。推論時には関数からメッシュを抽出できる点も示しています。根拠は原論文の Figure 1、§3.1、§3.3です。[CVF公式公開論文](https://openaccess.thecvf.com/content_CVPR_2019/papers/Mescheder_Occupancy_Networks_Learning_3D_Reconstruction_in_Function_Space_CVPR_2019_paper.pdf)
+
+### 成果物
+
+- [編集可能なPowerPoint](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/occupancy-network-transition.pptx)
+- [PDF](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/occupancy-network-transition.pdf)
+- [PNG（2560×1440）](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/occupancy-network-transition.png)
+- [生成元のJavaScript](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/occupancy_transition.mjs)
+- 使用した[原論文 Figure 1 の切り抜き](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/figures/occupancy-networks-figure-1.png)と[出典・抽出記録](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/figures/figure-source.txt)
+- [参照した論文PDF](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/sources/Mescheder2019CVPR.pdf)、[BibTeX](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/sources/occupancy-networks.bib)
+- [制作・検証記録](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/process-record.txt)と[チェックサム一覧](/private/tmp/survey-luna-case-2-w52qk5df/deliverables/checksums.sha256)
+
+### 検証
+
+PPTXは1枚・16:9で、全オブジェクトがスライド内に収まり、はみ出し検査も通過しました。出典を示すスピーカーノートを確認し、日本語の字形、図の見え方、文字の切れや重なりをPNGとPDFの再レンダリングで目視確認しています。元講義資料、評価用資料、他ケースの環境・成果物は閲覧・探索していません。
+
+補足として、PPTX内の文字や配置は編集できますが、論文の原図は画像として埋め込んでいます。PDFも画像ベースのため、テキスト選択・検索には対応しません。

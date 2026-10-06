@@ -1,0 +1,135 @@
+{
+  "samplingSha256": "a8111a5a4890a7f49c6462f523af3326d6e75aada64ac95edda751212cae0ca6",
+  "pairs": [
+    {
+      "pairId": "pair-03",
+      "caseId": 3,
+      "referencePdfPage": 20,
+      "referenceLabel": "A",
+      "generatedLabel": "B",
+      "generatedAt": "2026-10-06T17:09:21.171830+00:00",
+      "finalAndNoExplicitProducerOrPageLabelConfirmed": true,
+      "referenceSource": "reference-renders/page-020-masked.png",
+      "referenceSourceSha256": "5d30ba29397cd637be04b729153454e9ce1204b77cc9ba5b686a2016442235e1",
+      "generatedPdf": "case-3/outputs/slide.pdf",
+      "generatedPdfSha256": "f82ff262101f24fe29bbca261f752bfccfc32f6695b5c3429285063fcc24fe46",
+      "generatedPdfInfo": "Producer:        cairo 1.18.4 (https://cairographics.org)\nCreationDate:    Wed Oct  7 02:06:13 2026 JST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       1200 x 675 pts\nPage rot:        0\nFile size:       278621 bytes\nOptimized:       no\nPDF version:     1.7\n",
+      "generatedRaster": "blind-packets/.supervisor/generated-3-from-final-pdf.png",
+      "generatedRasterSha256": "314ae034c281e776d092169070a87676aab3d650c4f867e63b2341df519b74b5",
+      "packetSha256": {
+        "A.png": "5d30ba29397cd637be04b729153454e9ce1204b77cc9ba5b686a2016442235e1",
+        "B.png": "b8bb4a39bbf8a513ec1fba3a96908834aaba130a0b20665c3476586bb16be40c",
+        "brief.txt": "f1259a872e9f30178c311a1b8183d5bde053398ed622429822f9918c7b8dc725"
+      },
+      "pngMetadataRemoved": true,
+      "packetPixelContentUnchanged": true,
+      "submittedPngComparison": {
+        "submittedPngPresent": true,
+        "submittedPng": "case-3/outputs/slide.png",
+        "submittedPngSha256": "35cce826e0d5630cc46f2ee745cd2e6ef6b515909d2570d03e357a42d3f53c66",
+        "submittedPngSize": [
+          1600,
+          900
+        ],
+        "comparisonSize": [
+          1600,
+          900
+        ],
+        "meanAbsoluteChannelDifference": [
+          2.008208333333333,
+          1.8028388888888889,
+          1.6880416666666667
+        ],
+        "identicalAfterNormalization": false,
+        "note": "The packet always uses the final PDF raster; antialiasing and resizing can affect PNG differences."
+      }
+    },
+    {
+      "pairId": "pair-01",
+      "caseId": 1,
+      "referencePdfPage": 102,
+      "referenceLabel": "B",
+      "generatedLabel": "A",
+      "generatedAt": "2026-10-06T17:15:06.843885+00:00",
+      "finalAndNoExplicitProducerOrPageLabelConfirmed": true,
+      "referenceSource": "reference-renders/page-102-masked.png",
+      "referenceSourceSha256": "98525caf57ffe933ebd0545a28e47065da1ae3b0d250a80d3380c544419e8d67",
+      "generatedPdf": "case-1/outputs/slide.pdf",
+      "generatedPdfSha256": "72bbbb7ec70d9925068d6c55527fd794a208e263327b4ea4894d0da67d912302",
+      "generatedPdfInfo": "Producer:        macOS Version 15.6 (Build 24G84) Quartz PDFContext\nCreationDate:    Wed Oct  7 02:11:37 2026 JST\nModDate:         Wed Oct  7 02:11:37 2026 JST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       960 x 540 pts\nPage rot:        0\nFile size:       566931 bytes\nOptimized:       no\nPDF version:     1.3\n",
+      "generatedRaster": "blind-packets/.supervisor/generated-1-from-final-pdf.png",
+      "generatedRasterSha256": "1a4474b442b71c1b80ea72c8d5c7fe2a047e265b0926a448ef322ada639a5abe",
+      "packetSha256": {
+        "A.png": "d52df3850fad44f9f07ea8a420d1107a502391d6f10524cbf845f79c1acaa1cf",
+        "B.png": "98525caf57ffe933ebd0545a28e47065da1ae3b0d250a80d3380c544419e8d67",
+        "brief.txt": "f7e8a8a2bf5fd039ac9cb85dcce5d1eee662dd076554ae3def7fde09c85bfb2a"
+      },
+      "pngMetadataRemoved": true,
+      "packetPixelContentUnchanged": true,
+      "submittedPngComparison": {
+        "submittedPngPresent": true,
+        "submittedPng": "case-1/outputs/slide.png",
+        "submittedPngSha256": "1470a2d2819308b8c0ebb583fde36a5bb8e916fcc3b5d45e836d9ce8b25586d2",
+        "submittedPngSize": [
+          1920,
+          1080
+        ],
+        "comparisonSize": [
+          1600,
+          900
+        ],
+        "meanAbsoluteChannelDifference": [
+          8.239803472222222,
+          7.518605555555555,
+          6.765953472222222
+        ],
+        "identicalAfterNormalization": false,
+        "note": "The packet always uses the final PDF raster; antialiasing and resizing can affect PNG differences.",
+        "visualComparisonNote": "The supplied 1920x1080 PNG and 1600x900 PDF raster were visually inspected at full-slide scale; no content or layout discrepancy was observed. The packet uses only the final PDF raster."
+      }
+    },
+    {
+      "pairId": "pair-02",
+      "caseId": 2,
+      "referencePdfPage": 18,
+      "referenceLabel": "A",
+      "generatedLabel": "B",
+      "generatedAt": "2026-10-06T17:21:42.073852+00:00",
+      "finalAndNoExplicitProducerOrPageLabelConfirmed": true,
+      "referenceSource": "reference-renders/page-018-masked.png",
+      "referenceSourceSha256": "e1d6314f7dba439759930836861ad3e591e60447aba4d668113d7c80e8bd5b46",
+      "generatedPdf": "case-2/outputs/deliverables/occupancy-network-transition.pdf",
+      "generatedPdfSha256": "974602c237b91dc83a37ecc87729be31b20c5eb05268a63a47e3afdbb8dd1be4",
+      "generatedPdfInfo": "Producer:        macOS Version 15.6 (Build 24G84) Quartz PDFContext\nCreationDate:    Wed Oct  7 02:18:26 2026 JST\nModDate:         Wed Oct  7 02:18:26 2026 JST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       960 x 540 pts\nPage rot:        0\nFile size:       525174 bytes\nOptimized:       no\nPDF version:     1.3\n",
+      "generatedRaster": "blind-packets/.supervisor/generated-2-from-final-pdf.png",
+      "generatedRasterSha256": "55a6ee314aabdf6c04233093e8094941e2f3f180bce52d8dd306352c30a7abcc",
+      "packetSha256": {
+        "A.png": "e1d6314f7dba439759930836861ad3e591e60447aba4d668113d7c80e8bd5b46",
+        "B.png": "e44446587e8425f4b586725ce1a6c569e726466fa314aba66becbd5e714b6be8",
+        "brief.txt": "2e637d52890eb48201eef32605864c0c87fe84dff371334000dcc7db18a59a70"
+      },
+      "pngMetadataRemoved": true,
+      "packetPixelContentUnchanged": true,
+      "submittedPngComparison": {
+        "submittedPngPresent": true,
+        "submittedPng": "case-2/outputs/deliverables/occupancy-network-transition.png",
+        "submittedPngSha256": "2dbc862bdb33798e1c5798f1e77f696e105d07c3e81e67ecbb61c5c3d9fb2d8b",
+        "submittedPngSize": [
+          2560,
+          1440
+        ],
+        "comparisonSize": [
+          1600,
+          900
+        ],
+        "meanAbsoluteChannelDifference": [
+          6.685015277777778,
+          6.308868055555555,
+          5.912818055555555
+        ],
+        "identicalAfterNormalization": false,
+        "note": "The packet always uses the final PDF raster; antialiasing and resizing can affect PNG differences."
+      }
+    }
+  ]
+}

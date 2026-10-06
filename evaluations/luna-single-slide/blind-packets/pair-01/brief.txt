@@ -1,0 +1,8 @@
+scope / role:
+3D表現を直接生成する研究動向を紹介・比較する。
+
+bibliography:
+- Jun — Shap-E: Generating Conditional 3D Implicit Functions
+- Xiang — Structured 3D Latents for Scalable and Versatile 3D Generation
+- Hunyuan3D Team — Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation
+- ByteDance Seed — Seed3D 1.0: From Images to High-Fidelity Simulation-Ready 3D Assets

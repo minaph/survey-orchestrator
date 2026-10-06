@@ -1,0 +1,35 @@
+{
+  "preparedAt": "2026-10-06T17:46:27.972270+00:00",
+  "cliVersion": "codex-cli 0.160.1",
+  "settings": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "profile": null,
+    "sandbox_mode": "workspace-write",
+    "network_access": true,
+    "approval": "approve-for-me"
+  },
+  "snapshotFileCount": 47,
+  "snapshotManifestSha256": "d36ebaed1f07ce18ca4f2368c673248c40618039f5bcaf93cdf05005740ce343",
+  "priorSnapshotDifference": "Five Python bytecode cache files excluded; non-cache skill paths match previous 52-file snapshot.",
+  "commonPromptSha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+  "copiedPaperCount": 10,
+  "copiedTextCount": 10,
+  "inputFileCountPerRun": 69,
+  "runInputsIdentical": true,
+  "sourceAndSnapshotHashesMatch": true,
+  "promptInputPath": "corpus/",
+  "promptPlotOutput": "outputs/plot.md",
+  "allRunsPreparedButNotLaunched": true,
+  "cliArgumentParsing": [
+    {
+      "mode": "new_session",
+      "parseExitCode": 0
+    },
+    {
+      "mode": "resume",
+      "parseExitCode": 0
+    }
+  ],
+  "runnerTests": "5 passed, fake CLI only; no real model execution"
+}

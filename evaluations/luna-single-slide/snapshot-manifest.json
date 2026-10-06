@@ -1,0 +1,278 @@
+{
+  "created_at": "2026-10-06T16:46:35.303204+00:00",
+  "copied_roots": [
+    "SKILL.md",
+    "references",
+    "scripts",
+    "assets",
+    "agents"
+  ],
+  "excluded_roots": [
+    "tmp",
+    "audit",
+    "evaluations"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size_bytes": 17856,
+      "sha256": "f4ef89d0799c5ebcd6879a0011c2aae31c94f19d402703002d1c09c025394f93"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "size_bytes": 668,
+      "sha256": "fcdc57dafab1c8bf3c44ffc378a50eb9a5fa28da9c1aeb613046d87f746a543c"
+    },
+    {
+      "path": "assets/icon.svg",
+      "size_bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/README.md",
+      "size_bytes": 1164,
+      "sha256": "ce672e4e0525e62f5c3106ec86934f7b7f777c41d44757646b43e6d891adccf8"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-compute-loss.png",
+      "size_bytes": 34963,
+      "sha256": "8e10c271a06affb2354119d1d9a2dc7a7c9cc2094feb9e03ae21253e21e28e0f"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-data-loss.png",
+      "size_bytes": 26780,
+      "sha256": "469a1aa92b4d6568f46c8f7f48a962c8d04275b619affb394123300cdd31747a"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p024-deepsdf-comparison.png",
+      "size_bytes": 222540,
+      "sha256": "fca604378e41365d3c62ff2bdc5eadb6ad086a15f4789883338f5dba1af4098e"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p025-deepsdf-interpolation.png",
+      "size_bytes": 311721,
+      "sha256": "ae03ed3399a68b846aea9ed22ab13ccdb93627dd3a2bf9cba360bf80b2eca410"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p040-hash-encoding.png",
+      "size_bytes": 213873,
+      "sha256": "78012b4591d5b55e0c6eec7319bd3d408e0a6ceeca00da3134e99a04730fa4f3"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p050-surface-binding.png",
+      "size_bytes": 81504,
+      "sha256": "3f74e975a5522292501dacb5445284a766193b23071957d3d0e0c94e9b39ff6c"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-mesh-sharing.png",
+      "size_bytes": 76331,
+      "sha256": "208149f10b253f529a7e541d7629cce2dd326fa2493a57376109dec43c37528d"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-triangle-splatting.png",
+      "size_bytes": 103949,
+      "sha256": "fc183c258a2d21815f6d6e28825226fd501cbdfaf070af398cbb37f11a94eedd"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-ambiguity.png",
+      "size_bytes": 39594,
+      "sha256": "62f864a8baff4dde1e2b086bc08ef30e2010bbf585a8f996fbc40ad7afed083d"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-training-test.png",
+      "size_bytes": 673401,
+      "sha256": "29f5fa7fd2a17bae5c8166ee8295eef9cfc26ec5b0753fe00118a669e487d8f1"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-method.png",
+      "size_bytes": 233104,
+      "sha256": "5b5068b180c94de27564169f4d9496fce31162de4f452ec4b5d225de85ee8c01"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-results.png",
+      "size_bytes": 667776,
+      "sha256": "5340c2e53c132e3f0a287d3514f969f21d0907dd0f1f1a0bb2419f5e640c7c93"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p093-vggt-synthetic-probe.png",
+      "size_bytes": 39371,
+      "sha256": "7b226d520d02c3ebb0d163b6713311812bacdf5624637daa07112f298ddb81fb"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-cupid.png",
+      "size_bytes": 311917,
+      "sha256": "e4117eb9bb553b997a960c7b01d9a57a4095202e8f0703086fb59731617d76c1"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-gen3r.png",
+      "size_bytes": 413103,
+      "sha256": "886ab619f656fa8aaea351c71e83a0d6215c2911a012f6571f1d8f01b0c51298"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/provenance.json",
+      "size_bytes": 5873,
+      "sha256": "40b8848ef8ff5aa8c531b5bd4837ddd1bde3113889e274604aadddd879a27c5b"
+    },
+    {
+      "path": "assets/survey-slide-templates.html",
+      "size_bytes": 58564,
+      "sha256": "e01327475d0598439c52edb10797818b5f71ada76ea5cb76eafbb38d888e76f5"
+    },
+    {
+      "path": "references/design-resource-map.md",
+      "size_bytes": 6080,
+      "sha256": "614ab6ff39547d7e56c2257afe3551a379372a96d2ffa718a28132870d297673"
+    },
+    {
+      "path": "references/evidence-model.md",
+      "size_bytes": 14593,
+      "sha256": "3884a6ab4e1eb2f0fc08942ecdc81f18093b688fb9dd3ac56e9a42880229c8e9"
+    },
+    {
+      "path": "references/evidence-visual-contract.md",
+      "size_bytes": 25324,
+      "sha256": "7e89d7af995057cab006f35b3364646ff0fc10d3199ee3c70bedaf4f8e25274f"
+    },
+    {
+      "path": "references/figure-extraction.md",
+      "size_bytes": 18772,
+      "sha256": "dbc4089e457130c0af6f4dc26c959aff888b17df34a64f93fe8ab1abefeff432"
+    },
+    {
+      "path": "references/hci-stance-attribution.md",
+      "size_bytes": 5919,
+      "sha256": "dab3fe9f4ef989724bf319c09960db7dcadd1c07274e594ab125014b79af63fe"
+    },
+    {
+      "path": "references/incident-log.md",
+      "size_bytes": 2777,
+      "sha256": "436832382745039dcdf9eed45c05f6ae72753d66045571d9e1bfc9f4593f9c16"
+    },
+    {
+      "path": "references/management-workflow.md",
+      "size_bytes": 7299,
+      "sha256": "48648a012bc6ddd2d4fd98b3df0be9305e09d382ca190d5f664a64b7811af33b"
+    },
+    {
+      "path": "references/miru-style-profile.md",
+      "size_bytes": 10281,
+      "sha256": "1ba3e12234c2d8c56e7dcea5018e6f2d839e6c15dadb8baa855c3dc48cf652ac"
+    },
+    {
+      "path": "references/presentation-build-contract.md",
+      "size_bytes": 18374,
+      "sha256": "16224fb9db845cfbc543006e8c999336fc2b8cd7621ffd90977c85114690560c"
+    },
+    {
+      "path": "references/reconstruction-review.md",
+      "size_bytes": 18737,
+      "sha256": "81e42e9f32c9cf1e7bf85b09a841ff07044b22ca0073739b664b21288cffb4a8"
+    },
+    {
+      "path": "references/reference-analysis.md",
+      "size_bytes": 6217,
+      "sha256": "3fcf42c48cf19e4b7bae9a292f676a2386a0c09da1e7f1e085e5ab5b90e3eb10"
+    },
+    {
+      "path": "references/research-slide-writing.md",
+      "size_bytes": 11443,
+      "sha256": "85428a5abc870c53561ce8cdaad6b21718ab0ac4907a2af995ec727d5a0f3e25"
+    },
+    {
+      "path": "references/review-rubric.md",
+      "size_bytes": 18442,
+      "sha256": "4d104d4983fbe64a38b8b6bd320318e8cc48611d2713635ccc1c4264b6c1ccac"
+    },
+    {
+      "path": "references/rrm.md",
+      "size_bytes": 13888,
+      "sha256": "caba13e616a954e8bf1b5e2a3d8775840f804a9b6548d64f5c8dc307e46bdd40"
+    },
+    {
+      "path": "references/storyline-plot.md",
+      "size_bytes": 23052,
+      "sha256": "a605e0fd5e7c4430e461a65e1b19506500175fafda5f76745218a51c14329f6a"
+    },
+    {
+      "path": "references/survey-design-analysis.md",
+      "size_bytes": 13806,
+      "sha256": "ead5b35990612bde1007e0b84edb161054a71c0c680379a60db189478554ae95"
+    },
+    {
+      "path": "references/survey-methods.md",
+      "size_bytes": 11187,
+      "sha256": "2abb0f7c00ef9b5a6f40d0ae4774582a391b3db576d93cc8ddd918cec02ffc91"
+    },
+    {
+      "path": "references/survey-slide-templates.md",
+      "size_bytes": 35286,
+      "sha256": "6609e64f81af6a495e5ea0dbf80b618b9b4f4bfae915c9035d433d5b5cca9555"
+    },
+    {
+      "path": "references/verification.md",
+      "size_bytes": 4728,
+      "sha256": "99d76ff392e2777b500ab12e8840c88f6b87196847758e1d491a5533a21d0719"
+    },
+    {
+      "path": "references/visual-review.md",
+      "size_bytes": 7782,
+      "sha256": "e25d4ab7600afd6f85f19c93aa3a8c44dd6a02defca34349731ba4e02ebc3187"
+    },
+    {
+      "path": "scripts/__pycache__/check_deck_quality.cpython-314.pyc",
+      "size_bytes": 104592,
+      "sha256": "f30d26bdcd48abbfb0d1c6c93653ee3312497617b02fc8c81440d6eae31041d3"
+    },
+    {
+      "path": "scripts/__pycache__/check_evidence_visual_contract.cpython-314.pyc",
+      "size_bytes": 104847,
+      "sha256": "a9bc490b1a764bb973a2e74f76f811d48e24f043a4abb58e175ddfcac91910d6"
+    },
+    {
+      "path": "scripts/__pycache__/check_review_record.cpython-314.pyc",
+      "size_bytes": 21967,
+      "sha256": "948eb90745458f627d6e52fb35dce51ce907904fe137552c10b723b02e2064dd"
+    },
+    {
+      "path": "scripts/__pycache__/check_storyline_plot.cpython-314.pyc",
+      "size_bytes": 19682,
+      "sha256": "ef9383756c60a9f53ea30444d590753ffb75f043658d54f2cb72c043f755ff6e"
+    },
+    {
+      "path": "scripts/__pycache__/manifest_visuals.cpython-314.pyc",
+      "size_bytes": 9868,
+      "sha256": "d219771601cc24dbe85c9d177a08669a5d454eed6a5ada499fe7ea46582dd677"
+    },
+    {
+      "path": "scripts/check_deck_quality.py",
+      "size_bytes": 78897,
+      "sha256": "11e1d14e0700463fed60d1650599d892192d47a0fe37ec7548c614ed8a94aad8"
+    },
+    {
+      "path": "scripts/check_evidence_visual_contract.py",
+      "size_bytes": 88314,
+      "sha256": "3b8e19b23dccef3e12fb6dbd1242a5f1e0a19e97a3e076e9c40ffc84ca3f068c"
+    },
+    {
+      "path": "scripts/check_review_record.py",
+      "size_bytes": 15882,
+      "sha256": "a2e01e78ff7fc60abd4917e6ed4b288ab007da633b0300159547fce7192975fe"
+    },
+    {
+      "path": "scripts/check_storyline_plot.py",
+      "size_bytes": 13642,
+      "sha256": "d50f7ddd4d90be9c7c85aeab6d8ae3ba2b0f76575fe28c217218f83a84b75338"
+    },
+    {
+      "path": "scripts/extract_source_figure.py",
+      "size_bytes": 27330,
+      "sha256": "84f4854d1911be385a988684fd4c9cbdc208bd3de93eb89f2ae118a26d3c405c"
+    },
+    {
+      "path": "scripts/manifest_visuals.py",
+      "size_bytes": 6506,
+      "sha256": "7971f41548b0e3fd7769f2b4c617c32565a4f210993b9fd4cbeea8b3c8ff13cb"
+    }
+  ],
+  "sampling_sha256": "a8111a5a4890a7f49c6462f523af3326d6e75aada64ac95edda751212cae0ca6"
+}

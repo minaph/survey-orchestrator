@@ -1,0 +1,718 @@
+{
+  "verifiedAt": "2026-10-06T18:14:43.792350+00:00",
+  "allRequestedExecutionsCompleted": true,
+  "allArchivedVersionsVerified": true,
+  "settings": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "profile": null,
+    "sandbox_mode": "workspace-write",
+    "network_access": true,
+    "approval": "approve-for-me"
+  },
+  "snapshotFileCount": 47,
+  "snapshotManifestSha256": "d36ebaed1f07ce18ca4f2368c673248c40618039f5bcaf93cdf05005740ce343",
+  "snapshotUnchanged": true,
+  "commonPromptSha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+  "inputsIdenticalAcrossRuns": true,
+  "inputFileCountPerRun": 69,
+  "distinctInitialThreads": true,
+  "roundCount": 8,
+  "contentApproval": {
+    "status": "approved_by_parent",
+    "source": "Parent /root message: all three reviews approved and discussions ended; run1 discussion-2, run2 discussion-1, run3 discussion-2.",
+    "determination": "Parent review judgment, separately reported from execution and archive verification.",
+    "scope": "構成・論証の評価終了",
+    "productionContractApproval": false,
+    "boundaryReview": "evaluations/luna-plot-study/reviews/contract-boundary-review.md",
+    "productionLimitations": {
+      "affectedRuns": [1, 3],
+      "affectedVisual": "Self-Route紹介ページの文章由来の自作説明フロー",
+      "g5ImplementationApproved": false,
+      "requiredBeforeG5": "現案の自作フローは固定版の文献紹介に関する制作契約で使用不可です。G4-Vで視覚計画を局所修正し、使用許可を確認してからG5へ引き継ぎます。",
+      "excludedFromApproval": "全制作契約への適合、G5制作準備の全面承認、完成スライドの本番公開・運用"
+    }
+  },
+  "processCheck": {
+    "verifiedAt": "2026-10-06T18:14:43.792350+00:00",
+    "recordedProcessIds": [
+      44659,
+      52512,
+      58315,
+      44863,
+      53928,
+      44553,
+      51238,
+      61134
+    ],
+    "recordedProcessesRemaining": false,
+    "evaluationRunnerRemaining": false,
+    "commands": [
+      {
+        "command": "ps -p 44659,44863,44553,51238,52512,53928,58315,61134 -o pid=,ppid=,stat=,comm=",
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "command": "pgrep -fl 'evaluations/luna-plot-study/runtime/runner.py'",
+        "exitCode": 1,
+        "output": ""
+      }
+    ],
+    "terminationActions": [],
+    "note": "Escalated read-only process listing found no matches; no unrelated Codex processes were stopped."
+  },
+  "individualCommandFailureCount": 2,
+  "individualCommandFailures": [
+    {
+      "run": 2,
+      "round": "initial",
+      "id": "item_30",
+      "command": "/bin/zsh -lc \"python - <<'PY'\nfrom pathlib import Path\nimport re\nfor p in Path('corpus/papers').glob('*.txt'):\n s=p.read_text(errors='ignore')\n m=re.search(r'Abstract\\\\s*(.*?)\\\\n\\\\s*(?:1\\\\s+Introduction|1\\\\s+INTRODUCTION|Introduction)',s,re.S|re.I)\n if m:\n  a=re.sub(r'\\\\s+',' ',m.group(1)).strip()\n  print(f'## {p.stem}\\\\n{a[:2200]}\\\\n')\nPY\"",
+      "exit_code": 127,
+      "status": "failed"
+    },
+    {
+      "run": 3,
+      "round": "initial",
+      "id": "item_7",
+      "command": "/bin/zsh -lc 'for f in corpus/papers/*.txt; do echo ===$f; rg -n -i '\"'abstract|conclusion|results|limitation|cost|latency|token|retrieval|long.?context|needle|accuracy|citation|cost|compute|efficien|dataset|benchmark' \\\"\"'$f\" | head -35; done'",
+      "exit_code": 1,
+      "status": "failed"
+    }
+  ],
+  "verificationScope": "File hashes, exact archive inventories, fixed inputs/instructions, approved prompts, execution events, same-thread continuity, prior-after to next-before chains, current outputs, and process completion. Plot content validity is the parent/reviewer responsibility.",
+  "runs": [
+    {
+      "run": 1,
+      "threadId": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+      "finalRound": "discussion-2",
+      "inputFileCount": 69,
+      "instructionsSha256": "0336c319586a8971d8e12c264d40b762afa36e2913548d6a01d0146c65d272c7",
+      "finalSavedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "3a5ac3bc2ba51dadd52e2137808a73eb6d87a63cc542b57f8032df5a830aea93",
+          "size_bytes": 30493
+        },
+        {
+          "path": "制作メモ.md",
+          "sha256": "ed93bba77419f9fb4a2788abff422a610ad3c7a1c15f03a8e2f27dbe3e456274",
+          "size_bytes": 7716
+        }
+      ],
+      "latestWorkspaceMatchesFinalArchive": true,
+      "rounds": [
+        {
+          "round": "initial",
+          "mode": "new_session",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/runtime/common-prompt.txt",
+          "promptSha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "6ff8ca660a7c8ee31579c53054f02f0d0c7b1baf237e3945bb4ff876845b794c",
+              "size_bytes": 26043
+            },
+            {
+              "path": "制作メモ.md",
+              "sha256": "bedaaf466ee32185d67fcf1c4e3f066a8c269cb108d4bf7a73ec98778ec6fe16",
+              "size_bytes": 4038
+            }
+          ],
+          "commandFailures": [],
+          "processId": 44659,
+          "startedAt": "2026-10-06T17:47:04.703218+00:00",
+          "finishedAt": "2026-10-06T17:52:24.442950+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-1/rounds/initial/execution.json",
+              "sha256": "6fd152cd660bde9f619ec4b8c0cbe6aee795ae8d6fac061f1f30ec66fbf6f6a9",
+              "size_bytes": 1748
+            },
+            {
+              "path": "run-1/rounds/initial/prompt.txt",
+              "sha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+              "size_bytes": 1011
+            },
+            {
+              "path": "run-1/rounds/initial/events.jsonl",
+              "sha256": "31f61282b0d763003b8b5cd208539cfa77b1fa0aedd6160f4ca8740c7b371bd3",
+              "size_bytes": 496528
+            },
+            {
+              "path": "run-1/rounds/initial/stderr.log",
+              "sha256": "d973f0745272ba5fbe1edca40ec3fae629eeaa0b3a1c5120b9cdd03d34451e13",
+              "size_bytes": 1246
+            },
+            {
+              "path": "run-1/rounds/initial/final.txt",
+              "sha256": "af3113553ea87ad655a037c33a99472c21f2fabcbf875735fe29f60a5b7950bb",
+              "size_bytes": 997
+            },
+            {
+              "path": "run-1/rounds/initial/save-verification.json",
+              "sha256": "43e317f1d86b81683031b8a521df4da1842259664c41532e4e7d23521144d89d",
+              "size_bytes": 544
+            }
+          ]
+        },
+        {
+          "round": "discussion-1",
+          "mode": "resume",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/reviews/run-1-discussion-1-prompt.txt",
+          "promptSha256": "b3e055c2e5e6990c27cb08f519d5ef1b6b776e17ff4ef6ea6a590e541550f7bc",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "6ff8ca660a7c8ee31579c53054f02f0d0c7b1baf237e3945bb4ff876845b794c",
+              "size_bytes": 26043
+            },
+            {
+              "path": "制作メモ.md",
+              "sha256": "bedaaf466ee32185d67fcf1c4e3f066a8c269cb108d4bf7a73ec98778ec6fe16",
+              "size_bytes": 4038
+            }
+          ],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "627afa0502ba72122c529c1bc6858e4dde09bcfef4645f2cf9964d6f33270142",
+              "size_bytes": 30241
+            },
+            {
+              "path": "制作メモ.md",
+              "sha256": "3fcf380c3eae0020d657be6e734bdaf7a161d618d08569a9168b2a66a8dbe956",
+              "size_bytes": 6634
+            }
+          ],
+          "commandFailures": [],
+          "processId": 52512,
+          "startedAt": "2026-10-06T17:56:05.379455+00:00",
+          "finishedAt": "2026-10-06T18:00:28.878565+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-1/rounds/discussion-1/execution.json",
+              "sha256": "9bd93b1310d8c700b08e6809931a13d6f79b34354ddc0e478b7e866e9b32b04f",
+              "size_bytes": 2117
+            },
+            {
+              "path": "run-1/rounds/discussion-1/prompt.txt",
+              "sha256": "b3e055c2e5e6990c27cb08f519d5ef1b6b776e17ff4ef6ea6a590e541550f7bc",
+              "size_bytes": 2507
+            },
+            {
+              "path": "run-1/rounds/discussion-1/events.jsonl",
+              "sha256": "146823b1dc6845e4113dc2a438b009c1f34463cda4b04d3d8977e6dedf58fbab",
+              "size_bytes": 255692
+            },
+            {
+              "path": "run-1/rounds/discussion-1/stderr.log",
+              "sha256": "1126f99e7c3075594458a81fade109245e481f2132b11b09b406e454f0a92406",
+              "size_bytes": 1310
+            },
+            {
+              "path": "run-1/rounds/discussion-1/final.txt",
+              "sha256": "d07bbe2db499f7b70035430aa5fefb41c4d0be8220e312b5437ef26a3d533a62",
+              "size_bytes": 1734
+            },
+            {
+              "path": "run-1/rounds/discussion-1/save-verification.json",
+              "sha256": "0c1a06b375778025c5d4e0e930c9272e4757923926891925a0bf45f92a3b1516",
+              "size_bytes": 603
+            }
+          ]
+        },
+        {
+          "round": "discussion-2",
+          "mode": "resume",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/reviews/run-1-discussion-2-prompt.txt",
+          "promptSha256": "5bb66724132c83f948c7b4a72c6793e8a48b25a4bf14c8969cea7dfa01991290",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "627afa0502ba72122c529c1bc6858e4dde09bcfef4645f2cf9964d6f33270142",
+              "size_bytes": 30241
+            },
+            {
+              "path": "制作メモ.md",
+              "sha256": "3fcf380c3eae0020d657be6e734bdaf7a161d618d08569a9168b2a66a8dbe956",
+              "size_bytes": 6634
+            }
+          ],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "3a5ac3bc2ba51dadd52e2137808a73eb6d87a63cc542b57f8032df5a830aea93",
+              "size_bytes": 30493
+            },
+            {
+              "path": "制作メモ.md",
+              "sha256": "ed93bba77419f9fb4a2788abff422a610ad3c7a1c15f03a8e2f27dbe3e456274",
+              "size_bytes": 7716
+            }
+          ],
+          "commandFailures": [],
+          "processId": 58315,
+          "startedAt": "2026-10-06T18:03:38.432686+00:00",
+          "finishedAt": "2026-10-06T18:07:50.605940+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-1/rounds/discussion-2/execution.json",
+              "sha256": "25f8789a2cf5b7742a3a53b60bd314d9418c9a75175c7c23f3297ff5589f99e6",
+              "size_bytes": 2117
+            },
+            {
+              "path": "run-1/rounds/discussion-2/prompt.txt",
+              "sha256": "5bb66724132c83f948c7b4a72c6793e8a48b25a4bf14c8969cea7dfa01991290",
+              "size_bytes": 1479
+            },
+            {
+              "path": "run-1/rounds/discussion-2/events.jsonl",
+              "sha256": "6ccc34fdb26c4e24877fb15d71aec98905210f0a5ecb9ac4db53b64aab1a91d5",
+              "size_bytes": 52274
+            },
+            {
+              "path": "run-1/rounds/discussion-2/stderr.log",
+              "sha256": "421ac7f1fe5f061279d8ff696901cea842660df6c4ad3654f28dc89070fb5fd5",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-1/rounds/discussion-2/final.txt",
+              "sha256": "6f5d9697632a443d564e1d6c0b5381af7bc7608ea07aa30a9b2a855832d268af",
+              "size_bytes": 1088
+            },
+            {
+              "path": "run-1/rounds/discussion-2/save-verification.json",
+              "sha256": "ff72dcee19b761bc55d0a216a028daa58e06ac3286e13f784d989714ea474b91",
+              "size_bytes": 606
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "threadId": "01a11253-834a-7420-90f7-cbfc68749120",
+      "finalRound": "discussion-1",
+      "inputFileCount": 69,
+      "instructionsSha256": "0336c319586a8971d8e12c264d40b762afa36e2913548d6a01d0146c65d272c7",
+      "finalSavedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "5f8a75f8f20ab359d472319064a365ac6c1b0fa82071ee104f3200c2ce664f92",
+          "size_bytes": 35244
+        },
+        {
+          "path": "production-notes.md",
+          "sha256": "7b1aea2cc45640745e4cb5b3f381377b3c9f90229aa2fd919dd90886411a9f73",
+          "size_bytes": 5876
+        }
+      ],
+      "latestWorkspaceMatchesFinalArchive": true,
+      "rounds": [
+        {
+          "round": "initial",
+          "mode": "new_session",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-834a-7420-90f7-cbfc68749120",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/runtime/common-prompt.txt",
+          "promptSha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "fe0880c0c2f39a7ea07a2ddc8ed05086825483f1ac665c4980197ac81e232d05",
+              "size_bytes": 28516
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "589b75a04ef25d47486f5a9ad28976effa4f43fecab6f2c0b0aa143ca2496448",
+              "size_bytes": 5102
+            }
+          ],
+          "commandFailures": [
+            {
+              "id": "item_30",
+              "command": "/bin/zsh -lc \"python - <<'PY'\nfrom pathlib import Path\nimport re\nfor p in Path('corpus/papers').glob('*.txt'):\n s=p.read_text(errors='ignore')\n m=re.search(r'Abstract\\\\s*(.*?)\\\\n\\\\s*(?:1\\\\s+Introduction|1\\\\s+INTRODUCTION|Introduction)',s,re.S|re.I)\n if m:\n  a=re.sub(r'\\\\s+',' ',m.group(1)).strip()\n  print(f'## {p.stem}\\\\n{a[:2200]}\\\\n')\nPY\"",
+              "exit_code": 127,
+              "status": "failed"
+            }
+          ],
+          "processId": 44863,
+          "startedAt": "2026-10-06T17:47:05.385200+00:00",
+          "finishedAt": "2026-10-06T17:52:22.618021+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-2/rounds/initial/execution.json",
+              "sha256": "95d896da2704377ac7eb24d1fb1af6f7fded59fa30dc29d8b198a140082142a6",
+              "size_bytes": 2228
+            },
+            {
+              "path": "run-2/rounds/initial/prompt.txt",
+              "sha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+              "size_bytes": 1011
+            },
+            {
+              "path": "run-2/rounds/initial/events.jsonl",
+              "sha256": "e5577f4cffd79bebd4b6d7a34cb87180737e0caeb9052f133671f2c219f1e4b8",
+              "size_bytes": 701499
+            },
+            {
+              "path": "run-2/rounds/initial/stderr.log",
+              "sha256": "31b2449dd1a839af7319c33d33aa24c16d88ea8b31adc1963a66cedad4cdc060",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-2/rounds/initial/final.txt",
+              "sha256": "65b04c88337caf088d8f080b86a18696fe2dad7d43912c19c10e2074b9f7494a",
+              "size_bytes": 1058
+            },
+            {
+              "path": "run-2/rounds/initial/save-verification.json",
+              "sha256": "5963666a165df3e4f4044c89fdc3783aa85346fc67477b3e4c03f04c251d1125",
+              "size_bytes": 1025
+            }
+          ]
+        },
+        {
+          "round": "discussion-1",
+          "mode": "resume",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-834a-7420-90f7-cbfc68749120",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/reviews/run-2-discussion-1-prompt.txt",
+          "promptSha256": "734eaa5a97160df3398f5017a548239b7c03102cdf429c805f017f1538c6dbea",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "fe0880c0c2f39a7ea07a2ddc8ed05086825483f1ac665c4980197ac81e232d05",
+              "size_bytes": 28516
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "589b75a04ef25d47486f5a9ad28976effa4f43fecab6f2c0b0aa143ca2496448",
+              "size_bytes": 5102
+            }
+          ],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "5f8a75f8f20ab359d472319064a365ac6c1b0fa82071ee104f3200c2ce664f92",
+              "size_bytes": 35244
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "7b1aea2cc45640745e4cb5b3f381377b3c9f90229aa2fd919dd90886411a9f73",
+              "size_bytes": 5876
+            }
+          ],
+          "commandFailures": [],
+          "processId": 53928,
+          "startedAt": "2026-10-06T17:57:52.106456+00:00",
+          "finishedAt": "2026-10-06T18:04:10.112023+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-2/rounds/discussion-1/execution.json",
+              "sha256": "671e9ef5a03179fa1c112228dd081b63174869ca9ac0166ae76699119fbe76b3",
+              "size_bytes": 2125
+            },
+            {
+              "path": "run-2/rounds/discussion-1/prompt.txt",
+              "sha256": "734eaa5a97160df3398f5017a548239b7c03102cdf429c805f017f1538c6dbea",
+              "size_bytes": 2731
+            },
+            {
+              "path": "run-2/rounds/discussion-1/events.jsonl",
+              "sha256": "d2dfd2d0f3bcb8f59eb74ddc3c9f0b115c344cec66acb9b52a5e1abae1a86759",
+              "size_bytes": 341376
+            },
+            {
+              "path": "run-2/rounds/discussion-1/stderr.log",
+              "sha256": "b85b76caa2550c64c24818b784ac29024c20dc1569c0f6d41ab26e67959059b0",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-2/rounds/discussion-1/final.txt",
+              "sha256": "4745333fdf272bec466385026d95f3bdca966bfe6326a753f90f961f479db962",
+              "size_bytes": 1605
+            },
+            {
+              "path": "run-2/rounds/discussion-1/save-verification.json",
+              "sha256": "854c97b647c9b086dbeb1744a5a0479477583677c6af6b3b1adca97a731fd49c",
+              "size_bytes": 607
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+      "finalRound": "discussion-2",
+      "inputFileCount": 69,
+      "instructionsSha256": "0336c319586a8971d8e12c264d40b762afa36e2913548d6a01d0146c65d272c7",
+      "finalSavedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "58eb18ed081922e3aa00632ca8a814f336a4d846fda9253d24ec0de7658cb5d0",
+          "size_bytes": 36126
+        },
+        {
+          "path": "production-notes.md",
+          "sha256": "7efd09deb2c0b268ef7e0b8e50a6536fbf03579823a6ef3750a4b7b93753dba2",
+          "size_bytes": 6409
+        }
+      ],
+      "latestWorkspaceMatchesFinalArchive": true,
+      "rounds": [
+        {
+          "round": "initial",
+          "mode": "new_session",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/runtime/common-prompt.txt",
+          "promptSha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "a605cd85f2fb83c1dfed01365c2f2fcd4d6b69740dd0e951275baa249713b7b8",
+              "size_bytes": 30809
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "8f0277d3aaefee4728fcc3ce981b7e034c747adacb61924baa6ef42030faac71",
+              "size_bytes": 3797
+            }
+          ],
+          "commandFailures": [
+            {
+              "id": "item_7",
+              "command": "/bin/zsh -lc 'for f in corpus/papers/*.txt; do echo ===$f; rg -n -i '\"'abstract|conclusion|results|limitation|cost|latency|token|retrieval|long.?context|needle|accuracy|citation|cost|compute|efficien|dataset|benchmark' \\\"\"'$f\" | head -35; done'",
+              "exit_code": 1,
+              "status": "failed"
+            }
+          ],
+          "processId": 44553,
+          "startedAt": "2026-10-06T17:47:03.929896+00:00",
+          "finishedAt": "2026-10-06T17:50:22.267653+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-3/rounds/initial/execution.json",
+              "sha256": "d23b362726d22edf65aadb5c245b146f9f779ca70c38d23458977c72528cc47d",
+              "size_bytes": 2106
+            },
+            {
+              "path": "run-3/rounds/initial/prompt.txt",
+              "sha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+              "size_bytes": 1011
+            },
+            {
+              "path": "run-3/rounds/initial/events.jsonl",
+              "sha256": "e44ff8766dc220f7ee8e2bb17622678252f3356b10291af35d4220852cbec6c9",
+              "size_bytes": 650849
+            },
+            {
+              "path": "run-3/rounds/initial/stderr.log",
+              "sha256": "d35b63fc5be1bef0cdd526778b233e4061e39c38a6d6bb9dfc7f63afd0916086",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-3/rounds/initial/final.txt",
+              "sha256": "8b29a8e563ff99c1a227eb9f5ed8bfac61446dd6efd370822153b39c610a60d2",
+              "size_bytes": 1002
+            },
+            {
+              "path": "run-3/rounds/initial/save-verification.json",
+              "sha256": "df9536adedfc5a285e857a6ad33f47a7c55b974678cf485ed3f16d6011031185",
+              "size_bytes": 902
+            }
+          ]
+        },
+        {
+          "round": "discussion-1",
+          "mode": "resume",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/reviews/run-3-discussion-1-prompt.txt",
+          "promptSha256": "a4b5961604d989c4716357a74cbebb36859c6b664b55de83b3b72fa9c62f9628",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "a605cd85f2fb83c1dfed01365c2f2fcd4d6b69740dd0e951275baa249713b7b8",
+              "size_bytes": 30809
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "8f0277d3aaefee4728fcc3ce981b7e034c747adacb61924baa6ef42030faac71",
+              "size_bytes": 3797
+            }
+          ],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "e35c745f2b6758b476589d57fdcffead0508b83334d43b319e05ee6dbdd1cee5",
+              "size_bytes": 35655
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "726a249bfea079b2055f45581faac1d1f8651cfcd6bc89a3e239318e5b713822",
+              "size_bytes": 8173
+            }
+          ],
+          "commandFailures": [],
+          "processId": 51238,
+          "startedAt": "2026-10-06T17:54:33.571621+00:00",
+          "finishedAt": "2026-10-06T18:04:03.482218+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-3/rounds/discussion-1/execution.json",
+              "sha256": "3f54310589bf9a5c7fc82737a4fdbbacbcb1aa5cc0610096e3a48852fd97a646",
+              "size_bytes": 2125
+            },
+            {
+              "path": "run-3/rounds/discussion-1/prompt.txt",
+              "sha256": "a4b5961604d989c4716357a74cbebb36859c6b664b55de83b3b72fa9c62f9628",
+              "size_bytes": 2585
+            },
+            {
+              "path": "run-3/rounds/discussion-1/events.jsonl",
+              "sha256": "bbe6b40a1e56b2bef99fed932ed271be8ba7adf506792f0da5d291e5c8c93525",
+              "size_bytes": 242672
+            },
+            {
+              "path": "run-3/rounds/discussion-1/stderr.log",
+              "sha256": "3ab6fce80e2c1073b354e6cf0f0005744241e57dae544c6ff59aff971a69b3e7",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-3/rounds/discussion-1/final.txt",
+              "sha256": "e45a8fc97d5f656a3c5159bc677ddf1088c65b17921966f32efdb6a0727d3459",
+              "size_bytes": 674
+            },
+            {
+              "path": "run-3/rounds/discussion-1/save-verification.json",
+              "sha256": "33594469b21a83018d888b252fc5b031a290257e65dd4414abecef4de35d7d2b",
+              "size_bytes": 607
+            }
+          ]
+        },
+        {
+          "round": "discussion-2",
+          "mode": "resume",
+          "status": "completed",
+          "exitCode": 0,
+          "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+          "sameThreadVerified": true,
+          "turnCompleted": true,
+          "inputsUnchanged": true,
+          "promptMatchesSupervisorSource": "evaluations/luna-plot-study/reviews/run-3-discussion-2-prompt.txt",
+          "promptSha256": "8d08a0561dacaa550deedc6594bd62ed7e69a6d7801566b33019c50701eba8bc",
+          "beforeMatchesPriorRound": true,
+          "beforeArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "e35c745f2b6758b476589d57fdcffead0508b83334d43b319e05ee6dbdd1cee5",
+              "size_bytes": 35655
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "726a249bfea079b2055f45581faac1d1f8651cfcd6bc89a3e239318e5b713822",
+              "size_bytes": 8173
+            }
+          ],
+          "savedArtifacts": [
+            {
+              "path": "plot.md",
+              "sha256": "58eb18ed081922e3aa00632ca8a814f336a4d846fda9253d24ec0de7658cb5d0",
+              "size_bytes": 36126
+            },
+            {
+              "path": "production-notes.md",
+              "sha256": "7efd09deb2c0b268ef7e0b8e50a6536fbf03579823a6ef3750a4b7b93753dba2",
+              "size_bytes": 6409
+            }
+          ],
+          "commandFailures": [],
+          "processId": 61134,
+          "startedAt": "2026-10-06T18:06:44.680105+00:00",
+          "finishedAt": "2026-10-06T18:10:09.931935+00:00",
+          "metadataArtifacts": [
+            {
+              "path": "run-3/rounds/discussion-2/execution.json",
+              "sha256": "72e13b0d52d1dfe5339edd7b6cf16f1250a49aa17dd63d8b55b769bbd62f7d2a",
+              "size_bytes": 2125
+            },
+            {
+              "path": "run-3/rounds/discussion-2/prompt.txt",
+              "sha256": "8d08a0561dacaa550deedc6594bd62ed7e69a6d7801566b33019c50701eba8bc",
+              "size_bytes": 1483
+            },
+            {
+              "path": "run-3/rounds/discussion-2/events.jsonl",
+              "sha256": "4577ee116e8bf09924cc1587b7945bd30026cb30b5909f38764967cde2a5f67a",
+              "size_bytes": 98211
+            },
+            {
+              "path": "run-3/rounds/discussion-2/stderr.log",
+              "sha256": "76052ab4fb67714cbca5d2a6744b626344eee40367970d7eeef0325f40b56249",
+              "size_bytes": 680
+            },
+            {
+              "path": "run-3/rounds/discussion-2/final.txt",
+              "sha256": "d1e8c3616630f5ab64d8c28b060933c81f55730ea3debfdb1888540a710f7863",
+              "size_bytes": 947
+            },
+            {
+              "path": "run-3/rounds/discussion-2/save-verification.json",
+              "sha256": "e254256276f2a6e77a4374179c38f9d362add8638c7bb0a950fb990968937772",
+              "size_bytes": 610
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

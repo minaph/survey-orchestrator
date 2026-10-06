@@ -1,0 +1,8 @@
+ご指定の2ファイルを更新しました。
+
+- [発表プロット](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-3/workspace/outputs/plot.md>)
+- [制作メモ](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-3/workspace/outputs/production-notes.md>)
+
+10枚目では、Self-Routeの処理の流れを§4.2本文に基づく説明用の再構成とし、原Fig. 1は性能・費用の比較図として区別しました。7列の平均値は本文値との対応と調査側の再計算を分け、著者がその集計方法を明記したとは確認できない点も残しました。制作メモは現行判断・未完了事項・初稿からの変更履歴に整理しています。
+
+確認範囲は同梱Self-Route PDFのFig. 1、Table 1、§4.2–4.3などです。初稿は参照しておらず、指定された他の試行や監督者記録も探索していません。

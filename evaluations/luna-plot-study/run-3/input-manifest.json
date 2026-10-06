@@ -1,0 +1,421 @@
+{
+  "prepared_at": "2026-10-06T17:45:45.716436+00:00",
+  "snapshot_manifest_sha256": "d36ebaed1f07ce18ca4f2368c673248c40618039f5bcaf93cdf05005740ce343",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c6ccf22d9c919710815c852ec61b04abd345e60daaf8978be005bb939a80dcb4",
+      "size_bytes": 18145,
+      "category": "skill"
+    },
+    {
+      "path": "references/design-resource-map.md",
+      "sha256": "614ab6ff39547d7e56c2257afe3551a379372a96d2ffa718a28132870d297673",
+      "size_bytes": 6080,
+      "category": "skill"
+    },
+    {
+      "path": "references/evidence-model.md",
+      "sha256": "3884a6ab4e1eb2f0fc08942ecdc81f18093b688fb9dd3ac56e9a42880229c8e9",
+      "size_bytes": 14593,
+      "category": "skill"
+    },
+    {
+      "path": "references/evidence-visual-contract.md",
+      "sha256": "7e89d7af995057cab006f35b3364646ff0fc10d3199ee3c70bedaf4f8e25274f",
+      "size_bytes": 25324,
+      "category": "skill"
+    },
+    {
+      "path": "references/figure-extraction.md",
+      "sha256": "2cbf82da522011d83c2102195d45a444bd620d43ea807693e9b16f287844c39d",
+      "size_bytes": 19332,
+      "category": "skill"
+    },
+    {
+      "path": "references/hci-stance-attribution.md",
+      "sha256": "dab3fe9f4ef989724bf319c09960db7dcadd1c07274e594ab125014b79af63fe",
+      "size_bytes": 5919,
+      "category": "skill"
+    },
+    {
+      "path": "references/incident-log.md",
+      "sha256": "436832382745039dcdf9eed45c05f6ae72753d66045571d9e1bfc9f4593f9c16",
+      "size_bytes": 2777,
+      "category": "skill"
+    },
+    {
+      "path": "references/management-workflow.md",
+      "sha256": "f0f517b22dc799f19d29e306fc670f47fcbd8f025ff9f6b4a2e5bb6ba73276ba",
+      "size_bytes": 9932,
+      "category": "skill"
+    },
+    {
+      "path": "references/miru-style-profile.md",
+      "sha256": "1ba3e12234c2d8c56e7dcea5018e6f2d839e6c15dadb8baa855c3dc48cf652ac",
+      "size_bytes": 10281,
+      "category": "skill"
+    },
+    {
+      "path": "references/presentation-build-contract.md",
+      "sha256": "16224fb9db845cfbc543006e8c999336fc2b8cd7621ffd90977c85114690560c",
+      "size_bytes": 18374,
+      "category": "skill"
+    },
+    {
+      "path": "references/reconstruction-review.md",
+      "sha256": "81e42e9f32c9cf1e7bf85b09a841ff07044b22ca0073739b664b21288cffb4a8",
+      "size_bytes": 18737,
+      "category": "skill"
+    },
+    {
+      "path": "references/reference-analysis.md",
+      "sha256": "3fcf42c48cf19e4b7bae9a292f676a2386a0c09da1e7f1e085e5ab5b90e3eb10",
+      "size_bytes": 6217,
+      "category": "skill"
+    },
+    {
+      "path": "references/research-slide-writing.md",
+      "sha256": "15927a19cb7d16585d7fa28efef5f4c0f4fc8363a48606b324a287efa1419ad6",
+      "size_bytes": 12559,
+      "category": "skill"
+    },
+    {
+      "path": "references/review-rubric.md",
+      "sha256": "4d104d4983fbe64a38b8b6bd320318e8cc48611d2713635ccc1c4264b6c1ccac",
+      "size_bytes": 18442,
+      "category": "skill"
+    },
+    {
+      "path": "references/rrm.md",
+      "sha256": "caba13e616a954e8bf1b5e2a3d8775840f804a9b6548d64f5c8dc307e46bdd40",
+      "size_bytes": 13888,
+      "category": "skill"
+    },
+    {
+      "path": "references/storyline-plot.md",
+      "sha256": "a605e0fd5e7c4430e461a65e1b19506500175fafda5f76745218a51c14329f6a",
+      "size_bytes": 23052,
+      "category": "skill"
+    },
+    {
+      "path": "references/survey-design-analysis.md",
+      "sha256": "ead5b35990612bde1007e0b84edb161054a71c0c680379a60db189478554ae95",
+      "size_bytes": 13806,
+      "category": "skill"
+    },
+    {
+      "path": "references/survey-methods.md",
+      "sha256": "2abb0f7c00ef9b5a6f40d0ae4774582a391b3db576d93cc8ddd918cec02ffc91",
+      "size_bytes": 11187,
+      "category": "skill"
+    },
+    {
+      "path": "references/survey-slide-templates.md",
+      "sha256": "6609e64f81af6a495e5ea0dbf80b618b9b4f4bfae915c9035d433d5b5cca9555",
+      "size_bytes": 35286,
+      "category": "skill"
+    },
+    {
+      "path": "references/verification.md",
+      "sha256": "99d76ff392e2777b500ab12e8840c88f6b87196847758e1d491a5533a21d0719",
+      "size_bytes": 4728,
+      "category": "skill"
+    },
+    {
+      "path": "references/visual-review.md",
+      "sha256": "e25d4ab7600afd6f85f19c93aa3a8c44dd6a02defca34349731ba4e02ebc3187",
+      "size_bytes": 7782,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/check_deck_quality.py",
+      "sha256": "11e1d14e0700463fed60d1650599d892192d47a0fe37ec7548c614ed8a94aad8",
+      "size_bytes": 78897,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/check_evidence_visual_contract.py",
+      "sha256": "3b8e19b23dccef3e12fb6dbd1242a5f1e0a19e97a3e076e9c40ffc84ca3f068c",
+      "size_bytes": 88314,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/check_review_record.py",
+      "sha256": "a2e01e78ff7fc60abd4917e6ed4b288ab007da633b0300159547fce7192975fe",
+      "size_bytes": 15882,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/check_storyline_plot.py",
+      "sha256": "d50f7ddd4d90be9c7c85aeab6d8ae3ba2b0f76575fe28c217218f83a84b75338",
+      "size_bytes": 13642,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/extract_source_figure.py",
+      "sha256": "84f4854d1911be385a988684fd4c9cbdc208bd3de93eb89f2ae118a26d3c405c",
+      "size_bytes": 27330,
+      "category": "skill"
+    },
+    {
+      "path": "scripts/manifest_visuals.py",
+      "sha256": "7971f41548b0e3fd7769f2b4c617c32565a4f210993b9fd4cbeea8b3c8ff13cb",
+      "size_bytes": 6506,
+      "category": "skill"
+    },
+    {
+      "path": "assets/icon.svg",
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+      "size_bytes": 420,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/README.md",
+      "sha256": "ce672e4e0525e62f5c3106ec86934f7b7f777c41d44757646b43e6d891adccf8",
+      "size_bytes": 1164,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-compute-loss.png",
+      "sha256": "8e10c271a06affb2354119d1d9a2dc7a7c9cc2094feb9e03ae21253e21e28e0f",
+      "size_bytes": 34963,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p013-data-loss.png",
+      "sha256": "469a1aa92b4d6568f46c8f7f48a962c8d04275b619affb394123300cdd31747a",
+      "size_bytes": 26780,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p024-deepsdf-comparison.png",
+      "sha256": "fca604378e41365d3c62ff2bdc5eadb6ad086a15f4789883338f5dba1af4098e",
+      "size_bytes": 222540,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p025-deepsdf-interpolation.png",
+      "sha256": "ae03ed3399a68b846aea9ed22ab13ccdb93627dd3a2bf9cba360bf80b2eca410",
+      "size_bytes": 311721,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p040-hash-encoding.png",
+      "sha256": "78012b4591d5b55e0c6eec7319bd3d408e0a6ceeca00da3134e99a04730fa4f3",
+      "size_bytes": 213873,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p050-surface-binding.png",
+      "sha256": "3f74e975a5522292501dacb5445284a766193b23071957d3d0e0c94e9b39ff6c",
+      "size_bytes": 81504,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-mesh-sharing.png",
+      "sha256": "208149f10b253f529a7e541d7629cce2dd326fa2493a57376109dec43c37528d",
+      "size_bytes": 76331,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p051-triangle-splatting.png",
+      "sha256": "fc183c258a2d21815f6d6e28825226fd501cbdfaf070af398cbb37f11a94eedd",
+      "size_bytes": 103949,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-ambiguity.png",
+      "sha256": "62f864a8baff4dde1e2b086bc08ef30e2010bbf585a8f996fbc40ad7afed083d",
+      "size_bytes": 39594,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p054-training-test.png",
+      "sha256": "29f5fa7fd2a17bae5c8166ee8295eef9cfc26ec5b0753fe00118a669e487d8f1",
+      "size_bytes": 673401,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-method.png",
+      "sha256": "5b5068b180c94de27564169f4d9496fce31162de4f452ec4b5d225de85ee8c01",
+      "size_bytes": 233104,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p074-srt-results.png",
+      "sha256": "5340c2e53c132e3f0a287d3514f969f21d0907dd0f1f1a0bb2419f5e640c7c93",
+      "size_bytes": 667776,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p093-vggt-synthetic-probe.png",
+      "sha256": "7b226d520d02c3ebb0d163b6713311812bacdf5624637daa07112f298ddb81fb",
+      "size_bytes": 39371,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-cupid.png",
+      "sha256": "e4117eb9bb553b997a960c7b01d9a57a4095202e8f0703086fb59731617d76c1",
+      "size_bytes": 311917,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/p104-gen3r.png",
+      "sha256": "886ab619f656fa8aaea351c71e83a0d6215c2911a012f6571f1d8f01b0c51298",
+      "size_bytes": 413103,
+      "category": "skill"
+    },
+    {
+      "path": "assets/miru-reference-excerpts/provenance.json",
+      "sha256": "40b8848ef8ff5aa8c531b5bd4837ddd1bde3113889e274604aadddd879a27c5b",
+      "size_bytes": 5873,
+      "category": "skill"
+    },
+    {
+      "path": "assets/survey-slide-templates.html",
+      "sha256": "80121ba82af29aa84c83b0121cbb23c86cc31881f81ec2ae3ecdeba4233c272d",
+      "size_bytes": 57942,
+      "category": "skill"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "fcdc57dafab1c8bf3c44ffc378a50eb9a5fa28da9c1aeb613046d87f746a543c",
+      "size_bytes": 668,
+      "category": "skill"
+    },
+    {
+      "path": "corpus/README.md",
+      "sha256": "3a71eb08a4fbc8ba8937266681097d40fa79ab7d104470d82952bedba554c3f1",
+      "size_bytes": 4973,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/bibliography.json",
+      "sha256": "2838248ca34db8fc3d10e94cb0691c71ea5c5d3cc3f363320d2bb86483e13b5b",
+      "size_bytes": 8597,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/bergen.pdf",
+      "sha256": "e94b9f862f921a41ccd346226d73663b8e417bead69cbab81820c2dbf8ff97fe",
+      "size_bytes": 560386,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/bergen.txt",
+      "sha256": "78045069320025fe86d8bfd2544ef97f1bd56fc0c55c1057b546ed017c146b3c",
+      "size_bytes": 151801,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/lara.pdf",
+      "sha256": "a40d65f934c6532bc3f2b3204770f10eb43037114fb258af43429c3c70f399fc",
+      "size_bytes": 609393,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/lara.txt",
+      "sha256": "f8ce4986acebdfbceee699782e4b79fb44866c88e9a324a28955b48e550154a1",
+      "size_bytes": 105989,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/loft.pdf",
+      "sha256": "9e23e39c91daee42c8f9c36fbd3e665a6f59becaeff15860e44c7aca6cb22d0c",
+      "size_bytes": 2722529,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/loft.txt",
+      "sha256": "86de25ba048253cd475afa11e3fd3ab7463cf1ce2f504ca52226f83f5bee8aaa",
+      "size_bytes": 130313,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/long-context-meets-rag.pdf",
+      "sha256": "693af1edc4b4e82b76629fcfeed21833959d38974e1b8b32514951a7c43f4b61",
+      "size_bytes": 1681409,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/long-context-meets-rag.txt",
+      "sha256": "e59d3b89069cae3fa505c846fea02923def702a7d603288b29a2277b868fd450",
+      "size_bytes": 152222,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/longbench-v2.pdf",
+      "sha256": "cb8c8a4de3dbc2d7bd8fc2586e502c45b5dc424c2a062ca9a8e02c55e0f6a46d",
+      "size_bytes": 10314775,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/longbench-v2.txt",
+      "sha256": "24f23fa8662699b7804acd839387a547f3cfd54004eda95fcb5dcffa9b77179c",
+      "size_bytes": 111267,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/longcite.pdf",
+      "sha256": "fa1cb09d03dcb90ee6f847c83516a737485e3d0db1f70b8829349430372175db",
+      "size_bytes": 800920,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/longcite.txt",
+      "sha256": "099d1d3826e6870260f3a4b67f11de1ddfbfde18637b050ceaf1696e625695d6",
+      "size_bytes": 99153,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/lost-in-the-middle.pdf",
+      "sha256": "f37f6fabe0fe0d8c73b67579cd115dbf14e282cfb7b7af655ae8109638402c9b",
+      "size_bytes": 2609413,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/lost-in-the-middle.txt",
+      "sha256": "43c5e837e7f033a0e603fcb5b2462be1cc1ff579f387e6bfb6933e4fe283efc2",
+      "size_bytes": 77003,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/op-rag.pdf",
+      "sha256": "69db5675292a0661dce2ddc22d2bedae4481c4fe06eb4dc565bd5ff8583183f4",
+      "size_bytes": 447231,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/op-rag.txt",
+      "sha256": "611bfa55c9a45e0954f060a2c17dc7e94223b2af5d658dc812c507506c4d5477",
+      "size_bytes": 24244,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/ruler.pdf",
+      "sha256": "8a4bc6ca28d84570eec7f42652400c2121f4c8bc361701634e596772e396fc22",
+      "size_bytes": 682955,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/ruler.txt",
+      "sha256": "d0d61a6b9ab393a35fd0cdba36d458905a238de171f6d0595c877657255ef100",
+      "size_bytes": 119646,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/self-route.pdf",
+      "sha256": "90407fd3c2bcf11d52868f0aaee3d39d6a9919351c89636555a641950531a070",
+      "size_bytes": 582318,
+      "category": "paper"
+    },
+    {
+      "path": "corpus/papers/self-route.txt",
+      "sha256": "0fa7c33b88017c22e978c9e0edde5a8718e0fd157574224935fe698c93e91a93",
+      "size_bytes": 65207,
+      "category": "paper"
+    }
+  ],
+  "instructions_sha256": "0336c319586a8971d8e12c264d40b762afa36e2913548d6a01d0146c65d272c7"
+}

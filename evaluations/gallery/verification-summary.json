@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-10-06T17:03:23.328Z",
+  "source": "assets/survey-slide-templates.html",
+  "sourceSha256": "80121ba82af29aa84c83b0121cbb23c86cc31881f81ec2ae3ecdeba4233c272d",
+  "sourceUnchangedDuringRendering": true,
+  "caseIds": [
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S14",
+    "S15",
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S13",
+    "S16"
+  ],
+  "screenCount": 16,
+  "screenOverflowCount": 0,
+  "printOverflowCount": 0,
+  "imageCount": 16,
+  "unloadedImageCount": 0,
+  "mobile": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "bodyWidth": 390,
+    "overflow": false
+  },
+  "pdfPageCount": 16,
+  "printRasterCount": 16,
+  "printRasterSize": [
+    1600,
+    900
+  ],
+  "printPageOrder": [
+    {
+      "page": 1,
+      "caseId": "S07",
+      "image": "evaluations/gallery/print/page-01.png"
+    },
+    {
+      "page": 2,
+      "caseId": "S08",
+      "image": "evaluations/gallery/print/page-02.png"
+    },
+    {
+      "page": 3,
+      "caseId": "S09",
+      "image": "evaluations/gallery/print/page-03.png"
+    },
+    {
+      "page": 4,
+      "caseId": "S10",
+      "image": "evaluations/gallery/print/page-04.png"
+    },
+    {
+      "page": 5,
+      "caseId": "S11",
+      "image": "evaluations/gallery/print/page-05.png"
+    },
+    {
+      "page": 6,
+      "caseId": "S12",
+      "image": "evaluations/gallery/print/page-06.png"
+    },
+    {
+      "page": 7,
+      "caseId": "S14",
+      "image": "evaluations/gallery/print/page-07.png"
+    },
+    {
+      "page": 8,
+      "caseId": "S15",
+      "image": "evaluations/gallery/print/page-08.png"
+    },
+    {
+      "page": 9,
+      "caseId": "S01",
+      "image": "evaluations/gallery/print/page-09.png"
+    },
+    {
+      "page": 10,
+      "caseId": "S02",
+      "image": "evaluations/gallery/print/page-10.png"
+    },
+    {
+      "page": 11,
+      "caseId": "S03",
+      "image": "evaluations/gallery/print/page-11.png"
+    },
+    {
+      "page": 12,
+      "caseId": "S04",
+      "image": "evaluations/gallery/print/page-12.png"
+    },
+    {
+      "page": 13,
+      "caseId": "S05",
+      "image": "evaluations/gallery/print/page-13.png"
+    },
+    {
+      "page": 14,
+      "caseId": "S06",
+      "image": "evaluations/gallery/print/page-14.png"
+    },
+    {
+      "page": 15,
+      "caseId": "S13",
+      "image": "evaluations/gallery/print/page-15.png"
+    },
+    {
+      "page": 16,
+      "caseId": "S16",
+      "image": "evaluations/gallery/print/page-16.png"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "verifiedAt": "2026-10-06T17:53:48.550768+00:00",
+  "allInitialRoundsCompleted": true,
+  "inputsIdentical": true,
+  "runs": [
+    {
+      "run": 1,
+      "status": "completed",
+      "exitCode": 0,
+      "threadId": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+      "inputsUnchanged": true,
+      "savedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "6ff8ca660a7c8ee31579c53054f02f0d0c7b1baf237e3945bb4ff876845b794c",
+          "size_bytes": 26043
+        },
+        {
+          "path": "制作メモ.md",
+          "sha256": "bedaaf466ee32185d67fcf1c4e3f066a8c269cb108d4bf7a73ec98778ec6fe16",
+          "size_bytes": 4038
+        }
+      ],
+      "commandFailures": [],
+      "finishedAt": "2026-10-06T17:52:24.442950+00:00"
+    },
+    {
+      "run": 2,
+      "status": "completed",
+      "exitCode": 0,
+      "threadId": "01a11253-834a-7420-90f7-cbfc68749120",
+      "inputsUnchanged": true,
+      "savedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "fe0880c0c2f39a7ea07a2ddc8ed05086825483f1ac665c4980197ac81e232d05",
+          "size_bytes": 28516
+        },
+        {
+          "path": "production-notes.md",
+          "sha256": "589b75a04ef25d47486f5a9ad28976effa4f43fecab6f2c0b0aa143ca2496448",
+          "size_bytes": 5102
+        }
+      ],
+      "commandFailures": [
+        {
+          "id": "item_30",
+          "command": "/bin/zsh -lc \"python - <<'PY'\nfrom pathlib import Path\nimport re\nfor p in Path('corpus/papers').glob('*.txt'):\n s=p.read_text(errors='ignore')\n m=re.search(r'Abstract\\\\s*(.*?)\\\\n\\\\s*(?:1\\\\s+Introduction|1\\\\s+INTRODUCTION|Introduction)',s,re.S|re.I)\n if m:\n  a=re.sub(r'\\\\s+',' ',m.group(1)).strip()\n  print(f'## {p.stem}\\\\n{a[:2200]}\\\\n')\nPY\"",
+          "exit_code": 127,
+          "status": "failed"
+        }
+      ],
+      "finishedAt": "2026-10-06T17:52:22.618021+00:00"
+    },
+    {
+      "run": 3,
+      "status": "completed",
+      "exitCode": 0,
+      "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+      "inputsUnchanged": true,
+      "savedArtifacts": [
+        {
+          "path": "plot.md",
+          "sha256": "a605cd85f2fb83c1dfed01365c2f2fcd4d6b69740dd0e951275baa249713b7b8",
+          "size_bytes": 30809
+        },
+        {
+          "path": "production-notes.md",
+          "sha256": "8f0277d3aaefee4728fcc3ce981b7e034c747adacb61924baa6ef42030faac71",
+          "size_bytes": 3797
+        }
+      ],
+      "commandFailures": [
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -lc 'for f in corpus/papers/*.txt; do echo ===$f; rg -n -i '\"'abstract|conclusion|results|limitation|cost|latency|token|retrieval|long.?context|needle|accuracy|citation|cost|compute|efficien|dataset|benchmark' \\\"\"'$f\" | head -35; done'",
+          "exit_code": 1,
+          "status": "failed"
+        }
+      ],
+      "finishedAt": "2026-10-06T17:50:22.267653+00:00"
+    }
+  ]
+}

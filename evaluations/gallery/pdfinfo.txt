@@ -1,0 +1,19 @@
+Title:           大規模サーベイのスライド設計例｜16の情報構造
+Creator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36
+Producer:        Skia/PDF m154
+CreationDate:    Wed Oct  7 02:03:22 2026 JST
+ModDate:         Wed Oct  7 02:03:22 2026 JST
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           16
+Encrypted:       no
+Page size:       906.96 x 510 pts
+Page rot:        0
+File size:       6822800 bytes
+Optimized:       no
+PDF version:     1.4

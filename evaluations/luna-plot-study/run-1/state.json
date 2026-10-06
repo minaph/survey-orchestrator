@@ -1,0 +1,19 @@
+{
+  "run": 1,
+  "status": "completed",
+  "settings": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "profile": null,
+    "sandbox_mode": "workspace-write",
+    "network_access": true,
+    "approval": "approve-for-me"
+  },
+  "workspace": "/Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace",
+  "thread_id": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+  "rounds": [
+    "initial",
+    "discussion-1",
+    "discussion-2"
+  ]
+}

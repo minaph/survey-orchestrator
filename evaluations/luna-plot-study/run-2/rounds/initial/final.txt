@@ -1,0 +1,8 @@
+日本語の発表スライド用プロットを14枚構成で作成し、成果物を保存しました。
+
+- [詳細プロット](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-2/workspace/outputs/plot.md>)
+- [制作メモ・未解決事項](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-2/workspace/outputs/production-notes.md>)
+
+内容は、長文脈の利用限界、RAGとの条件別比較、ルーティングや検索後の長文脈処理、根拠の検証、方式選択の判断表へと展開しています。提供された論文10報を取り込み、論文ごとの評価条件の違いと、出典の報告とサーベイ側の解釈を区別しました。
+
+確認では、14枚すべてに問い・説明・要点・図案・次への接続・出典があることと、10報がプロットに含まれることを確認しました。Self-Routeの本文と表で記載が揺れる数値など、制作時に原PDFで照合が必要な点は制作メモに記録しています。

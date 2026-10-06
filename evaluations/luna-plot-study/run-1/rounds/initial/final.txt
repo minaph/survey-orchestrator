@@ -1,0 +1,6 @@
+発表用プロットを13枚構成で作成し、RAGと長文脈の比較、ルーティングと検索後の長文脈入力という二種類の併用、根拠の検証可能性、計算資源を踏まえた選択手順まで整理しました。制作上の判断と未解決事項は別メモにまとめています。
+
+- [発表プロット](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/plot.md>)
+- [制作メモ](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/制作メモ.md>)
+
+確認では、コーパスの論文10件すべてに扱いを割り当て、各スライドに問い・説明・要点・図の役割・次の問いがあることを確認しました。Self-Routeの本文と表にある性能差の不一致など、制作前に再照合すべき点もメモに残しています。完成スライドや図の表示確認は、今回の成果物には含めていません。

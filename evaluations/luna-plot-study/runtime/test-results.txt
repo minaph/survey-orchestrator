@@ -1,0 +1,26 @@
+test_exit_zero_without_successful_turn_is_incomplete (test_runner.RunnerTests.test_exit_zero_without_successful_turn_is_incomplete) ... ok
+test_failed_internal_command_is_retained_separately (test_runner.RunnerTests.test_failed_internal_command_is_retained_separately) ... ok
+test_modified_frozen_input_blocks_launch (test_runner.RunnerTests.test_modified_frozen_input_blocks_launch) ... ok
+test_resume_preserves_initial_and_before_after_outputs (test_runner.RunnerTests.test_resume_preserves_initial_and_before_after_outputs) ... ok
+test_three_identical_copies_and_immutable_preparation (test_runner.RunnerTests.test_three_identical_copies_and_immutable_preparation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.479s
+
+OK
+{"snapshot": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-5jm3h615/repository/evaluations/luna-plot-study/snapshot", "files": 5, "manifest_sha256": "01483838639e740a59b1b170e68da65a0c435814831f3321ddc9d28b0d57656e"}
+{"run": 1, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-5jm3h615/repository/evaluations/luna-plot-study/run-1/workspace", "inputs": 6}
+{"run": 1, "round": "draft", "status": "incomplete", "thread_id": "a1111111-2222-4333-8444-555555555555", "exit_code": 0, "command_failures": 0}
+{"snapshot": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-out9h_2h/repository/evaluations/luna-plot-study/snapshot", "files": 5, "manifest_sha256": "9ee011b2ec9c229acc44bd848c93fcf5c7aabeb28e3aadafb01196c638fba8cc"}
+{"run": 1, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-out9h_2h/repository/evaluations/luna-plot-study/run-1/workspace", "inputs": 6}
+{"run": 1, "round": "draft", "status": "completed", "thread_id": "a1111111-2222-4333-8444-555555555555", "exit_code": 0, "command_failures": 1}
+{"snapshot": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-gyo1k8im/repository/evaluations/luna-plot-study/snapshot", "files": 5, "manifest_sha256": "3717fa3768bbd5e7a309f91758594de7d2513087b03e3bca9dcc4a20d53dbea8"}
+{"run": 1, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-gyo1k8im/repository/evaluations/luna-plot-study/run-1/workspace", "inputs": 6}
+{"snapshot": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-u8h9_45f/repository/evaluations/luna-plot-study/snapshot", "files": 5, "manifest_sha256": "282dc615fc84347071b51686cf03c9036156ba9ecce9527c856de6286f8bf539"}
+{"run": 1, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-u8h9_45f/repository/evaluations/luna-plot-study/run-1/workspace", "inputs": 6}
+{"run": 1, "round": "draft", "status": "completed", "thread_id": "a1111111-2222-4333-8444-555555555555", "exit_code": 0, "command_failures": 0}
+{"run": 1, "round": "r1", "status": "completed", "thread_id": "a1111111-2222-4333-8444-555555555555", "exit_code": 0, "command_failures": 0}
+{"snapshot": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-opeut345/repository/evaluations/luna-plot-study/snapshot", "files": 5, "manifest_sha256": "024f0a1e7bc81c47de1769b02f76a820ce9d047f0c2e987fab4943580349caae"}
+{"run": 1, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-opeut345/repository/evaluations/luna-plot-study/run-1/workspace", "inputs": 6}
+{"run": 2, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-opeut345/repository/evaluations/luna-plot-study/run-2/workspace", "inputs": 6}
+{"run": 3, "workspace": "/var/folders/ny/6lsmzt1d1fngy874bk6df87m0000gn/T/plot-runner-test-opeut345/repository/evaluations/luna-plot-study/run-3/workspace", "inputs": 6}

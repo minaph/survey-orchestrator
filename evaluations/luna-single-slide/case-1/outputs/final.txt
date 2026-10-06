@@ -1,0 +1,20 @@
+指定された4研究を日本語・16:9の1枚にまとめ、成果物を作業ディレクトリに保存しました。各論文のFigure 1を出典付きで配置し、研究間の比較は「生成表現の選択幅」と「生成後の用途への接続」という今回の整理軸で示しています。入力や評価条件が異なるため、性能順位を示さないことも明記しました。内容は各論文の一次資料に基づいています ([Shap·E](https://arxiv.org/abs/2305.02463)、[Structured 3D Latents](https://arxiv.org/abs/2412.01506)、[Hunyuan3D 2.0](https://arxiv.org/abs/2501.12202)、[Seed3D 1.0](https://arxiv.org/abs/2510.19944))。
+
+**成果物**
+
+- [編集可能なスライド SVG](/private/tmp/survey-luna-case-1-zcncki90/slide.svg)
+- [PDF](/private/tmp/survey-luna-case-1-zcncki90/slide.pdf)・[PNG](/private/tmp/survey-luna-case-1-zcncki90/slide.png)
+- [制作ソース](/private/tmp/survey-luna-case-1-zcncki90/build_slide.py)・[PDF生成ソース](/private/tmp/survey-luna-case-1-zcncki90/build_pdf.swift)
+- [使用図版と出典・根拠対応](/private/tmp/survey-luna-case-1-zcncki90/sources_and_figures.md)・[制作過程と検証記録](/private/tmp/survey-luna-case-1-zcncki90/process_record.md)
+- [図版・取得資料・成果物のSHA-256一覧](/private/tmp/survey-luna-case-1-zcncki90/SHA256SUMS.txt)
+
+原論文PDF、図を含むページ画像、切り抜き画像も `audit/` と `figures/` に保存しています。講義資料、評価用資料、他ケースの作業環境・成果物は調査・制作に使用していません。
+
+**実施した検証**
+
+- SVGの構文、1920×1080の16:9寸法、4点の図版リンクを確認しました。
+- PDFが1ページ、960×540 ptの16:9であることを確認しました。
+- PDFを1920×1080 PNGに再描画し、図版、文字、出典表示、配置を目視確認しました。日本語の欠字や文字切れ、要素の重なりは見つかりませんでした。
+- デッキ品質チェッカーは実行しましたが、視覚マニフェストがなく、実行環境にもPyMuPDFがないため、PDFを機械観測できず `fail` となりました。この結果は品質判定ではありません。制約と手動確認の範囲は制作記録に残しています。
+
+PDFは表示を安定させるため画像ベースで、PDF内の文字選択・検索はできません。文字や配置の編集にはSVGをご利用ください。

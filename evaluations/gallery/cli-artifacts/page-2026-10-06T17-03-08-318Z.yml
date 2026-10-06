@@ -1,0 +1,655 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - paragraph [ref=e3]: 問いと根拠から、配置を選ぶ
+    - heading "大規模サーベイの スライド設計例" [level=1] [ref=e4]:
+      - text: 大規模サーベイの
+      - text: スライド設計例
+    - paragraph [ref=e5]: 16型の役割を保ち、実図と要約・比較・境界を読む8つの主見本、構成・集計の8つの補助例に分けています。主見本の図は提供されたMIRU2026資料からの抜粋です。補助例は「生活空間の通知支援」の架空設定です。全16枚を一つの完成デッキとして読む例ではありません。
+    - generic [ref=e6]:
+      - button "一時編集を開始" [ref=e7] [cursor=pointer]
+      - button "作例を印刷" [ref=e8] [cursor=pointer]
+    - paragraph [ref=e9]: 一時編集は再読込で失われます。継続する変更はHTMLへ反映してください。印刷用CSSは一作例一ページを意図し、PDFの表示は書き出し後に確認します。
+    - heading "実図を読む主見本" [level=2] [ref=e10]
+    - paragraph [ref=e11]: 方法・結果・機構差・評価条件・反例・統合を、複数の図領域で具体化します。
+    - navigation "実図を読む主見本へ移動" [ref=e12]:
+      - link "S07 単一研究の方法・設定" [ref=e13] [cursor=pointer]:
+        - /url: "#S07"
+        - generic [ref=e14]: S07
+        - generic [ref=e15]: 単一研究の方法・設定
+      - link "S08 単一研究の主要結果" [ref=e16] [cursor=pointer]:
+        - /url: "#S08"
+        - generic [ref=e17]: S08
+        - generic [ref=e18]: 単一研究の主要結果
+      - link "S09 研究間比較" [ref=e19] [cursor=pointer]:
+        - /url: "#S09"
+        - generic [ref=e20]: S09
+        - generic [ref=e21]: 研究間比較
+      - link "S10 時系列と転換点" [ref=e22] [cursor=pointer]:
+        - /url: "#S10"
+        - generic [ref=e23]: S10
+        - generic [ref=e24]: 時系列と転換点
+      - link "S11 結果と評価条件" [ref=e25] [cursor=pointer]:
+        - /url: "#S11"
+        - generic [ref=e26]: S11
+        - generic [ref=e27]: 結果と評価条件
+      - link "S12 不一致・反証の比較" [ref=e28] [cursor=pointer]:
+        - /url: "#S12"
+        - generic [ref=e29]: S12
+        - generic [ref=e30]: 不一致・反証の比較
+      - link "S14 統合と機序" [ref=e31] [cursor=pointer]:
+        - /url: "#S14"
+        - generic [ref=e32]: S14
+        - generic [ref=e33]: 統合と機序
+      - link "S15 結論・限界・次の問い" [ref=e34] [cursor=pointer]:
+        - /url: "#S15"
+        - generic [ref=e35]: S15
+        - generic [ref=e36]: 結論・限界・次の問い
+    - heading "構成・集計の補助例" [level=2] [ref=e37]
+    - paragraph [ref=e38]: 問い・案内・定義・選定・集合・分類・不足・出典導線の役割を架空例で確認します。
+    - navigation "構成・集計の補助例へ移動" [ref=e39]:
+      - link "S01 問いと対象範囲" [ref=e40] [cursor=pointer]:
+        - /url: "#S01"
+        - generic [ref=e41]: S01
+        - generic [ref=e42]: 問いと対象範囲
+      - link "S02 全体の見取り図・節案内" [ref=e43] [cursor=pointer]:
+        - /url: "#S02"
+        - generic [ref=e44]: S02
+        - generic [ref=e45]: 全体の見取り図・節案内
+      - link "S03 概念定義と隣接概念" [ref=e46] [cursor=pointer]:
+        - /url: "#S03"
+        - generic [ref=e47]: S03
+        - generic [ref=e48]: 概念定義と隣接概念
+      - link "S04 検索・選定過程" [ref=e49] [cursor=pointer]:
+        - /url: "#S04"
+        - generic [ref=e50]: S04
+        - generic [ref=e51]: 検索・選定過程
+      - link "S05 文献集合の概観" [ref=e52] [cursor=pointer]:
+        - /url: "#S05"
+        - generic [ref=e53]: S05
+        - generic [ref=e54]: 文献集合の概観
+      - link "S06 分類地図" [ref=e55] [cursor=pointer]:
+        - /url: "#S06"
+        - generic [ref=e56]: S06
+        - generic [ref=e57]: 分類地図
+      - link "S13 研究ギャップ" [ref=e58] [cursor=pointer]:
+        - /url: "#S13"
+        - generic [ref=e59]: S13
+        - generic [ref=e60]: 研究ギャップ
+      - link "S16 参考文献・付録導線" [ref=e61] [cursor=pointer]:
+        - /url: "#S16"
+        - generic [ref=e62]: S16
+        - generic [ref=e63]: 参考文献・付録導線
+  - main [ref=e64]:
+    - region "単一研究の方法・設定" [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: S07
+        - heading "単一研究の方法・設定" [level=2] [ref=e68]
+      - article "SRTは、画像集合から新しい視点を直接予測する" [ref=e70]:
+        - heading "SRTは、画像集合から新しい視点を直接予測する" [level=2] [ref=e71]
+        - paragraph [ref=e72]: 少数の入力画像をTransformerで一つの場面表現へ集約し、問い合わせる視線へのAttentionで画像を合成する。場面ごとの反復再構成を省く方法です。
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "画像をまとめ、視線から読み出す" [level=3] [ref=e75]
+            - paragraph [ref=e76]: CNN特徴を集約し、DecoderへQuery raysを渡す。
+            - figure "提供PDF p.74｜SRTとして紹介された方法図" [ref=e77]:
+              - img "複数の入力画像からCNN、Encoder Transformer、場面表現、Decoder Transformerへ進み、Query raysから生成視点を得る図" [ref=e78]
+              - generic [ref=e79]: 提供PDF p.74｜SRTとして紹介された方法図
+            - paragraph [ref=e80]:
+              - strong [ref=e81]: 方法の要点：
+              - text: 入力画像の符号化と視点の指定を分離し、同じ場面表現から複数の視点を生成できる構成です。
+          - generic [ref=e82]:
+            - heading "近傍と遠方で、細部の再現が変わる" [level=3] [ref=e83]
+            - paragraph [ref=e84]: カメラ姿勢を与える設定・与えない設定の双方を紹介。
+            - figure "提供PDF p.74｜入力・近傍予測・遠方予測" [ref=e85]:
+              - img "三つの場面でInput Views、Nearby SRT Predictions、Far SRT Predictionsを示した結果例" [ref=e86]
+              - generic [ref=e87]: 提供PDF p.74｜入力・近傍予測・遠方予測
+            - paragraph [ref=e88]:
+              - strong [ref=e89]: 掲載例の結果：
+              - text: 三場面とも、遠方の予測は近傍より輪郭や細部がぼけて見えます。入力から離れた視点で外観を保つことが評価の焦点になります。
+        - paragraph [ref=e90]: 少数画像から一度の推論で視点を変える。入力視点からの距離とカメラ情報の条件で、出力の再現性を評価します。
+        - generic [ref=e91]:
+          - generic [ref=e92]: 直接出所：提供PDF「三次元データ処理の動向」p.74
+          - generic [ref=e93]: 提供資料の分析例
+      - paragraph [ref=e94]: 方法図のCNN・Encoder・Decoderと、結果図の入力／近傍／遠方を対応づけます。場面表現の共有という新規性と、視点が離れたときの細部の再現を一つの紹介に結びます。
+      - paragraph [ref=e95]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：M. S. M. Sajjadi+, Scene Representation Transformer: Geometry-Free Novel View Synthesis Through Set-Latent Scene Representations, CVPR2022."
+    - region "単一研究の主要結果" [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]: S08
+        - heading "単一研究の主要結果" [level=2] [ref=e99]
+      - article "DeepSDFの形状表現は、再構成と補間へ使える" [ref=e101]:
+        - heading "DeepSDFの形状表現は、再構成と補間へ使える" [level=2] [ref=e102]
+        - paragraph [ref=e103]: 形状コードと座標から符号付き距離（SDF）を予測し、距離ゼロの面で形状を表す。
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - heading "再構成では、背の隙間を保つ" [level=3] [ref=e106]
+            - paragraph [ref=e107]: 左から参照形状、DeepSDF、25 patch、sphere。
+            - figure "提供PDF p.24｜DeepSDFの再構成比較" [ref=e108]:
+              - img "椅子のGround-truth、Our Result、25 patch、sphereの再構成比較。Our Resultを囲む赤枠は提供資料の表示" [ref=e109]
+              - generic [ref=e110]: 提供PDF p.24｜DeepSDFの再構成比較
+            - paragraph [ref=e111]:
+              - strong [ref=e112]: 掲載例の結果：
+              - text: 掲載された椅子では、DeepSDFが細い支柱と隙間を再現し、二つの比較手法は背を面状に埋めます。
+          - generic [ref=e113]:
+            - heading "コードの補間で、形状を段階的に変える" [level=3] [ref=e114]
+            - paragraph [ref=e115]: 椅子と車の二系列で、形状間の補間を示しています。
+            - figure "提供PDF p.25｜DeepSDFの形状補間" [ref=e116]:
+              - img "椅子と車の形状補間例をそれぞれ七つの形状で示す。下端の両矢印は資料の表示" [ref=e117]
+              - generic [ref=e118]: 提供PDF p.25｜DeepSDFの形状補間
+            - paragraph [ref=e119]:
+              - strong [ref=e120]: 補間で分かること：
+              - text: 背もたれ・肘掛けや車体の形が段階的に変わります。形状ごとのコードを持つ表現は、再構成に加えて形状間の移り変わりを扱えます。
+        - paragraph [ref=e121]: SDFで表面を表し、コードで個体差を扱う。掲載例は、細部の再構成と形状間の補間という二つの用途を示します。
+        - generic [ref=e122]:
+          - generic [ref=e123]: 直接出所：提供PDF「三次元データ処理の動向」p.24–25
+          - generic [ref=e124]: 提供資料の分析例
+      - paragraph [ref=e125]: p.21–22のSDFと形状コードの説明を短い導入へ取り込み、p.24の再構成比較とp.25の補間を別の能力として並べます。比較する局所構造と、補間で変わる形状を本文で具体化します。
+      - paragraph [ref=e126]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：J. J. Park+, DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation, CVPR2019."
+    - region "研究間比較" [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]: S09
+        - heading "研究間比較" [level=2] [ref=e130]
+      - article "三角形の独立性と連結性が、最適化の単位を変える" [ref=e132]:
+        - heading "三角形の独立性と連結性が、最適化の単位を変える" [level=2] [ref=e133]
+        - paragraph [ref=e134]: Triangle Splattingは三角形の集合を、MeshSplattingは頂点を共有するメッシュを、微分可能レンダリングで直接最適化します。
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - heading "Triangle Splatting：各三角形を更新" [level=3] [ref=e137]
+            - paragraph [ref=e138]: 三角形をスクリーン空間のsplatとして描画し、勾配でパラメータを更新する。
+            - figure "提供PDF p.51｜式と描画の挙動" [ref=e139]:
+              - img "Eq.1とEq.2の曲線、複数のsigma条件での三角形表示、色尺度を保持した図" [ref=e140]
+              - generic [ref=e141]: 提供PDF p.51｜式と描画の挙動
+            - paragraph [ref=e142]:
+              - strong [ref=e143]: 描画の挙動：
+              - text: 式（1）と（2）は三角形の外側への広がりが異なります。σを小さくした図では境界がくっきりし、パラメータと描画の関係が見えます。
+          - generic [ref=e144]:
+            - heading "MeshSplatting：共有頂点を更新" [level=3] [ref=e145]
+            - paragraph [ref=e146]: 隣接する三角形で頂点を共有し、幾何と外観を同時に最適化する。
+            - figure "提供PDF p.51｜頂点共有の対照" [ref=e147]:
+              - img "Triangle Soupでは頂点を共有せず、Triangular Meshでは頂点を共有して勾配をまとめる対照図" [ref=e148]
+              - generic [ref=e149]: 提供PDF p.51｜頂点共有の対照
+            - paragraph [ref=e150]:
+              - strong [ref=e151]: 共有による差：
+              - text: 独立三角形は頂点を別々に持ちます。共有頂点には隣接三角形の勾配が集まり、連結を持つ構造として更新されます。
+        - paragraph [ref=e152]: 共通点は微分可能な直接最適化。三角形を独立に動かすか、共有頂点を通じて連結を持たせるかが設計上の違いです。
+        - generic [ref=e153]:
+          - generic [ref=e154]: 直接出所：提供PDF「三次元データ処理の動向」p.51
+          - generic [ref=e155]: 提供資料の分析例
+      - paragraph [ref=e156]: 左は式・σ・描画を対応づけ、右は頂点の同一性と勾配の集まり方を比較します。共通のレンダリング手法を背景に、更新する要素と隣接関係の違いを説明する作例です。
+      - paragraph [ref=e157]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：J. Held+, Triangle Splatting for Real-Time Radiance Field Rendering, 3DV2026. / J. Held+, MeshSplatting: Differentiable Rendering with Opaque Meshes, CVPR2026."
+    - region "時系列と転換点" [ref=e158]:
+      - generic [ref=e159]:
+        - generic [ref=e160]: S10
+        - heading "時系列と転換点" [level=2] [ref=e161]
+      - article "空間を符号化する設計から、表面へ束縛する設計へ" [ref=e163]:
+        - heading "空間を符号化する設計から、表面へ束縛する設計へ" [level=2] [ref=e164]
+        - paragraph [ref=e165]: 2022年のInstant-NGPは空間を複数解像度で符号化し、2024年のSuGaRはGaussianを表面へ関係づける。表現に与える構造の違いを追います。
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - heading "2022｜空間特徴を検索・補間する" [level=3] [ref=e168]
+            - paragraph [ref=e169]: 異なる解像度のグリッドで特徴を保持し、検索・補間・連結した特徴をネットワークへ渡す。
+            - figure "提供PDF p.40｜Instant-NGPとして掲載された図" [ref=e170]:
+              - img "空間の複数解像度グリッドからhash lookup、補間、連結、ニューラルネットワークへ進む図" [ref=e171]
+              - generic [ref=e172]: 提供PDF p.40｜Instant-NGPとして掲載された図
+            - paragraph [ref=e173]:
+              - strong [ref=e174]: 空間構造の役割：
+              - text: 位置ごとの情報をデータ構造へ分担し、MLPだけに場面全体を保持させる構成を変えています。
+          - generic [ref=e175]:
+            - heading "2024｜Gaussianを三角形へ束縛する" [level=3] [ref=e176]
+            - paragraph [ref=e177]: 3D Gaussianを表面へ整列させ、抽出メッシュの三角形へ新しいGaussianを束縛して最適化する。
+            - figure "提供PDF p.50｜三角形への束縛図" [ref=e178]:
+              - img "三角形上のGaussianと法線を示す図。Gaussians bound to the triangleのラベルを保持" [ref=e179]
+              - generic [ref=e180]: 提供PDF p.50｜三角形への束縛図
+            - paragraph [ref=e181]:
+              - strong [ref=e182]: 表面構造の役割：
+              - text: 三角形とGaussianの対応を持たせ、表面形状と外観を表す要素を結びつけています。
+        - paragraph [ref=e183]: 構造を持たせる場所が異なる。空間特徴の効率的な利用と、表面に沿う幾何表現を分けて評価します。
+        - generic [ref=e184]:
+          - generic [ref=e185]: 直接出所：提供PDF「三次元データ処理の動向」p.40・50
+          - generic [ref=e186]: 提供資料の分析例
+      - paragraph [ref=e187]: 年次は二つの設計を読む道筋として使います。検索・補間する空間特徴と、Gaussianを束縛する表面の違いを図のラベルへ結び、設計の焦点がどこへ移ったかを説明します。p.50の図の直接出所は提供PDF頁に限定します。
+      - paragraph [ref=e188]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：T. Müller+, Instant Neural Graphics Primitives with a Multiresolution Hash Encoding, SIGGRAPH2022. / p.50の下端書誌：A. Guédon+, SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering, CVPR2024."
+    - region "結果と評価条件" [ref=e189]:
+      - generic [ref=e190]:
+        - generic [ref=e191]: S11
+        - heading "結果と評価条件" [level=2] [ref=e192]
+      - article "同変モデルはデータ効率が高く、拡張で差が縮まる" [ref=e194]:
+        - heading "同変モデルはデータ効率が高く、拡張で差が縮まる" [level=2] [ref=e195]
+        - paragraph [ref=e196]: 幾何的な対称性を組み込む同変モデルをBaselineと比較する。縦軸はLoss、横軸は計算量またはデータ量で、いずれも対数軸です。
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - heading "同じ計算量で、Lossの近似線が低い" [level=3] [ref=e199]
+            - figure "提供PDF p.13｜計算量とLoss" [ref=e200]:
+              - img "対数軸の訓練計算量とLoss。BaselineとEquivariantの点、線、帯を保持したグラフ" [ref=e201]
+              - generic [ref=e202]: 提供PDF p.13｜計算量とLoss
+            - paragraph [ref=e203]:
+              - strong [ref=e204]: 計算量との関係：
+              - text: 掲載範囲の近似線では、赤の同変モデルが青のBaselineより低いLossを示します。計算量が大きい領域にも系列間の差が残っています。
+          - generic [ref=e205]:
+            - heading "データ拡張が、同変モデルとの差を縮める" [level=3] [ref=e206]
+            - figure "提供PDF p.13｜データ量とLoss" [ref=e207]:
+              - img "対数軸の訓練データ量とLoss。Baseline、Data augmentation、Equivariantの三系列を保持したグラフ" [ref=e208]
+              - generic [ref=e209]: 提供PDF p.13｜データ量とLoss
+            - paragraph [ref=e210]:
+              - strong [ref=e211]: 拡張の効果：
+              - text: 拡張した水色の系列は、青のBaselineより赤の同変系列へ近づきます。資料は、同変モデルのデータ効率は高いが、拡張が差をほぼ埋めると評価しています。
+        - paragraph [ref=e212]: 対称性を設計へ組み込む価値は、少ないデータでの効率と、拡張を加えた後の差を併せて評価します。
+        - generic [ref=e213]:
+          - generic [ref=e214]: 直接出所：提供PDF「三次元データ処理の動向」p.13
+          - generic [ref=e215]: 提供資料の分析例
+      - paragraph [ref=e216]: 二つの結果図で資源の種類を分けます。左は同じ計算量での近似線、右は拡張系列の位置に注目し、同変性の利点と拡張による差の縮小を具体的に説明します。帯の定義はこの資料だけでは確認できません。
+      - paragraph [ref=e217]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: 資料記載書誌：図付近の下端書誌：J. Brehmer+, Does equivariance matter at scale?, TMLR (2025). 本文ではRapidashも紹介しています。
+    - region "不一致・反証の比較" [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]: S12
+        - heading "不一致・反証の比較" [level=2] [ref=e221]
+      - article "球面に固定しても、訓練視点の外観は再現できる" [ref=e223]:
+        - heading "球面に固定しても、訓練視点の外観は再現できる" [level=2] [ref=e224]
+        - paragraph [ref=e225]: 単位球に形状を固定し、視線依存の外観だけを学習。訓練視点とテスト視点の再現を比べます。
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - heading "訓練視点の再現とテスト視点の崩れ" [level=3] [ref=e228]
+            - figure "提供PDF p.54｜訓練・テスト視点と予測" [ref=e229]:
+              - img "GT training view、Prediction PSNR25.4、GT test view、Prediction PSNR10.7を並べた四画像" [ref=e230]
+              - generic [ref=e231]: 提供PDF p.54｜訓練・テスト視点と予測
+            - paragraph [ref=e232]:
+              - strong [ref=e233]: 反例の結果：
+              - text: 訓練視点の予測は部品や輪郭を保ちますが、テスト視点は崩れます。掲載画像のPSNRは、訓練25.4に対してテスト10.7です。
+          - generic [ref=e234]:
+            - heading "形状と外観の曖昧さ" [level=3] [ref=e235]
+            - figure "提供PDF p.54｜Shape-Radiance Ambiguity" [ref=e236]:
+              - img "二つのカメラ、実形状と球面の関係を示すShape-Radiance Ambiguityの模式図" [ref=e237]
+              - generic [ref=e238]: 提供PDF p.54｜Shape-Radiance Ambiguity
+            - paragraph [ref=e239]:
+              - strong [ref=e240]: 反例の仕組み：
+              - text: 視線依存の外観で、誤った形状も観測画像へ合わせられます。観測に合う形状と外観の組は複数あります。
+        - paragraph [ref=e241]: 画像の一致だけでは正しい幾何は保証されません。幾何の評価には、未観測視点での再現や3D形状の検証を加えます。
+        - generic [ref=e242]:
+          - generic [ref=e243]: 直接出所：提供PDF「三次元データ処理の動向」p.54
+          - generic [ref=e244]: 提供資料の分析例
+      - paragraph [ref=e245]: 形状の固定、視線依存の学習、訓練／テストの差を明示し、成功と失敗を同じ反例の中で説明します。否定は「画像が合えば幾何も正しい」という仮説を退けるために使います。PSNRは掲載画像の値です。
+      - paragraph [ref=e246]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：K. Zhang+, NeRF++: Analyzing and Improving Neural Radiance Fields, arXiv."
+    - region "統合と機序" [ref=e247]:
+      - generic [ref=e248]:
+        - generic [ref=e249]: S14
+        - heading "統合と機序" [level=2] [ref=e250]
+      - article "Gen3Rは同時分布を、CUPIDは生成と姿勢推定を使う" [ref=e252]:
+        - heading "Gen3Rは同時分布を、CUPIDは生成と姿勢推定を使う" [level=2] [ref=e253]
+        - paragraph [ref=e254]: Gen3Rは動画と再構成の同時分布を一つのモデルで扱う。CUPIDは生成した3D構造と2D–3D対応から姿勢を求め、外観生成へつなぎます。
+        - generic [ref=e255]:
+          - generic [ref=e256]:
+            - heading "Gen3R：幾何と動画の潜在表現を接続" [level=3] [ref=e257]
+            - paragraph [ref=e258]: VGGTの幾何と動画生成モデルをAdapterで接続し、Joint Latentsで扱う。
+            - figure "提供PDF p.104｜Gen3Rの経路" [ref=e259]:
+              - img "VGGTとWan VAE、Adapter、Joint Latents、生成と再構成を結ぶGen3Rとして紹介された図" [ref=e260]
+              - generic [ref=e261]: 提供PDF p.104｜Gen3Rの経路
+            - paragraph [ref=e262]:
+              - strong [ref=e263]: 一つのモデルの役割：
+              - text: 1／2視点からの条件付き生成、カメラ条件あり／なし、Feed-Forward再構成に対応します。
+          - generic [ref=e264]:
+            - heading "CUPID：生成した対応から姿勢を求める" [level=3] [ref=e265]
+            - paragraph [ref=e266]: 構造と2D–3D対応を生成し、PnPで姿勢を推定。画像画素に対応する特徴を次の生成へ入れる。
+            - figure "提供PDF p.104｜CUPIDの経路" [ref=e267]:
+              - img "Single-view InputからOccupancy and Pose Generation、PnP、Pose-aligned Geometry and Appearance Generationへ進むCUPIDとして紹介された図" [ref=e268]
+              - generic [ref=e269]: 提供PDF p.104｜CUPIDの経路
+            - paragraph [ref=e270]:
+              - strong [ref=e271]: 二段階の役割：
+              - text: まず構造と姿勢を求め、次に姿勢に合わせた幾何と外観を生成します。図ではGaussianとMeshの出力を示しています。
+        - paragraph [ref=e272]: 統一する出力・条件の範囲と、幾何の整合を入れる位置に、両者の統合方法の違いが現れます。
+        - generic [ref=e273]:
+          - generic [ref=e274]: 直接出所：提供PDF「三次元データ処理の動向」p.104
+          - generic [ref=e275]: 提供資料の分析例
+      - paragraph [ref=e276]: Gen3RはAdapterとJoint Latents、CUPIDは対応・PnP・姿勢に整合する生成を読む経路にします。方法名だけでなく、何を統一し、どの情報を次段へ渡すかを比較します。
+      - paragraph [ref=e277]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：J. Huang+, Gen3R: 3D Scene Generation Meets Feed-Forward Reconstruction, CVPR2026. / B. Huang+, CUPID: Generative 3D Reconstruction via Joint Object and Pose Modeling, CVPR2026."
+    - region "結論・限界・次の問い" [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]: S15
+        - heading "結論・限界・次の問い" [level=2] [ref=e281]
+      - article "内部の幾何関係と、未観測部分の補完を分ける" [ref=e283]:
+        - heading "内部の幾何関係と、未観測部分の補完を分ける" [level=2] [ref=e284]
+        - paragraph [ref=e285]: 内部から幾何を読み出す能力と、観測に事前知識を加えて生成する能力を分けて評価します。
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - heading "VGGT：中間層から基礎行列を復元" [level=3] [ref=e288]
+            - figure "提供PDF p.93｜VGGT・合成データの代表パネル" [ref=e289]:
+              - img "VGGTの合成データに限定した層別Median Sampson Error、seen classesとnovel classesの凡例を保持した代表パネル" [ref=e290]
+              - generic [ref=e291]: 提供PDF p.93｜VGGT・合成データの代表パネル
+            - paragraph [ref=e292]:
+              - strong [ref=e293]: 掲載パネルの結果：
+              - text: 2層MLPで基礎行列を読み出すと、合成データのVGGTでは12–14層付近で誤差が急減します。資料は、不可視の対応を補完する性質も報告しています。
+          - generic [ref=e294]:
+            - heading "Gen3R：観測を条件に幾何と動画を生成" [level=3] [ref=e295]
+            - figure "提供PDF p.104｜生成と再構成の方法" [ref=e296]:
+              - img "生成・再構成を結ぶGen3Rの方法図。内部表現の分析とは別の問いを担う" [ref=e297]
+              - generic [ref=e298]: 提供PDF p.104｜生成と再構成の方法
+            - paragraph [ref=e299]:
+              - strong [ref=e300]: 観測：
+              - text: 1／2視点の画像やカメラ条件を与える。
+            - paragraph [ref=e301]:
+              - strong [ref=e302]: 生成：
+              - text: 幾何と動画の潜在表現から、複数の出力を作る。
+            - paragraph [ref=e303]:
+              - strong [ref=e304]: 補完：
+              - text: 観測に不足する情報へ、学習した事前分布を使う。
+        - paragraph [ref=e305]: 中間層の幾何関係と不可視対応の補完を区別し、未観測部分の形状を検証することが次の課題です。
+        - generic [ref=e306]:
+          - generic [ref=e307]: 直接出所：提供PDF「三次元データ処理の動向」p.93・103–104
+          - generic [ref=e308]: 提供資料の分析例
+      - paragraph [ref=e309]: p.93の六パネルからVGGT・合成データを選び、Median Sampson Error（px）・Layers・seen／novel classesの凡例を保持します。p.103の観測と事前分布の区別、p.104のGen3Rの方法を対置し、内部の幾何関係と観測不足を補う能力を別の評価対象へ位置づけます。
+      - paragraph [ref=e310]:
+        - text: 提供資料からの抜粋・分析用参考例です。原論文の図番号・実験条件・科学的主張は原典と独立照合していません。書誌は資料に記載されたものです。
+        - text: "資料記載書誌：J. Bratulić+, On Geometric Understanding and Learned Priors in Feed-forward 3D Reconstruction Models, arXiv. / J. Huang+, Gen3R: 3D Scene Generation Meets Feed-Forward Reconstruction, CVPR2026."
+    - region "問いと対象範囲" [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]: S01
+        - heading "問いと対象範囲" [level=2] [ref=e314]
+      - article "通知支援は、誰のどの課題を支えるのか" [ref=e316]:
+        - heading "通知支援は、誰のどの課題を支えるのか" [level=2] [ref=e317]
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - paragraph [ref=e320]:
+              - text: 通知支援は、
+              - text: 誰のどの課題を
+              - text: 支えるのか。
+            - paragraph [ref=e321]:
+              - text: 短期の作業再開と、
+              - text: 生活場面の負担を分けて読む。
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - term [ref=e324]: 対象
+              - definition [ref=e325]: 成人の通知利用
+            - generic [ref=e326]:
+              - term [ref=e327]: 場面
+              - definition [ref=e328]: 実験室と生活空間
+            - generic [ref=e329]:
+              - term [ref=e330]: 比較
+              - definition [ref=e331]: 固定時点と課題・状況への適応
+        - paragraph [ref=e332]: 今回の範囲：短期の再開と生活負担。子どもの利用と長期学習の効果は結論に含めません。
+        - generic [ref=e333]:
+          - generic [ref=e334]: 架空の調査課題・対象条件
+          - generic [ref=e335]: 架空の例示
+      - paragraph [ref=e336]: 中心質問を左の約6割、対象・場面・期間を右に整列し、下端へ今回扱わない範囲を置きます。最初に問い、次に対象、最後に境界を読みます。 対象が増えたら対象範囲と中心質問を分け、細かな除外条件は手順付録へ送ります。問いが抽象語だけになっていないか、期間の境界が読めるかを点検します。
+    - region "全体の見取り図・節案内" [ref=e337]:
+      - generic [ref=e338]:
+        - generic [ref=e339]: S02
+        - heading "全体の見取り図・節案内" [level=2] [ref=e340]
+      - article "定義から比較へ、比較から条件付きの結論へ" [ref=e342]:
+        - heading "定義から比較へ、比較から条件付きの結論へ" [level=2] [ref=e343]
+        - generic [ref=e344]:
+          - list [ref=e345]:
+            - listitem [ref=e346]:
+              - generic [ref=e347]: "01"
+              - generic [ref=e348]:
+                - text: 何を通知支援と呼ぶか
+                - generic [ref=e349]: 概念と操作を分ける
+            - listitem [ref=e350]:
+              - generic [ref=e351]: "02"
+              - generic [ref=e352]:
+                - text: どの研究を集めたか
+                - generic [ref=e353]: 集合と偏りを知る
+            - listitem [ref=e354]:
+              - generic [ref=e355]: "03"
+              - generic [ref=e356]:
+                - text: どの条件で結果が違うか
+                - generic [ref=e357]: 現在：方法と比較
+            - listitem [ref=e358]:
+              - generic [ref=e359]: "04"
+              - generic [ref=e360]:
+                - text: どこまで転用できるか
+                - generic [ref=e361]: 境界と次の検証
+          - generic [ref=e362]:
+            - paragraph [ref=e363]: この節で答える問い
+            - paragraph [ref=e364]:
+              - text: 同じ「通知」でも、
+              - text: 操作と測定は
+              - text: そろっているか。
+            - paragraph [ref=e365]:
+              - text: 結果を並べる前に、
+              - text: 比較できる範囲を確かめます。
+        - generic [ref=e366]:
+          - generic [ref=e367]: 架空の調査課題・対象条件
+          - generic [ref=e368]: 架空の例示
+      - paragraph [ref=e369]: 左に質問順の縦の経路、右に現在節で答える問いを大きく置きます。現在位置は色と「現在」の文字で二重に示し、済んだ問い・次の問いを分けます。 節が多ければ全体図と局所図を分けます。詳細な章番号は付録へ送り、現在位置を色だけで判別させていないか確認します。
+    - region "概念定義と隣接概念" [ref=e370]:
+      - generic [ref=e371]:
+        - generic [ref=e372]: S03
+        - heading "概念定義と隣接概念" [level=2] [ref=e373]
+      - article "通知のタイミングと、通知の量を分ける" [ref=e375]:
+        - heading "通知のタイミングと、通知の量を分ける" [level=2] [ref=e376]
+        - generic [ref=e377]:
+          - paragraph [ref=e378]: このサーベイの採用定義
+          - paragraph [ref=e379]:
+            - text: 通知のタイミング：
+            - strong [ref=e380]: 一つの通知を提示する時点
+          - paragraph [ref=e381]: 典型例：即時に示すか、課題の区切りで示すか。
+        - generic [ref=e382]:
+          - generic [ref=e383]:
+            - heading "変える属性" [level=3] [ref=e384]
+            - paragraph [ref=e385]: 提示時点
+            - paragraph [ref=e386]: 内容と回数は同じにする。
+          - generic [ref=e387]:
+            - heading "隣接する別の操作" [level=3] [ref=e388]
+            - paragraph [ref=e389]: 回数・内容・強度
+            - paragraph [ref=e390]: 通知を減らすこととは分ける。
+        - paragraph [ref=e391]: 同じ語でも、操作した属性が違えば同じ介入とは扱いません。
+        - generic [ref=e392]:
+          - generic [ref=e393]: 架空の調査課題・対象条件
+          - generic [ref=e394]: 架空の例示
+      - paragraph [ref=e395]: 上部に採用する定義、下部に近い概念との違いを二列で置きます。対象単位と典型例を先に、境界例・該当しない例を後に示します。 定義が競合すれば別ページで原資料ごとの適用範囲を比較します。用語対応表は付録へ。語が同じという理由で対象・測定を統合していないか点検します。
+    - region "検索・選定過程" [ref=e396]:
+      - generic [ref=e397]:
+        - generic [ref=e398]: S04
+        - heading "検索・選定過程" [level=2] [ref=e399]
+      - article "取得した報告から、対象に合う研究を選ぶ" [ref=e401]:
+        - heading "取得した報告から、対象に合う研究を選ぶ" [level=2] [ref=e402]
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - strong [ref=e406]: "120"
+              - generic [ref=e407]: 取得した報告
+            - paragraph [ref=e408]: ↓ 重複を同定
+            - complementary [ref=e409]:
+              - text: 42報告を除外
+              - text: 同じ報告の再取得
+          - generic [ref=e410]:
+            - generic [ref=e411]:
+              - strong [ref=e412]: "78"
+              - generic [ref=e413]: 一次評価した報告
+            - paragraph [ref=e414]: ↓ 対象条件を確認
+            - complementary [ref=e415]:
+              - text: 46報告を除外
+              - text: 対象・介入・指標が範囲外
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - strong [ref=e418]: "32"
+              - generic [ref=e419]: 全文を確認した報告
+            - paragraph [ref=e420]: ↓ 適用条件を照合
+            - complementary [ref=e421]:
+              - text: 20報告を除外
+              - text: 方法・比較が採用条件に合わない
+          - generic [ref=e422]:
+            - generic [ref=e423]:
+              - strong [ref=e424]: "12"
+              - generic [ref=e425]: 採用研究・報告
+            - paragraph [ref=e426]: 一研究一報告の例
+            - complementary [ref=e427]:
+              - text: 12研究・12報告
+              - text: 実調査では研究と報告を別に同定
+        - paragraph [ref=e428]: 架空の選択過程です。特定の報告標準への準拠を示すものではありません。
+        - generic [ref=e429]:
+          - generic [ref=e430]: 例示の検索・選択記録
+          - generic [ref=e431]: 架空の例示
+      - paragraph [ref=e432]: 中央に取得→重複除外後→全文確認→採用を縦に置き、各段階の右に除外件数と理由を並べます。件数の単位を流れの内側で明示します。 検索源が増えたら検索源別の表を別ページにします。式の整合、全文未取得と対象外の区別、どの時点の検索かを点検します。
+    - region "文献集合の概観" [ref=e433]:
+      - generic [ref=e434]:
+        - generic [ref=e435]: S05
+        - heading "文献集合の概観" [level=2] [ref=e436]
+      - article "12研究のうち、9研究は短期の実験だった" [ref=e438]:
+        - heading "12研究のうち、9研究は短期の実験だった" [level=2] [ref=e439]
+        - generic [ref=e440]:
+          - generic [ref=e441]:
+            - strong [ref=e442]: "12"
+            - text: 採用した研究
+            - paragraph [ref=e443]:
+              - text: 例示集合v1
+              - text: 12研究・12報告
+          - generic [ref=e444]:
+            - img "12研究の内訳。短期実験9研究、生活場面3研究。" [ref=e445]:
+              - generic [ref=e446]: 短期実験 9
+              - generic [ref=e447]: 生活場面 3
+            - generic [ref=e448]:
+              - generic [ref=e449]:
+                - term [ref=e450]: 短期実験
+                - definition [ref=e451]: 課題と通知条件をそろえて比較
+              - generic [ref=e452]:
+                - term [ref=e453]: 生活場面
+                - definition [ref=e454]: 日常利用の負担を確認
+            - paragraph [ref=e455]:
+              - text: この12研究の内訳です。
+              - text: 分野全体の研究比率や代表性は示しません。
+        - paragraph [ref=e456]: 短期の比較が中心です。生活場面への転用は別に判断します。
+        - generic [ref=e457]:
+          - generic [ref=e458]: 例示集合v1：12研究・12報告
+          - generic [ref=e459]: 架空の例示
+      - paragraph [ref=e460]: 左に研究数と単位、右に実験9・生活場面3の一本の構成帯、下にそれぞれが答えられる範囲を置きます。件数を最初に、構成と限界を続けます。 分類が多ければ一軸ずつ分け、個別研究一覧は付録へ。分母12、重複分類の有無、未知の分類を0件にしていないか確認します。
+    - region "分類地図" [ref=e461]:
+      - generic [ref=e462]:
+        - generic [ref=e463]: S06
+        - heading "分類地図" [level=2] [ref=e464]
+      - article "比較条件と、主指標の測定範囲を分ける" [ref=e466]:
+        - heading "比較条件と、主指標の測定範囲を分ける" [level=2] [ref=e467]
+        - generic [ref=e468]:
+          - heading "固定時点どうしの比較" [level=3] [ref=e470]
+          - heading "状況適応を含む比較" [level=3] [ref=e471]
+          - heading "短期課題の指標" [level=3] [ref=e472]
+          - generic [ref=e473]:
+            - strong [ref=e474]: 5研究
+            - paragraph [ref=e475]: 即時／一定間隔など
+            - text: 固定時点の条件だけを比較
+          - generic [ref=e476]:
+            - strong [ref=e477]: 4研究
+            - paragraph [ref=e478]: 固定／課題境界など
+            - text: 例示研究A・Bはこちら
+          - heading "生活場面の負担" [level=3] [ref=e479]
+          - generic [ref=e480]:
+            - strong [ref=e481]: 1研究
+            - paragraph [ref=e482]: 一定時刻どうし
+            - text: 固定時点の条件だけを比較
+          - generic [ref=e483]:
+            - strong [ref=e484]: 2研究
+            - paragraph [ref=e485]: 固定／状況への適応
+            - text: 例示研究Cはこちら
+        - paragraph [ref=e486]: 適応条件を一つでも含めば右列。主指標の場面で行を選び、一研究を一セルだけ数えます。
+        - generic [ref=e487]:
+          - generic [ref=e488]: 例示集合v1：サーベイ独自分類
+          - generic [ref=e489]: 架空の例示
+      - paragraph [ref=e490]: 横軸を固定時点どうしの比較・状況適応を含む比較、縦軸を主指標の測定範囲（短期課題・生活場面の負担）とする2×2の地図を中央に置きます。セルには研究数と該当研究の例を置きます。 軸が増えたら同じ横軸を保つ別ページへ分割します。三次元の飾りを加えず、分類の排他性と未分類の扱いを確認します。
+    - region "研究ギャップ" [ref=e491]:
+      - generic [ref=e492]:
+        - generic [ref=e493]: S13
+        - heading "研究ギャップ" [level=2] [ref=e494]
+      - article "情報不足と、差を確認しなかった結果を分ける" [ref=e496]:
+        - heading "情報不足と、差を確認しなかった結果を分ける" [level=2] [ref=e497]
+        - table "問いごとに、確認範囲と情報の状態を区別する" [ref=e498]:
+          - caption [ref=e499]: 問いごとに、確認範囲と情報の状態を区別する
+          - rowgroup [ref=e500]:
+            - row "問い 確認状態 確認範囲 次の判断" [ref=e501]:
+              - columnheader "問い" [ref=e502]
+              - columnheader "確認状態" [ref=e503]
+              - columnheader "確認範囲" [ref=e504]
+              - columnheader "次の判断" [ref=e505]
+          - rowgroup [ref=e506]:
+            - row "対象年齢の内訳 不明 記載を確認したが確定できず 年齢別の転用を保留" [ref=e507]:
+              - rowheader "対象年齢の内訳" [ref=e508]
+              - cell "不明" [ref=e509]
+              - cell "記載を確認したが確定できず" [ref=e510]
+              - cell "年齢別の転用を保留" [ref=e511]
+            - row "生活場面の負担 確認済み 生活場面3研究 尺度を分ける" [ref=e512]:
+              - rowheader "生活場面の負担" [ref=e513]
+              - cell "確認済み" [ref=e514]
+              - cell "生活場面3研究" [ref=e515]
+              - cell "尺度を分ける" [ref=e516]
+            - row "長期の学習 未報告 採用12研究を確認 調査範囲を広げるか判断" [ref=e517]:
+              - rowheader "長期の学習" [ref=e518]
+              - cell "未報告" [ref=e519]
+              - cell "採用12研究を確認" [ref=e520]
+              - cell "調査範囲を広げるか判断" [ref=e521]
+            - row "睡眠への影響 未調査 検索・読解を未実施 調べる必要性を判断" [ref=e522]:
+              - rowheader "睡眠への影響" [ref=e523]
+              - cell "未調査" [ref=e524]
+              - cell "検索・読解を未実施" [ref=e525]
+              - cell "調べる必要性を判断" [ref=e526]
+            - row "子どもの利用 対象外 成人に範囲を限定 別の調査として扱う" [ref=e527]:
+              - rowheader "子どもの利用" [ref=e528]
+              - cell "対象外" [ref=e529]
+              - cell "成人に範囲を限定" [ref=e530]
+              - cell "別の調査として扱う" [ref=e531]
+            - row "反応精度 差を確認せず 例示研究E・36人 不足ではなく結果を保持" [ref=e532]:
+              - rowheader "反応精度" [ref=e533]
+              - cell "差を確認せず" [ref=e534]
+              - cell "例示研究E・36人" [ref=e535]
+              - cell "不足ではなく結果を保持" [ref=e536]
+        - paragraph [ref=e537]: 不明・未報告・未調査・対象外は、差を確認しなかった観測結果と異なります。
+        - generic [ref=e538]:
+          - generic [ref=e539]: 例示集合v1と例示研究E：架空の確認状態
+          - generic [ref=e540]: 架空の例示
+      - paragraph [ref=e541]: 問い、確認状態、確認範囲、次の判断の四列を置きます。空欄は使わず、不明・未報告・未調査・対象外・差を確認せずを文字で示します。 問いが多ければ意思決定に関わる不足を先にし、全ギャップは付録へ。空欄や灰色だけで状態を表していないか、未取得を否定へ変えていないか点検します。
+    - region "参考文献・付録導線" [ref=e542]:
+      - generic [ref=e543]:
+        - generic [ref=e544]: S16
+        - heading "参考文献・付録導線" [level=2] [ref=e545]
+      - article "根拠と詳細へ、問いに応じて戻れるようにする" [ref=e547]:
+        - heading "根拠と詳細へ、問いに応じて戻れるようにする" [level=2] [ref=e548]
+        - generic [ref=e549]:
+          - generic [ref=e550]:
+            - heading "この作例で用いた架空のラベル" [level=3] [ref=e551]
+            - list [ref=e552]:
+              - listitem [ref=e553]:
+                - strong [ref=e554]: 例示研究A
+                - generic [ref=e555]: 文章編集の方法・再開時間
+              - listitem [ref=e556]:
+                - strong [ref=e557]: 例示研究B
+                - generic [ref=e558]: 計算課題と不一致
+              - listitem [ref=e559]:
+                - strong [ref=e560]: 例示研究C
+                - generic [ref=e561]: 生活場面の負担
+              - listitem [ref=e562]:
+                - strong [ref=e563]: 例示研究E
+                - generic [ref=e564]: 反応精度の差を確認せず
+            - paragraph [ref=e565]: 全て架空です。実在の論文・著者・DOIは示していません。
+          - navigation "問いに応じた詳細への移動" [ref=e566]:
+            - heading "問いに応じて戻る" [level=3] [ref=e567]
+            - link "補助例 比較条件の分類 →" [ref=e568] [cursor=pointer]:
+              - /url: "#S06"
+              - text: 補助例 比較条件の分類
+              - generic [ref=e569]: →
+            - link "補助例 集合の構成 →" [ref=e570] [cursor=pointer]:
+              - /url: "#S05"
+              - text: 補助例 集合の構成
+              - generic [ref=e571]: →
+            - link "補助例 情報状態の区別 →" [ref=e572] [cursor=pointer]:
+              - /url: "#S13"
+              - text: 補助例 情報状態の区別
+              - generic [ref=e573]: →
+        - paragraph [ref=e574]: 実案件では正式な参考文献と所在を記載し、主張付近の出典表示も残します。
+        - generic [ref=e575]:
+          - generic [ref=e576]: 架空のラベル一覧：実在出典ではありません
+          - generic [ref=e577]: 架空の例示
+      - paragraph [ref=e578]: 左に主要根拠の一覧、右に方法・比較・未報告事項の付録への問い付き導線を置きます。原資料の版・所在は実案件で追跡できる形にします。 全件一覧は別の参考文献ページへ分け、本文には重要な導線を残します。リンク先・版・頁と、本文の主張付近の出典を点検します。
+  - contentinfo [ref=e579]:
+    - paragraph [ref=e580]: 余白は図の観察、列の対応、問いの切り替えを支えるために残しています。主見本は提供PDFの必要な図領域を抜粋しています。原典との独立照合、投影での可読性、読者の理解は別に確認します。抜粋の所在・切り抜き範囲は同梱の来歴記録に残しています。
+    - link "型ごとの使い方と意味境界" [ref=e581] [cursor=pointer]:
+      - /url: ../references/survey-slide-templates.md

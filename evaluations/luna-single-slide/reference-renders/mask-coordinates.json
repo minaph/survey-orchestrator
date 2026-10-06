@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-10-06T17:06:33.225539+00:00",
+  "source": "tmp/MIRU2026_tutorial_share.pdf",
+  "sourceSha256": "401ce069de52865899ff14cea3036be789ee90632054e46bf9d135aca9688567",
+  "coordinateConvention": "PNG pixels, origin top left, [left, top, rightExclusive, bottomExclusive]",
+  "purpose": "Mask only the lower-right page number for blind comparison; preserve all content and citations",
+  "pages": [
+    {
+      "pdfPage": 102,
+      "original": "page-102-original.png",
+      "masked": "page-102-masked.png",
+      "size": [
+        1600,
+        900
+      ],
+      "maskBounds": [
+        1498,
+        854,
+        1537,
+        876
+      ],
+      "changedPixelBounds": [
+        1500,
+        856,
+        1535,
+        874
+      ],
+      "pixelsOutsideMaskUnchanged": true,
+      "originalSha256": "c672bad330633a957ca6e421b963ae623fe80d296bf02c207988055e9a0e29eb",
+      "maskedSha256": "98525caf57ffe933ebd0545a28e47065da1ae3b0d250a80d3380c544419e8d67"
+    },
+    {
+      "pdfPage": 18,
+      "original": "page-018-original.png",
+      "masked": "page-018-masked.png",
+      "size": [
+        1600,
+        900
+      ],
+      "maskBounds": [
+        1511,
+        854,
+        1538,
+        876
+      ],
+      "changedPixelBounds": [
+        1513,
+        856,
+        1536,
+        874
+      ],
+      "pixelsOutsideMaskUnchanged": true,
+      "originalSha256": "97896b4844fbbcca60920f37f820eac828ebf6783ce68a1118f15d54ca903cbf",
+      "maskedSha256": "e1d6314f7dba439759930836861ad3e591e60447aba4d668113d7c80e8bd5b46"
+    },
+    {
+      "pdfPage": 20,
+      "original": "page-020-original.png",
+      "masked": "page-020-masked.png",
+      "size": [
+        1600,
+        900
+      ],
+      "maskBounds": [
+        1510,
+        854,
+        1538,
+        876
+      ],
+      "changedPixelBounds": [
+        1512,
+        856,
+        1536,
+        874
+      ],
+      "pixelsOutsideMaskUnchanged": true,
+      "originalSha256": "be4c12cfac233345bcce7c57035ae808f32518ce709e6db439cc307290cb7e63",
+      "maskedSha256": "5d30ba29397cd637be04b729153454e9ce1204b77cc9ba5b686a2016442235e1"
+    }
+  ]
+}

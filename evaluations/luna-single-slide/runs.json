@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-10-06T16:46:35.392123+00:00",
+  "sampling_sha256": "a8111a5a4890a7f49c6462f523af3326d6e75aada64ac95edda751212cae0ca6",
+  "environment_support": [
+    {
+      "action": "freeze skill roots, verify three identical workdir copies, separate prompts/events/stderr",
+      "content_intervention": false
+    },
+    {
+      "action": "CLI rejected simultaneous --sandbox workspace-write and --approve-for-me before model startup; retain approval routing and set sandbox_mode via config",
+      "observed_error": "the argument --sandbox <SANDBOX_MODE> cannot be used with --approve-for-me",
+      "content_intervention": false,
+      "recorded_at": "2026-10-06T16:47:49.436022+00:00"
+    },
+    {
+      "action": "temporary production directories disappeared following environment crash; recreate identical paths and restore frozen skill only; ask original model to regenerate from existing session history",
+      "content_intervention": false,
+      "recorded_at": "2026-10-06T17:01:54.613901+00:00"
+    },
+    {
+      "action": "enable sandbox_workspace_write.network_access=true when resuming after recorded sandbox DNS failure; escalated curl HEAD https://arxiv.org returned HTTP 200",
+      "content_intervention": false,
+      "recorded_at": "2026-10-06T17:01:54.614004+00:00"
+    },
+    {
+      "action": "periodically copy new production files to per-case outputs directories every 20 seconds; exclude frozen snapshot paths and caches/dependencies; record file names and timestamps in backup.jsonl",
+      "content_intervention": false
+    },
+    {
+      "action": "first recovery launch failed before process creation because case workdirs no longer existed (No such file or directory); frozen snapshot restored to identical paths before successful retry",
+      "content_intervention": false
+    },
+    {
+      "action": "all three resumed sessions completed with CLI exit_code=0; final files synchronized and hashed in final-artifacts.json; periodic backup stopped; own production logs retained without correction edits",
+      "content_intervention": false
+    }
+  ],
+  "cases": [
+    {
+      "case_id": 1,
+      "workdir": "/private/tmp/survey-luna-case-1-zcncki90",
+      "prompt_path": "evaluations/luna-single-slide/case-1.prompt.txt",
+      "prompt_sha256": "09365e1466af50004b1e917affb5bdd76202b362c30ffe987e0c7cc5d295b634",
+      "snapshot_manifest": "snapshot-manifest.json",
+      "snapshot_file_count": 52,
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high",
+      "profile": null,
+      "sandbox": "workspace-write",
+      "approval": "approve-for-me",
+      "launch_requires_escalated": true,
+      "status": "completed_after_environment_recovery",
+      "records_dir": "evaluations/luna-single-slide/case-1",
+      "attempts": [
+        {
+          "status": "cli_argument_rejected",
+          "exit_code": 2,
+          "stderr_path": "case-1/attempt-1.stderr.log",
+          "events_path": "case-1/attempt-1.events.jsonl"
+        }
+      ],
+      "sandbox_config": "sandbox_mode=\"workspace-write\"",
+      "approve_for_me_implies_workspace_write": true,
+      "session_id": 40402,
+      "launch_recorded_at": "2026-10-06T16:49:28.675712+00:00",
+      "cwd": "/private/tmp/survey-luna-case-1-zcncki90",
+      "argv": [
+        "codex",
+        "exec",
+        "-m",
+        "gpt-6-luna",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "sandbox_mode=\"workspace-write\"",
+        "--approve-for-me",
+        "--skip-git-repo-check",
+        "--json",
+        "-o",
+        "final.txt",
+        "-"
+      ],
+      "events_path": "case-1/events.jsonl",
+      "stderr_path": "case-1/stderr.log",
+      "final_path": "/private/tmp/survey-luna-case-1-zcncki90/final.txt",
+      "thread_id": "01a1121d-53cc-7fb3-aaac-ac079f7aec35",
+      "recoveries": [
+        {
+          "recovery_id": 1,
+          "thread_id": "01a1121d-53cc-7fb3-aaac-ac079f7aec35",
+          "status": "completed",
+          "network_access": true,
+          "recorded_at": "2026-10-06T17:02:59.379329+00:00",
+          "events_path": "case-1/recovery-1.events.jsonl",
+          "stderr_path": "case-1/recovery-1.stderr.log",
+          "workdir_restored_from_frozen_snapshot": true,
+          "snapshot_files": 52,
+          "prompt": "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。",
+          "session_id": 96396,
+          "exit_code": 0,
+          "completed_at": "2026-10-06T17:14:19.854343+00:00",
+          "argv": [
+            "codex",
+            "exec",
+            "--approve-for-me",
+            "-c",
+            "sandbox_mode=\"workspace-write\"",
+            "-c",
+            "sandbox_workspace_write.network_access=true",
+            "resume",
+            "-m",
+            "gpt-6-luna",
+            "-c",
+            "model_reasoning_effort=\"high\"",
+            "--skip-git-repo-check",
+            "--json",
+            "-o",
+            "final.txt",
+            "01a1121d-53cc-7fb3-aaac-ac079f7aec35",
+            "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。"
+          ],
+          "launch_requires_escalated": true,
+          "profile": null
+        }
+      ],
+      "final_pdf": {
+        "path": "evaluations/luna-single-slide/case-1/outputs/slide.pdf",
+        "sha256": "72bbbb7ec70d9925068d6c55527fd794a208e263327b4ea4894d0da67d912302",
+        "frozen_at_first_completed_output": true
+      }
+    },
+    {
+      "case_id": 2,
+      "workdir": "/private/tmp/survey-luna-case-2-w52qk5df",
+      "prompt_path": "evaluations/luna-single-slide/case-2.prompt.txt",
+      "prompt_sha256": "774c6028b8f5eeea0cd64e06e29d2e4332d0d6932568c00fbae2577c8c4054ce",
+      "snapshot_manifest": "snapshot-manifest.json",
+      "snapshot_file_count": 52,
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high",
+      "profile": null,
+      "sandbox": "workspace-write",
+      "approval": "approve-for-me",
+      "launch_requires_escalated": true,
+      "status": "completed_after_environment_recovery",
+      "records_dir": "evaluations/luna-single-slide/case-2",
+      "sandbox_config": "sandbox_mode=\"workspace-write\"",
+      "approve_for_me_implies_workspace_write": true,
+      "session_id": 92277,
+      "launch_recorded_at": "2026-10-06T16:49:28.675712+00:00",
+      "cwd": "/private/tmp/survey-luna-case-2-w52qk5df",
+      "argv": [
+        "codex",
+        "exec",
+        "-m",
+        "gpt-6-luna",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "sandbox_mode=\"workspace-write\"",
+        "--approve-for-me",
+        "--skip-git-repo-check",
+        "--json",
+        "-o",
+        "final.txt",
+        "-"
+      ],
+      "events_path": "case-2/events.jsonl",
+      "stderr_path": "case-2/stderr.log",
+      "final_path": "/private/tmp/survey-luna-case-2-w52qk5df/final.txt",
+      "thread_id": "01a1121d-9d31-7be2-9a96-c4bb94c20a1b",
+      "recoveries": [
+        {
+          "recovery_id": 1,
+          "thread_id": "01a1121d-9d31-7be2-9a96-c4bb94c20a1b",
+          "status": "completed",
+          "network_access": true,
+          "recorded_at": "2026-10-06T17:08:16.222200+00:00",
+          "events_path": "case-2/recovery-1.events.jsonl",
+          "stderr_path": "case-2/recovery-1.stderr.log",
+          "workdir_restored_from_frozen_snapshot": true,
+          "snapshot_files": 52,
+          "prompt": "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。",
+          "session_id": 53936,
+          "argv": [
+            "codex",
+            "exec",
+            "--approve-for-me",
+            "-c",
+            "sandbox_mode=\"workspace-write\"",
+            "-c",
+            "sandbox_workspace_write.network_access=true",
+            "resume",
+            "-m",
+            "gpt-6-luna",
+            "-c",
+            "model_reasoning_effort=\"high\"",
+            "--skip-git-repo-check",
+            "--json",
+            "-o",
+            "final.txt",
+            "01a1121d-9d31-7be2-9a96-c4bb94c20a1b",
+            "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。"
+          ],
+          "launch_requires_escalated": true,
+          "profile": null,
+          "exit_code": 0,
+          "completed_at": "2026-10-06T17:20:06.782097+00:00"
+        }
+      ],
+      "final_pdf": {
+        "path": "evaluations/luna-single-slide/case-2/outputs/deliverables/occupancy-network-transition.pdf",
+        "sha256": "974602c237b91dc83a37ecc87729be31b20c5eb05268a63a47e3afdbb8dd1be4",
+        "frozen_at_first_completed_output": true
+      }
+    },
+    {
+      "case_id": 3,
+      "workdir": "/private/tmp/survey-luna-case-3-xb7i_mfb",
+      "prompt_path": "evaluations/luna-single-slide/case-3.prompt.txt",
+      "prompt_sha256": "ccbd442e2931b5cfa5eebda2737934220ae5485419678ed3e9f3efa3a64c76d9",
+      "snapshot_manifest": "snapshot-manifest.json",
+      "snapshot_file_count": 52,
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high",
+      "profile": null,
+      "sandbox": "workspace-write",
+      "approval": "approve-for-me",
+      "launch_requires_escalated": true,
+      "status": "completed_after_environment_recovery",
+      "records_dir": "evaluations/luna-single-slide/case-3",
+      "sandbox_config": "sandbox_mode=\"workspace-write\"",
+      "approve_for_me_implies_workspace_write": true,
+      "session_id": 42508,
+      "launch_recorded_at": "2026-10-06T16:49:28.675712+00:00",
+      "cwd": "/private/tmp/survey-luna-case-3-xb7i_mfb",
+      "argv": [
+        "codex",
+        "exec",
+        "-m",
+        "gpt-6-luna",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "sandbox_mode=\"workspace-write\"",
+        "--approve-for-me",
+        "--skip-git-repo-check",
+        "--json",
+        "-o",
+        "final.txt",
+        "-"
+      ],
+      "events_path": "case-3/events.jsonl",
+      "stderr_path": "case-3/stderr.log",
+      "final_path": "/private/tmp/survey-luna-case-3-xb7i_mfb/final.txt",
+      "thread_id": "01a1121d-e525-7eb0-90f6-47188179781d",
+      "recoveries": [
+        {
+          "recovery_id": 1,
+          "session_id": 25142,
+          "thread_id": "01a1121d-e525-7eb0-90f6-47188179781d",
+          "status": "completed",
+          "network_access": true,
+          "recorded_at": "2026-10-06T17:02:31.201511+00:00",
+          "events_path": "case-3/recovery-1.events.jsonl",
+          "stderr_path": "case-3/recovery-1.stderr.log",
+          "workdir_restored_from_frozen_snapshot": true,
+          "snapshot_files": 52,
+          "prompt": "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。",
+          "exit_code": 0,
+          "completed_at": "2026-10-06T17:08:16.217511+00:00",
+          "argv": [
+            "codex",
+            "exec",
+            "--approve-for-me",
+            "-c",
+            "sandbox_mode=\"workspace-write\"",
+            "-c",
+            "sandbox_workspace_write.network_access=true",
+            "resume",
+            "-m",
+            "gpt-6-luna",
+            "-c",
+            "model_reasoning_effort=\"high\"",
+            "--skip-git-repo-check",
+            "--json",
+            "-o",
+            "final.txt",
+            "01a1121d-e525-7eb0-90f6-47188179781d",
+            "環境クラッシュから再開。一時作業ディレクトリが失われたため、固定版スキルだけ同じパスに復元済みです。既存依頼と保存された会話履歴を確認し、必要な保存物を再生成して制作を完了してください。ネットワーク設定を補修したので必要な取得操作は再試行可能です。"
+          ],
+          "launch_requires_escalated": true,
+          "profile": null
+        }
+      ],
+      "final_pdf": {
+        "path": "evaluations/luna-single-slide/case-3/outputs/slide.pdf",
+        "sha256": "f82ff262101f24fe29bbca261f752bfccfc32f6695b5c3429285063fcc24fe46",
+        "frozen_at_first_completed_output": true
+      }
+    }
+  ],
+  "snapshot_timing_note": "初回ベースラインとして凍結時点の使用版を保持。別担当によるテンプレート見切れ修正の完了を待たず起動し、修正後の評価と区別する。",
+  "reference_boundary": "各CLIのshell cwdは独立workdir。元講義PDF、tmp、audit、sampling/evaluation対応表は制作workdirへコピーせず、promptで閲覧・探索を禁止。"
+}

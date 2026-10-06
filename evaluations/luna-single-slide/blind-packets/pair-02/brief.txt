@@ -1,0 +1,5 @@
+scope / role:
+従来の明示的形状表現とニューラル陰関数表面モデルの関係・移行を説明する。
+
+bibliography:
+- Mescheder — Occupancy Networks: Learning 3D Reconstruction in Function Space, CVPR2019

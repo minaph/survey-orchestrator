@@ -1,0 +1,7 @@
+scope / role:
+場による表面形状表現を説明し代表ニューラルモデルを位置付ける。
+
+bibliography:
+- Park — DeepSDF, CVPR2019
+- Mescheder — Occupancy Networks, CVPR2019
+- Chen — Learning Implicit Fields for Generative Shape Modeling, CVPR2019

@@ -1,0 +1,48 @@
+制作記録
+
+依頼
+- 日本語、16:9、1枚。
+- 内容範囲：従来の明示的形状表現とニューラル陰関数表面モデルの関係・移行。
+- 指定書誌：Mescheder et al., “Occupancy Networks: Learning 3D Reconstruction in Function Space,” CVPR 2019。
+- 禁止範囲：元講義PDF・講義スライド、評価用の手本・対応表・比較資料、他ケースの作業環境・成果物。これらは探索・閲覧していない。
+
+ストーリーライン
+- T：形状をどこに、どの形式で表現するのか。
+- B：従来例は空間格子（voxel）、予測点（point）、頂点（mesh）に出力を置く。Occupancy Networksは観測xと座標pから占有確率fθ(p,x)を返し、その分類境界を表面とみなす。
+- Bottom：変化は形状表現の持ち方であり、メッシュそのものを廃止する主張ではない。推論時にはMISEによって関数から等値面を抽出し、メッシュを得る。
+- Figure：原論文Figure 1が4表現の関係を直接示すため採用。図中の4パネルとラベルを保持し、外側の論文本文だけを切り抜いた。
+- Next：得られたメッシュは下流処理に利用できる。連続関数をどう評価・抽出するかが次の方法上の問いとなる。
+
+情報源と根拠
+- CVF Open Accessの公式論文PDFを取得・読解。要約・定義はAbstract、Figure 1とIntroduction、§3.1、抽出処理は§3.3で照合。
+- Figure 1：従来の出力空間は voxel（空間）、point（予測点）、mesh（頂点）で離散化される。Occupancy Networksは分類器の連続決定境界を3D表面として扱い、任意解像度のメッシュ抽出を可能にする。
+- §3.1：fθ(p,x)は観測と3D座標を受け、占有確率を返す。境界が暗黙に表面を表す。
+- §3.3：推論ではMISE（Multiresolution IsoSurface Extraction）を使って表面を抽出する。
+- 解釈上の境界：連続な関数表現と、推論時に離散的なサンプルからメッシュを作る処理を区別した。単一論文の概念説明であり、全明示表現・全陰関数法を網羅・性能比較する資料ではない。
+
+制作
+- Codex Gridレイアウトライブラリの2カラム構成（slide 05）を参照し、タイトルと左右の説明領域を使用。
+- 1280×720 pxで制作。編集可能なPPTXは@oai/artifact-toolで作成。原図をPNG画像として埋め込み、文字と配置はPowerPoint上で編集可能。
+- 日本語フォントはシステムで確認したHiragino Sansを使用。
+- PDFは完成PNGをmacOS Quartzで13.33×7.5 inch（960×540 pt）の単ページPDFに変換。PDF本文は画像ベース。編集にはPPTXを使う。
+
+検証
+- Artifact Toolで出力したPNG（2560×1440 px）を全面表示し、日本語字形、図の可読性、切れ・重なりを目視確認。
+- PDFを192 dpiでPNGへ再レンダリング（2560×1440 px）して表示確認。1ページ、960×540 pt、16:9。
+- slides_test.pyによるPPTXはみ出し検査：合格（No overflow detected）。
+- OOXMLを確認：PPTX内1スライド、Notes Slide 1あり、原図画像1点を埋め込み。
+- 文字とノートの出典を検査し、[Sources]ブロックに原論文URL・図・節の参照が含まれることを確認。
+- 日本語レンダリング用の独立SKILL.mdは参照先に見つからなかったため、システムフォント一覧を確認し、制作レンダラーの実出力で字形を確かめた。
+
+成果物一覧
+- occupancy-network-transition.pptx：編集可能なスライド
+- occupancy-network-transition.pdf：単ページPDF
+- occupancy-network-transition.png：スライドPNG
+- occupancy_transition.mjs：PPTX・PNGの生成元
+- export_pdf.swift：PDF変換元
+- figures/occupancy-networks-figure-1.png：スライドで使用した原図切り抜き
+- figures/figure-source.txt：図の出典と抽出記録
+- sources/Mescheder2019CVPR.pdf：参照した公式論文PDF
+- sources/occupancy-networks.bib：書誌情報
+- 最終更新後の再確認：PDFを192 dpiで再レンダリングし、最終PNGと同じ16:9画面で字形・配置・図の見え方を再確認。
+- はみ出し検査時のスライドサイズ比率：1.777778（16:9）。OOXML上のスライド外にある要素：なし。

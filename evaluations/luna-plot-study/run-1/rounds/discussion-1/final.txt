@@ -1,0 +1,10 @@
+[発表プロット](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/plot.md>)と[制作メモ](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/制作メモ.md>)を改稿しました。
+
+主な変更は次のとおりです。
+
+- **LaRA**：幻覚検出の `Avg GAP` を32k −10.38、128k −22.36ポイントに統一しました。128kでRAGの平均優位が広がると読めますが、各長さで使う文書が異なるため、文脈長だけの効果とは結論していません。
+- **Self-Route**：本文の報告値とTable 1から算出した差を分け、異種指標を含む `Avg` を同一尺度の効果量として扱わないようにしました。「全文脈が必要な課題でLCが優位」という結論は総合平均からは導かず、タスク別に検証する仮説としました。
+- **OP-RAG**：単純RAGとの順序比較は§4.4・Figure 4、全文LCとの比較はTable 1に分けました。前者は元文書順で渡す効果、後者は特定条件での全文LCとの比較を支える根拠として説明しています。
+- **参照箇所**：LongCiteは引用品質のTable 1と回答正確性のTable 2を区別しました。LOFTの費用・遅延は結論後のLimitations（本文p.10）、prefix cachingの説明は§3.3に修正しました。
+
+制作メモには変更前→変更後→理由と、Self-Route本文・表の集計差など未解決事項を記録しました。原典の該当節・表・図を照合し、最終確認では13枚すべてにプロット項目があること、主要数値と参照箇所が更新されていることを確認しました。

@@ -1,0 +1,63 @@
+{
+  "round": "initial",
+  "started_at": "2026-10-06T17:47:04.703218+00:00",
+  "status": "completed",
+  "argv": [
+    "codex",
+    "exec",
+    "--approve-for-me",
+    "-m",
+    "gpt-6-luna",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "sandbox_mode=\"workspace-write\"",
+    "-c",
+    "sandbox_workspace_write.network_access=true",
+    "--skip-git-repo-check",
+    "--json",
+    "-o",
+    "/Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/rounds/initial/final.txt",
+    "-"
+  ],
+  "cwd": "/Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace",
+  "settings": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "profile": null,
+    "sandbox_mode": "workspace-write",
+    "network_access": true,
+    "approval": "approve-for-me"
+  },
+  "mode": "new_session",
+  "thread_id": "01a11253-80a2-72a0-ace3-1d4c9dbae057",
+  "prompt_sha256": "d28e7ed32ac76f72112fa577c5d44d215686151d54ae29e16cc65018beab4755",
+  "before_outputs": [],
+  "turn_completed": true,
+  "turn_failed": false,
+  "command_failures": [],
+  "exit_code": 0,
+  "process_id": 44659,
+  "usage": {
+    "input_tokens": 1426570,
+    "cached_input_tokens": 1315328,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15936,
+    "reasoning_output_tokens": 1913
+  },
+  "after_outputs": [
+    {
+      "path": "plot.md",
+      "sha256": "6ff8ca660a7c8ee31579c53054f02f0d0c7b1baf237e3945bb4ff876845b794c",
+      "size_bytes": 26043
+    },
+    {
+      "path": "制作メモ.md",
+      "sha256": "bedaaf466ee32185d67fcf1c4e3f066a8c269cb108d4bf7a73ec98778ec6fe16",
+      "size_bytes": 4038
+    }
+  ],
+  "inputs_unchanged": true,
+  "final_saved": true,
+  "finished_at": "2026-10-06T17:52:24.442950+00:00"
+}

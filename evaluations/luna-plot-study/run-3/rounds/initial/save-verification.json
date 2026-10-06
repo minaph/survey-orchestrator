@@ -1,0 +1,28 @@
+{
+  "run": 3,
+  "status": "completed",
+  "exitCode": 0,
+  "threadId": "01a11253-7dcc-7e81-8fa6-9a2401259548",
+  "inputsUnchanged": true,
+  "savedArtifacts": [
+    {
+      "path": "plot.md",
+      "sha256": "a605cd85f2fb83c1dfed01365c2f2fcd4d6b69740dd0e951275baa249713b7b8",
+      "size_bytes": 30809
+    },
+    {
+      "path": "production-notes.md",
+      "sha256": "8f0277d3aaefee4728fcc3ce981b7e034c747adacb61924baa6ef42030faac71",
+      "size_bytes": 3797
+    }
+  ],
+  "commandFailures": [
+    {
+      "id": "item_7",
+      "command": "/bin/zsh -lc 'for f in corpus/papers/*.txt; do echo ===$f; rg -n -i '\"'abstract|conclusion|results|limitation|cost|latency|token|retrieval|long.?context|needle|accuracy|citation|cost|compute|efficien|dataset|benchmark' \\\"\"'$f\" | head -35; done'",
+      "exit_code": 1,
+      "status": "failed"
+    }
+  ],
+  "finishedAt": "2026-10-06T17:50:22.267653+00:00"
+}

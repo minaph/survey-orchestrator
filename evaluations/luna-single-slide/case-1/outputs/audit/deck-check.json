@@ -1,0 +1,18 @@
+{
+  "failures": [
+    "visual_manifest.tsv was not supplied",
+    "PDF could not be observed: PyMuPDF unavailable: No module named 'fitz'"
+  ],
+  "warnings": [
+    "PyMuPDF unavailable: No module named 'fitz'"
+  ],
+  "metrics": {
+    "manifest_rows": 0,
+    "manifest_visuals": 0,
+    "pdf": {
+      "available": false,
+      "warning": "PyMuPDF unavailable: No module named 'fitz'"
+    }
+  },
+  "status": "fail"
+}

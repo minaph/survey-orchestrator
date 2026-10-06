@@ -1,0 +1,5 @@
+[発表プロット](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/plot.md>)と[制作メモ](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-1/workspace/outputs/制作メモ.md>)を更新しました。
+
+スライド8では、Self-RouteのFigure 1を3モデルの性能・相対コストの棒グラフとして記述し、二段階ルーティングの図とは分けました。ルーティングの説明用図は本文§4.2に基づく本発表の再構成と明記し、モデルの回答可能性判定が常に正しいかのような表現を避けています。Self-Routeの本文と表の数値差は、原因や計算定義が未確定であることを示し、別集計とは断定していません。
+
+保存版LOFT PDFを確認し、LimitationsはPDF p.11、印刷p.11と修正しました。プロットは13枚の構成を保ち、全スライドに必要な項目があることも確認済みです。未解決の数値差と今回の変更履歴は制作メモに記録しています。

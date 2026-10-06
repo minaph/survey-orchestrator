@@ -1,0 +1,17 @@
+制作を完了しました。編集可能な原稿はSVGと生成用Pythonスクリプトです。図は独自に描き起こさず、Mescheder et al. の論文図1を切り抜いて使用し、スライド内と記録資料に出典を記載しました。モデルの説明は各論文の本文に基づいています。[Occupancy Networks](https://openaccess.thecvf.com/content_CVPR_2019/html/Mescheder_Occupancy_Networks_Learning_3D_Reconstruction_in_Function_Space_CVPR_2019_paper.html) · [DeepSDF](https://openaccess.thecvf.com/content_CVPR_2019/html/Park_DeepSDF_Learning_Continuous_Signed_Distance_Functions_for_Shape_Representation_CVPR_2019_paper.html)
+
+**スライド**
+
+- [編集可能なSVG原稿](</private/tmp/survey-luna-case-3-xb7i_mfb/slide.svg>) · [生成スクリプト](</private/tmp/survey-luna-case-3-xb7i_mfb/slide_source.py>)
+- [PDF](</private/tmp/survey-luna-case-3-xb7i_mfb/slide.pdf>) · [PNG](</private/tmp/survey-luna-case-3-xb7i_mfb/slide.png>)
+- [使用した図](</private/tmp/survey-luna-case-3-xb7i_mfb/figures/mescheder-fig1.png>) · [出典・図の来歴](</private/tmp/survey-luna-case-3-xb7i_mfb/sources.md>)
+- [制作過程と検証記録](</private/tmp/survey-luna-case-3-xb7i_mfb/production_log.md>) · [スライド・プロット](</private/tmp/survey-luna-case-3-xb7i_mfb/slide_plot.md>)
+
+**検証結果**
+
+- PDFは1ページ、1200×675 ptの16:9。PNGは1600×900 pxです。
+- SVGのXML構造、ファイル形式、ページ数と寸法を確認しました。
+- PDFから日本語見出し、数式、モデル名、出典を抽出できることを確認しました。
+- PDF自体を再描画して目視し、日本語字形、図、文字の欠落・重なり・切れがないことを確認しました。
+
+講義資料、評価用資料、他ケースの環境や成果物は探索・閲覧していません。

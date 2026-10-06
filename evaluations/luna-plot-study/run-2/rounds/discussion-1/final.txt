@@ -1,0 +1,9 @@
+`outputs/plot.md` を15枚構成に改稿し、変更理由と未解決事項を [制作メモ](</Users/minaph/Projects/survey-orchestrator/evaluations/luna-plot-study/run-2/workspace/outputs/production-notes.md>) に記録しました。
+
+中心判断は、「複数箇所の比較・全体的質問ならLCを選ぶ」から、「LCを有力な比較対象に含め、同じ問い・モデル条件で測る」へ限定しました。LongBench v2ではQwen2.5の32K検索入力が全文入力を上回る一方、LaRAのComparison課題ではLC優位が見られ、全体成績はモデル群や文脈長で逆転するためです。
+
+図表も論証に合わせて特定しました。LongBench v2 Fig. 4、LaRA Table 2のComparison列、Self-Route Fig. 3(a)(b)とTable 1、同論文の失敗分析Fig. 4、JinらのFig. 3(b)–(d)、OP-RAGのTable 1を採用候補として詳述しています。LaRA Fig. 6は位置別結果の条件説明にとどめ、Comparison課題の根拠とは区別しました。
+
+Self-Routeでは、Table 1の同じモデル行で性能差とtoken比を対応づけています。たとえばGeminiはLC 49.70からSelf-Route 46.41（−3.29ポイント）、token比38.39%です。一方、本文と表で性能差・answerable率などに不一致が残るため、どちらかを誤植とは推測せず、制作メモに未解決として記録しました。
+
+該当する原PDFの図表を目視確認し、15枚すべてに問い・説明・要点・図案・次への接続・出典があること、10報すべてを扱っていることを確認しました。

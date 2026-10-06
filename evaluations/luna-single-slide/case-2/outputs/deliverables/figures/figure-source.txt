@@ -1,0 +1,5 @@
+図名：Occupancy Networks 論文 Figure 1（原図）
+ファイル：occupancy-networks-figure-1.png
+出典：Lars Mescheder, Michael Oechsle, Michael Niemeyer, Sebastian Nowozin, and Andreas Geiger. “Occupancy Networks: Learning 3D Reconstruction in Function Space.” CVPR 2019, p. 4460, Fig. 1. DOI: 10.1109/CVPR.2019.00459.
+公式公開PDF：https://openaccess.thecvf.com/content_CVPR_2019/papers/Mescheder_Occupancy_Networks_Learning_3D_Reconstruction_in_Function_Space_CVPR_2019_paper.pdf
+抽出：公式PDFの1ページ目を300 dpiでラスタ化し、Figure 1の4パネルと各ラベルだけを切り出した。パネル、ラベル、図内容は加工していない。スライド側の切り抜きは掲載サイズに合わせて縮小した。
