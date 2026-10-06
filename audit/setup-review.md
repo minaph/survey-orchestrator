@@ -37,3 +37,22 @@ Reviewerは関連25単体テストと人工PDF/PPTXの環境チェックを独�
 文言修正後、親がDevboxから両ZIPを再生成し、Reviewerは各59ファイルが現ソースの選定結果と完全一致することを再確認しました。依存原本の保持、固定コミット、リンク、ZIP整合性の確認と、環境の実動作を根拠に、今回のセットアップ・配布手順についてマージと本番利用を承認しました。親もこの範囲で実装完了と判断しました。
 
 公開に先立つ保全確認では、作業開始時に記録した既存評価・作例・提供PDFの626ファイルをSHA-256で照合し、変更・欠落は0件でした。公開対象から除外した原本や生ログも削除していません。公開の完了は、リポジトリのvisibility、pushしたコミット、公開先からのsubmodule取得を別途確認して判断します。
+
+## 公開後の確認
+
+権限昇格した `gh repo create --public --source ... --push` により、`minaph/japanese-font-rendering` と `minaph/survey-orchestrator` を作成・公開しました。`gh repo view` で両方の `visibility=PUBLIC` と `defaultBranchRef=main` を確認し、`git ls-remote` で公開コミットを照合しました。
+
+| リポジトリ | 公開確認したコミット | 内容 |
+| --- | --- | --- |
+| `minaph/japanese-font-rendering` | `59f6a6e53e42e79a456542955c3a7292017cbd32` | 原本5ファイルの初期コミット |
+| `minaph/survey-orchestrator` | `00c491c` | スキル本体・同梱ビルド・Devbox環境 |
+| `minaph/survey-orchestrator` | `6e569097f24e2031b1c0a18304a921316f3633f4` | 評価成果・監査記録の追加。公開cloneの確認対象 |
+
+公開URLから別ディレクトリへ `git clone --recurse-submodules` を実行し、固定した依存コミットを取得できました。そのcloneから両ZIPをビルドし、Devbox環境で作成したレビュー済みZIPとバイト単位で一致することをSHA-256で確認しました。
+
+| ZIP | SHA-256 |
+| --- | --- |
+| `survey-orchestrator.zip` | `404c000e091303c69c4328954495ccaaf67ceb35bac3a16a31ffd6398dce5693` |
+| `survey-orchestrator-flat.zip` | `a5d029a1c811d71e40314b3c81f928a45b4ff3402a78e5e8d993c5ba56610572` |
+
+この公開確認記録を最後の文書コミットとして追加します。実行用ファイルと依存コミットには変更を加えないため、確認したZIPの内容も維持されます。両publicリポジトリの存在、公開コミットの取得、submoduleの再現、配布ビルドの一致を根拠に、今回の公開作業を完了と判断しました。
