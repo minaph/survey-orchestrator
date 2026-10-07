@@ -1,0 +1,66 @@
+### Result
+{"generatedAt":"2026-10-07T00:38:14.821Z","url":"http://127.0.0.1:8767/assets/survey-slide-templates.html","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36","viewport":{"width":1440,"height":1000},"screen":[{"id":"S07","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p074-srt-method.png","complete":true,"naturalWidth":1110,"naturalHeight":510,"loaded":true},{"source":"miru-reference-excerpts/p074-srt-results.png","complete":true,"naturalWidth":1137,"naturalHeight":525,"loaded":true}]},{"id":"S08","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p024-deepsdf-comparison.png","complete":true,"naturalWidth":1236,"naturalHeight":639,"loaded":true},{"source":"miru-reference-excerpts/p025-deepsdf-interpolation.png","complete":true,"naturalWidth":1911,"naturalHeight":711,"loaded":true}]},{"id":"S09","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p051-triangle-splatting.png","complete":true,"naturalWidth":1156,"naturalHeight":426,"loaded":true},{"source":"miru-reference-excerpts/p051-mesh-sharing.png","complete":true,"naturalWidth":975,"naturalHeight":404,"loaded":true}]},{"id":"S10","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p040-hash-encoding.png","complete":true,"naturalWidth":1642,"naturalHeight":639,"loaded":true},{"source":"miru-reference-excerpts/p050-surface-binding.png","complete":true,"naturalWidth":332,"naturalHeight":406,"loaded":true}]},{"id":"S11","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p013-compute-loss.png","complete":true,"naturalWidth":478,"naturalHeight":460,"loaded":true},{"source":"miru-reference-excerpts/p013-data-loss.png","complete":true,"naturalWidth":506,"naturalHeight":464,"loaded":true}]},{"id":"S12","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p054-training-test.png","complete":true,"naturalWidth":1698,"naturalHeight":441,"loaded":true},{"source":"miru-reference-excerpts/p054-ambiguity.png","complete":true,"naturalWidth":507,"naturalHeight":450,"loaded":true}]},{"id":"S14","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p104-gen3r.png","complete":true,"naturalWidth":1197,"naturalHeight":405,"loaded":true},{"source":"miru-reference-excerpts/p104-cupid.png","complete":true,"naturalWidth":1086,"naturalHeight":405,"loaded":true}]},{"id":"S15","stage":{"width":1180,"height":663.75},"overflow":[],"images":[{"source":"miru-reference-excerpts/p093-vggt-synthetic-probe.png","complete":true,"naturalWidth":454,"naturalHeight":302,"loaded":true},{"source":"miru-reference-excerpts/p104-gen3r.png","complete":true,"naturalWidth":1197,"naturalHeight":405,"loaded":true}]},{"id":"S01","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S02","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S03","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S04","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S05","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S06","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S13","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]},{"id":"S16","stage":{"width":1180,"height":663.75},"overflow":[],"images":[]}],"mobile":{"viewport":390,"documentWidth":390,"bodyWidth":390,"overflow":false},"print":[{"id":"S07","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p074-srt-method.png","complete":true,"naturalWidth":1110,"naturalHeight":510,"loaded":true},{"source":"miru-reference-excerpts/p074-srt-results.png","complete":true,"naturalWidth":1137,"naturalHeight":525,"loaded":true}]},{"id":"S08","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p024-deepsdf-comparison.png","complete":true,"naturalWidth":1236,"naturalHeight":639,"loaded":true},{"source":"miru-reference-excerpts/p025-deepsdf-interpolation.png","complete":true,"naturalWidth":1911,"naturalHeight":711,"loaded":true}]},{"id":"S09","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p051-triangle-splatting.png","complete":true,"naturalWidth":1156,"naturalHeight":426,"loaded":true},{"source":"miru-reference-excerpts/p051-mesh-sharing.png","complete":true,"naturalWidth":975,"naturalHeight":404,"loaded":true}]},{"id":"S10","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p040-hash-encoding.png","complete":true,"naturalWidth":1642,"naturalHeight":639,"loaded":true},{"source":"miru-reference-excerpts/p050-surface-binding.png","complete":true,"naturalWidth":332,"naturalHeight":406,"loaded":true}]},{"id":"S11","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p013-compute-loss.png","complete":true,"naturalWidth":478,"naturalHeight":460,"loaded":true},{"source":"miru-reference-excerpts/p013-data-loss.png","complete":true,"naturalWidth":506,"naturalHeight":464,"loaded":true}]},{"id":"S12","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p054-training-test.png","complete":true,"naturalWidth":1698,"naturalHeight":441,"loaded":true},{"source":"miru-reference-excerpts/p054-ambiguity.png","complete":true,"naturalWidth":507,"naturalHeight":450,"loaded":true}]},{"id":"S14","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p104-gen3r.png","complete":true,"naturalWidth":1197,"naturalHeight":405,"loaded":true},{"source":"miru-reference-excerpts/p104-cupid.png","complete":true,"naturalWidth":1086,"naturalHeight":405,"loaded":true}]},{"id":"S15","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[{"source":"miru-reference-excerpts/p093-vggt-synthetic-probe.png","complete":true,"naturalWidth":454,"naturalHeight":302,"loaded":true},{"source":"miru-reference-excerpts/p104-gen3r.png","complete":true,"naturalWidth":1197,"naturalHeight":405,"loaded":true}]},{"id":"S01","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S02","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S03","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S04","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S05","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S06","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S13","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]},{"id":"S16","stage":{"width":1209.4375,"height":680.3125},"overflow":[],"images":[]}]}
+### Ran Playwright code
+```js
+await (async page => {
+  const root = '/Users/minaph/Projects/survey-orchestrator/audit/template-copyedit-01';
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.emulateMedia({ media: 'screen' });
+  await page.goto('http://127.0.0.1:8767/assets/survey-slide-templates.html');
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForFunction(() => [...document.images].every(image => image.complete));
+  const inspect = () => [...document.querySelectorAll('.case')].map(item => {
+    const stage = item.querySelector('.stage');
+    const box = stage.getBoundingClientRect();
+    const overflow = [...stage.querySelectorAll('*')].flatMap(element => {
+      const bounds = element.getBoundingClientRect();
+      if (!bounds.width || !bounds.height) return [];
+      const excess = {
+        left: box.left - bounds.left,
+        right: bounds.right - box.right,
+        bottom: bounds.bottom - box.bottom,
+      };
+      if (Object.values(excess).every(value => value <= 1)) return [];
+      return [{ tag: element.tagName, class: element.className, text: element.textContent.slice(0, 100), excess }];
+    });
+    return {
+      id: item.id,
+      stage: { width: box.width, height: box.height },
+      overflow,
+      images: [...stage.querySelectorAll('img')].map(image => ({
+        source: image.getAttribute('src'), complete: image.complete,
+        naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+        loaded: image.complete && image.naturalWidth > 0,
+      })),
+    };
+  });
+  const screen = await page.evaluate(inspect);
+  for (const item of screen.filter(item => ['S01','S02','S03','S06','S13','S16'].includes(item.id))) {
+    await page.locator(`#${item.id} .stage`).screenshot({ path: `${root}/screen/${item.id}.png` });
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => document.fonts.ready);
+  const mobile = await page.evaluate(() => ({
+    viewport: innerWidth,
+    documentWidth: document.documentElement.scrollWidth,
+    bodyWidth: document.body.scrollWidth,
+    overflow: document.documentElement.scrollWidth > innerWidth,
+  }));
+  await page.screenshot({ path: `${root}/mobile-390.png` });
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.emulateMedia({ media: 'print' });
+  await page.evaluate(() => document.fonts.ready);
+  const print = await page.evaluate(inspect);
+  for (const id of ['S01','S02','S03','S06','S13','S16']) { await page.locator(`#${id} .stage`).screenshot({ path: `${root}/print/${id}.png` }); }
+  await page.pdf({ path: `${root}/survey-slide-templates.pdf`, preferCSSPageSize: true, printBackground: true });
+  await page.emulateMedia({ media: 'screen' });
+  return {
+    generatedAt: new Date().toISOString(),
+    url: page.url(),
+    browser: await page.evaluate(() => navigator.userAgent),
+    viewport: { width: 1440, height: 1000 },
+    screen, mobile, print,
+  };
+}
+)(page);
+```
