@@ -18,14 +18,14 @@
 
 | 意味上のまとまり | 原本の主な記載位置 | 定義・説明を置く文書 | 残す区別 |
 | --- | --- | --- | --- |
-| 情報源・研究・証拠・主張 | `SKILL.md` の最小スキーマ、`evidence-model.md`、`rrm.md` | [証拠モデル](references/evidence-model.md) | 報告数と研究数、論理形式と主張責任、原資料の結果と調査者の解釈 |
-| RRMの観点と解釈の条件 | `SKILL.md` のRRM節・制御規則、`rrm.md`、方法・管理文書 | [RRM](references/rrm.md) | 必要な関係を復元できることと、6項目を一律に埋めることの違い |
-| G4-Pの適用と引き渡し | `SKILL.md:252`、`storyline-plot.md:121`、`review-rubric.md:64` | [論旨構成](references/storyline-plot.md) | G4-Pの `go` とG5/G6の正式な合格の違い |
-| レビュー対象と判定 | `presentation-build-contract.md:122`、`review-rubric.md:251`、`storyline-plot.md:351` | [レビュー基準](references/review-rubric.md) | G4-Pの全計画スライド確認とG6の通常行抽出、意味判断と機械検査 |
-| 図の候補走査と取得 | `figure-extraction.md`、図契約・制作文書 | [原図の取得](references/figure-extraction.md) | 候補なし、未アクセス、取得したが採用しない場合 |
-| 再構成の可否と原資料との対応 | `reconstruction-review.md`、図契約・制作・レビュー文書 | [再構成レビュー](references/reconstruction-review.md) | 文献紹介と調査独自の統合、原図・再構成・独自図の役割 |
-| 図の機械契約と制作状態 | `SKILL.md` の図スキーマ、図取得・図契約・制作文書 | [図の契約](references/evidence-visual-contract.md)・[制作契約](references/presentation-build-contract.md) | 機械的な整合、意味の妥当性、忠実性、表示確認の状態 |
-| 観察と解釈、個別事例と再利用規則 | 参考資料分析・MIRUプロファイル・表示確認・独立検証 | [参考資料の分析](references/reference-analysis.md)・各専門文書 | 測定値と採用判断、特定資料の値と普遍的な規則 |
+| 情報源・研究・証拠・主張 | `SKILL.md` の最小スキーマ、`evidence-model.md`、`rrm.md` | [証拠モデル](references/research/evidence-model.md) | 報告数と研究数、論理形式と主張責任、原資料の結果と調査者の解釈 |
+| RRMの観点と解釈の条件 | `SKILL.md` のRRM節・制御規則、`rrm.md`、方法・管理文書 | [RRM](references/research/rrm.md) | 必要な関係を復元できることと、6項目を一律に埋めることの違い |
+| G4-Pの適用と引き渡し | `SKILL.md:252`、`storyline-plot.md:121`、`review-rubric.md:64` | [論旨構成](references/presentation/storyline-plot.md) | G4-Pの `go` とG5/G6の正式な合格の違い |
+| レビュー対象と判定 | `presentation-build-contract.md:122`、`review-rubric.md:251`、`storyline-plot.md:351` | [レビュー基準](references/workflow/review-rubric.md) | G4-Pの全計画スライド確認とG6の通常行抽出、意味判断と機械検査 |
+| 図の候補走査と取得 | `figure-extraction.md`、図契約・制作文書 | [原図の取得](references/production/figure-extraction.md) | 候補なし、未アクセス、取得したが採用しない場合 |
+| 再構成の可否と原資料との対応 | `reconstruction-review.md`、図契約・制作・レビュー文書 | [再構成レビュー](references/production/reconstruction-review.md) | 文献紹介と調査独自の統合、原図・再構成・独自図の役割 |
+| 図の機械契約と制作状態 | `SKILL.md` の図スキーマ、図取得・図契約・制作文書 | [図の契約](references/production/evidence-visual-contract.md)・[制作契約](references/production/presentation-build-contract.md) | 機械的な整合、意味の妥当性、忠実性、表示確認の状態 |
+| 観察と解釈、個別事例と再利用規則 | 参考資料分析・MIRUプロファイル・表示確認・独立検証 | [参考資料の分析](references/presentation/reference-analysis.md)・各専門文書 | 測定値と採用判断、特定資料の値と普遍的な規則 |
 
 上表の行番号は編集前の原本に対するものです。編集後の移動先はリンク先を参照します。
 
@@ -102,7 +102,7 @@
 
 ## デザイン分析とテンプレートの増補
 
-`cross-media-design-decision-support` の分析手順と資料登録簿を読み、発表・配布の目的に沿って [デザイン分析](references/survey-design-analysis.md)、[資料対応表](references/design-resource-map.md)、[16種類のテンプレート](references/survey-slide-templates.md)、[HTML作例集](assets/survey-slide-templates.html) を追加しました。
+`cross-media-design-decision-support` の分析手順と資料登録簿を読み、発表・配布の目的に沿って [デザイン分析](references/presentation/survey-design-analysis.md)、[資料対応表](references/presentation/design-resource-map.md)、[16種類のテンプレート](references/presentation/survey-slide-templates.md)、[HTML作例集](assets/survey-slide-templates.html) を追加しました。
 
 既存文書が担う根拠の忠実性・図の役割・検査に対し、読者と媒体、最初に見るもの、主根拠と補足の配置、追加・拡大・図表化・余白維持の比較が十分に具体化されていない点を補っています。新しい必須台帳、属性、公開ゲートは追加していません。
 
@@ -153,7 +153,7 @@ HTMLの印刷CSSから16ページのPDFを作り、全ページを画像へ変�
 
 第6回Reviewerは修正内容と関連14テストを独立確認し、コード部分のマージ・運用を承認しました。親も全66テストの成功を確認しています。文書上の簡素化と、追加要件に応じた包含形式の実装は、別の変更として記録します。
 
-利用者から文言の情報不足を指摘されたため、`evidence-based-writing`を用いて主見本8型を再執筆しました。一般的な注意を中心にする構成から、入力・処理・出力、図に現れる差、比較を成り立たせる条件、結果の意味を説明する構成へ改めました。必要な反証は保持しています。[研究紹介の執筆](references/research-slide-writing.md)に方法と具体的な修正前後の例を追加し、新たな必須フィールドは設けていません。
+利用者から文言の情報不足を指摘されたため、`evidence-based-writing`を用いて主見本8型を再執筆しました。一般的な注意を中心にする構成から、入力・処理・出力、図に現れる差、比較を成り立たせる条件、結果の意味を説明する構成へ改めました。必要な反証は保持しています。[研究紹介の執筆](references/writing/research-slide-writing.md)に方法と具体的な修正前後の例を追加し、新たな必須フィールドは設けていません。
 
 Reviewerは提供PDFとの対応と文言の依頼適合を確認し、内容に重大な指摘はありませんでした。ただし、親とReviewerの再描画確認でS07・S08・S12・S14の下端に見切れが発生しています。要点や直接出所が欠けるため、この指摘を採用して文言担当へ差し戻しました。ギャラリーの承認は、表示修正と再確認まで保留です。この段階では原論文との独立照合を実施したとは扱いません。
 
@@ -167,7 +167,7 @@ Reviewerは提供PDFとの対応と文言の依頼適合を確認し、内容に
 
 第6回の表示P2を全て採用し、担当者が重複説明を整理しました。図寸法・CSS・数値・実験条件は維持しています。親の再描画では全16型で境界超過がなく、16使用画像が読み込まれ、幅390pxの表示で横方向のはみ出しがありませんでした。
 
-その後の環境クラッシュで一時成果が消失したため、ソースから再生成し、[表示検証の保存先](evaluations/gallery/)に画面16枚・印刷16枚・16ページPDFと検査結果を保持しました。新しい独立Reviewerが画面・印刷の全32画像を目視し、前回4型の要点・出典の見切れ解消と、新たな欠落・重なり・字形不良がないことを確認しました。対象HTMLのSHA-256も検査結果と一致しています。
+その後の環境クラッシュで一時成果が消失したため、ソースから再生成し、[表示検証の保存先](evaluations/gallery)に画面16枚・印刷16枚・16ページPDFと検査結果を保持しました。新しい独立Reviewerが画面・印刷の全32画像を目視し、前回4型の要点・出典の見切れ解消と、新たな欠落・重なり・字形不良がないことを確認しました。対象HTMLのSHA-256も検査結果と一致しています。
 
 この確認により、テンプレートの文言・表示、新しい委任規則は、参考例と制作手順としてのマージ・運用を承認されました。原論文との独立照合、実制作試験の成功、読者理解の改善まで含む承認ではありません。`figure-extraction.md`の最終採用責任については、監督者の公開判断と両立するものの、図ごとの事前承認とも読める非阻害の曖昧さが指摘されています。
 
@@ -205,7 +205,7 @@ Reviewerは提供PDFとの対応と文言の依頼適合を確認し、内容に
 
 ### 全3件終了後のスキル改訂
 
-スキル改訂は全員の終了承認後に行いました。`SKILL.md`と`references/storyline-plot.md`の既存説明を中心に、問いを変え得る研究内比較への戻り、中心図と観察の確定、原典不一致と調査側再計算の区別、訂正の現行記述への反映を明確にしました。特定論文・図番号・枚数を汎用規則へ移さず、新schema・必須欄・独立の品質門は追加していません。変更理由と採用しなかった過剰要求は[フィードバック記録](evaluations/luna-plot-study/skill-feedback.md)にまとめています。
+スキル改訂は全員の終了承認後に行いました。`SKILL.md`と`references/presentation/storyline-plot.md`の既存説明を中心に、問いを変え得る研究内比較への戻り、中心図と観察の確定、原典不一致と調査側再計算の区別、訂正の現行記述への反映を明確にしました。特定論文・図番号・枚数を汎用規則へ移さず、新schema・必須欄・独立の品質門は追加していません。変更理由と採用しなかった過剰要求は[フィードバック記録](evaluations/luna-plot-study/skill-feedback.md)にまとめています。
 
 改訂中に、Run 1・3のSelf-Route紹介ページの自作説明フローが既存の再構成契約に適合しないことが判明しました。独立Reviewerへ追加確認し、現案のままG5で実装できない残件として明記しました。構成・論証の評価完了と制作許可の全面承認を分け、過去のレビューにも追記しました。評価を通すための契約緩和は行っていません。
 
@@ -215,10 +215,10 @@ Reviewerは提供PDFとの対応と文言の依頼適合を確認し、内容に
 
 ## 配布ビルドと今後の評価環境
 
-追加依頼に基づき、参照プロジェクト `grade-informed-etd-decision-support` の同梱ビルドを参考に、実行用文書・図版・スクリプト・環境定義と依存スキルをまとめるZIPビルドを整備しました。本体は明示的な同梱一覧で選び、依存スキルはGit submoduleの固定コミットを検証します。評価コーパスや実行ログ、仮想環境は配布物から除外します。ビルド方法と同梱範囲は[配布手順](references/packaging.md)にまとめています。
+追加依頼に基づき、参照プロジェクト `grade-informed-etd-decision-support` の同梱ビルドを参考に、実行用文書・図版・スクリプト・環境定義と依存スキルをまとめるZIPビルドを整備しました。本体は明示的な同梱一覧で選び、依存スキルはGit submoduleの固定コミットを検証します。評価コーパスや実行ログ、仮想環境は配布物から除外します。ビルド方法と同梱範囲は[配布手順](docs/packaging.md)にまとめています。
 
 ユーザーが配置した `japanese-font-rendering` の原本をGitリポジトリとして初期化し、本プロジェクトの `skills/japanese-font-rendering` にsubmoduleとして登録しました。配布ZIPではそのスキルをガイドとして同梱し、本体から参照できるようにします。依存スキルの手順・記録先を保持し、フォントや変換器そのものは同梱しません。
 
-本プロジェクトでDevboxを初期化し、PythonとPyMuPDF等を管理する環境を追加しました。[評価環境手順](references/evaluation-environment.md)に従い、以降の評価ではCLIと検査プロセスをこの環境内で起動します。今回はセットアップと人工的な入力による動作確認のみを対象とし、ユーザーの指定どおりLuna評価・匿名比較・構成評価は再実行しません。過去のCase 1の正式検査未合格、Run 1・3の図案に残る制作上の制約、改訂版の初回品質が未実証であることは維持します。
+本プロジェクトでDevboxを初期化し、PythonとPyMuPDF等を管理する環境を追加しました。[評価環境手順](docs/evaluation-environment.md)に従い、以降の評価ではCLIと検査プロセスをこの環境内で起動します。今回はセットアップと人工的な入力による動作確認のみを対象とし、ユーザーの指定どおりLuna評価・匿名比較・構成評価は再実行しません。過去のCase 1の正式検査未合格、Run 1・3の図案に残る制作上の制約、改訂版の初回品質が未実証であることは維持します。
 
 今回からユーザーの追加依頼に従いコミットを作成し、本体と依存スキルを `minaph` 配下のpublicリポジトリとして公開します。以前の節にある「コミット・マージは行っていません」は、それぞれの作業終了時点の記録です。取得原論文・全文、提供PDF、作業用複製、CLI生ログはローカルで保持し、公開Gitの対象から除外します。今回のビルド・環境整備の検証と独立レビューは[セットアップ完了記録](audit/setup-review.md)に残します。

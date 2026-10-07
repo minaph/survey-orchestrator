@@ -17,3 +17,5 @@ __pycache__/
 /evaluations/**/source_pdfs/
 /evaluations/luna-single-slide/case-2/outputs/build/Mescheder2019CVPR.pdf
 /evaluations/luna-single-slide/case-2/outputs/deliverables/sources/Mescheder2019CVPR.pdf
+
+.playwright-cli/

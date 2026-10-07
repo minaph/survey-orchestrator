@@ -26,20 +26,20 @@ description: 研究者の読解モデルを用い、問いから情報源・研�
 
 | モデル・契約 | 役割 | 定義元 |
 |---|---|---|
-| 根拠モデル | `source/report → work/study → evidence → claim` の単位、同一性、属性、情報状態 | [evidence-model.md](references/evidence-model.md) |
-| 研究者の読解モデル（RRM） | 六つの読解観点、リスクに比例した復元可能性、調査側の解釈の条件 | [rrm.md](references/rrm.md) |
-| ストーリーライン・プロット | G0から育てる問いと回答、`T → B → Bottom → Figure → Next`、G4-Pの記録 | [storyline-plot.md](references/storyline-plot.md) |
-| 原図の採用・抽出 | 候補図の調査、採否、切り抜きと来歴 | [figure-extraction.md](references/figure-extraction.md) |
-| 再構成の許可・比較 | スライドの役割、許される経路、図注、要素対応、原図との比較 | [reconstruction-review.md](references/reconstruction-review.md) |
-| 図の機械契約 | 表・図式・グラフ・原図の共通項目と形式別条件、参照・結合・状態 | [evidence-visual-contract.md](references/evidence-visual-contract.md) |
-| 制作 | プロットからの構築、G4-PDの読者向け設計、制作時の契約 | [presentation-build-contract.md](references/presentation-build-contract.md) |
-| 合否判断・表示確認 | 意味・根拠・物語の合否と、実際の表示の観察 | [review-rubric.md](references/review-rubric.md)、[visual-review.md](references/visual-review.md) |
+| 根拠モデル | `source/report → work/study → evidence → claim` の単位、同一性、属性、情報状態 | [evidence-model.md](references/research/evidence-model.md) |
+| 研究者の読解モデル（RRM） | 六つの読解観点、リスクに比例した復元可能性、調査側の解釈の条件 | [rrm.md](references/research/rrm.md) |
+| ストーリーライン・プロット | G0から育てる問いと回答、`T → B → Bottom → Figure → Next`、G4-Pの記録 | [storyline-plot.md](references/presentation/storyline-plot.md) |
+| 原図の採用・抽出 | 候補図の調査、採否、切り抜きと来歴 | [figure-extraction.md](references/production/figure-extraction.md) |
+| 再構成の許可・比較 | スライドの役割、許される経路、図注、要素対応、原図との比較 | [reconstruction-review.md](references/production/reconstruction-review.md) |
+| 図の機械契約 | 表・図式・グラフ・原図の共通項目と形式別条件、参照・結合・状態 | [evidence-visual-contract.md](references/production/evidence-visual-contract.md) |
+| 制作 | プロットからの構築、G4-PDの読者向け設計、制作時の契約 | [presentation-build-contract.md](references/production/presentation-build-contract.md) |
+| 合否判断・表示確認 | 意味・根拠・物語の合否と、実際の表示の観察 | [review-rubric.md](references/workflow/review-rubric.md)、[visual-review.md](references/production/visual-review.md) |
 
 RRMの関係は既存の根拠・主張・プロットから復元します。中心的な主張の意味や強さを変える関係を確認し、六つの必須フィールドや固定のページ順を追加しません。解釈が必要なら、情報源の結果と調査側の橋渡しを分け、境界・反証・確実性を示します。`claim_type` と `claim_role` の区別、条件付きの数値属性は根拠モデルに従います。
 
 発表資料ではG0に簡潔なプロットを作り、検索、候補図の選択、統合、制作を通じて改訂します。G5前にプロットからマニフェストを導ける程度まで具体化してください。図の監査資料には原図の切り抜き・来歴、候補なしの場合の調査記録を保持します。再構成を使う場合も、対応する派生図と比較記録を加え、元の資料を置き換えません。
 
-「一枚一役割」は図や論文を一件へ制限する意味ではありません。方法と結果、複数研究の比較、反証と留保など、同じ問いへの回答に寄与する複数図を必要に応じて同じページへ配置します。原図の並置と調査独自の再構成を区別し、図ごとの契約とページ対応、出典・研究・帰属を辿れるようにします。概要や橋渡しと、研究詳説や横断比較では必要な情報量が異なります。根拠を担うページを、タイトルと一言、大きな余白だけで完成とせず、研究の条件・方法・実図・結果・比較評価・限界を根拠ブロック内で説明できるか確認してください。配分とレビューの基準は[プロット](references/storyline-plot.md)と[デザイン分析](references/survey-design-analysis.md)に従い、全情報を各ページの新しい必須欄にはしません。
+「一枚一役割」は図や論文を一件へ制限する意味ではありません。方法と結果、複数研究の比較、反証と留保など、同じ問いへの回答に寄与する複数図を必要に応じて同じページへ配置します。原図の並置と調査独自の再構成を区別し、図ごとの契約とページ対応、出典・研究・帰属を辿れるようにします。概要や橋渡しと、研究詳説や横断比較では必要な情報量が異なります。根拠を担うページを、タイトルと一言、大きな余白だけで完成とせず、研究の条件・方法・実図・結果・比較評価・限界を根拠ブロック内で説明できるか確認してください。配分とレビューの基準は[プロット](references/presentation/storyline-plot.md)と[デザイン分析](references/presentation/survey-design-analysis.md)に従い、全情報を各ページの新しい必須欄にはしません。
 
 ## 工程と状態責任
 
@@ -47,16 +47,16 @@ RRMの関係は既存の根拠・主張・プロットから復元します。�
 
 | 工程 | 担当する判断・成果 | 参照先と条件 |
 |---|---|---|
-| G0：依頼とタスク設定 | 「終了時に、［読者］が［中心的な理解］を根拠として［できること］を得る」を記述します。主問いと下位の問いを定め、読者・言語・範囲・日付・網羅性・形式・参照資料を設定します。結論は仮説として扱い、低詳細のプロットに仮の回答、不明点、次の調査判断を置きます。 | [storyline-plot.md](references/storyline-plot.md)。回答を変え得るRRMの関係を先に特定します。 |
-| G1：参照成果物の分析 | 代表的なページ・節を確認し、物語、出典配置、図の表現、書体、案内、限界を観察します。測定した値と設計上の解釈を分け、転用する規則を選びます。 | 参照成果物がある場合に [reference-analysis.md](references/reference-analysis.md)。必要なら参照側のプロットを別に作り、その分野の主張を調査側へ混ぜません。 |
-| G2：計画と根拠の設計 | レビュー方法、網羅性の主張、評価方法、統合方法を分けて定めます。概念・近接概念、検索先、期間、言語、採否、重複報告、引用追跡、公表状態を定め、既知の文献で試します。中核研究の方法・結果・比較・限界と必要な図表を説明できるよう、プロットの不足を検索・抽出へ反映します。 | [survey-methods.md](references/survey-methods.md)、[evidence-model.md](references/evidence-model.md)。必要な分野別モジュールを読み、未確認の結果でプロットを埋めません。 |
-| G3：調査と範囲を定めた委任 | 管理者が問い、計画、情報源の採用、定義、矛盾の処理、統合、物語、公開判断を担います。担当者は指定された範囲の、出典を伴う結果を返します。 | 委任・受け渡しが必要な場合に [management-workflow.md](references/management-workflow.md)。作業の複雑さに合わせてスクリプト、一括処理、管理者、担当者を選びます。 |
-| G4：情報源・研究・根拠・主張の照合 | 報告を研究・論証へ、根拠を主張へ結び、版や重複報告による研究件数の水増しを防ぎます。支持・反証・境界・確実性と、結果と解釈の区別を確認します。 | [evidence-model.md](references/evidence-model.md)、[rrm.md](references/rrm.md)。中心的な主張の重要な関係を復元できるようにします。 |
-| G4-V：設計前の原図の取得・採否 | アクセス可能で主要な主張を支える情報源の図、表、方法図、グラフを確認し、採用候補の切り抜きと来歴、候補が示す関係を保持します。 | 発表資料で [figure-extraction.md](references/figure-extraction.md)、[evidence-visual-contract.md](references/evidence-visual-contract.md)、[reconstruction-review.md](references/reconstruction-review.md)。読者向けの最終解釈やページ順は決定しません。 |
-| G4-P：制作前の形成的なプロットレビュー | 読者の理解・判断、問い、統合案、根拠の境界、実行可能な範囲を示し、物語・文献・反証・検索の十分さ・主張と図の関係を確認します。中心結論を支える研究内比較と図の観察を詳細プロットで確定し、条件に基づく評価を局所の回答へつなぎます。 | 主張を担う発表資料で、プロットが制作に使える段階または主要な構成・主張・図の経路が変わったときに [storyline-plot.md](references/storyline-plot.md)、[review-rubric.md](references/review-rubric.md)。表紙だけの資料や図を用いないレビューには適用しません。 |
-| G4-P内のG4-PD：読者向け設計の記録 | `reader_visual_job`、`reader_layout_route`、境界の見え方、意味を変える項目、理解の進展を必要に応じて記録します。図の来歴や解釈の本文を複製しません。 | [presentation-build-contract.md](references/presentation-build-contract.md)。任意のVDDR記録で、独立した状態ではありません。試作は範囲を定めた表示確認です。 |
-| G5：統合と読者向け成果物の制作 | 主張、概念、機序、比較、境界、矛盾、不足を軸に統合します。現行プロット、G4-Vの採否、該当するG4-Pの判断・修復、G4-PDを受け取り、制作します。 | 発表資料では [presentation-build-contract.md](references/presentation-build-contract.md)。再構成には [reconstruction-review.md](references/reconstruction-review.md)。情報源を順に要約するだけの構成にしません。 |
-| G6：検証と受け渡し | 構造化された事前検査、実際の成果物の検査、意味・表示・情報源への忠実性のレビューを分けて実施します。中心的・数値的・境界的・高リスクの項目と忠実性を要する図、事前に定めた通常項目の標本を確認します。 | [review-rubric.md](references/review-rubric.md)、[visual-review.md](references/visual-review.md)。必要な独立検証には [verification.md](references/verification.md)。読者向け成果物と監査資料を分けて渡します。 |
+| G0：依頼とタスク設定 | 「終了時に、［読者］が［中心的な理解］を根拠として［できること］を得る」を記述します。主問いと下位の問いを定め、読者・言語・範囲・日付・網羅性・形式・参照資料を設定します。結論は仮説として扱い、低詳細のプロットに仮の回答、不明点、次の調査判断を置きます。 | [storyline-plot.md](references/presentation/storyline-plot.md)。回答を変え得るRRMの関係を先に特定します。 |
+| G1：参照成果物の分析 | 代表的なページ・節を確認し、物語、出典配置、図の表現、書体、案内、限界を観察します。測定した値と設計上の解釈を分け、転用する規則を選びます。 | 参照成果物がある場合に [reference-analysis.md](references/presentation/reference-analysis.md)。必要なら参照側のプロットを別に作り、その分野の主張を調査側へ混ぜません。 |
+| G2：計画と根拠の設計 | レビュー方法、網羅性の主張、評価方法、統合方法を分けて定めます。概念・近接概念、検索先、期間、言語、採否、重複報告、引用追跡、公表状態を定め、既知の文献で試します。中核研究の方法・結果・比較・限界と必要な図表を説明できるよう、プロットの不足を検索・抽出へ反映します。 | [survey-methods.md](references/research/survey-methods.md)、[evidence-model.md](references/research/evidence-model.md)。必要な分野別モジュールを読み、未確認の結果でプロットを埋めません。 |
+| G3：調査と範囲を定めた委任 | 管理者が問い、計画、情報源の採用、定義、矛盾の処理、統合、物語、公開判断を担います。担当者は指定された範囲の、出典を伴う結果を返します。 | 委任・受け渡しが必要な場合に [management-workflow.md](references/workflow/management-workflow.md)。作業の複雑さに合わせてスクリプト、一括処理、管理者、担当者を選びます。 |
+| G4：情報源・研究・根拠・主張の照合 | 報告を研究・論証へ、根拠を主張へ結び、版や重複報告による研究件数の水増しを防ぎます。支持・反証・境界・確実性と、結果と解釈の区別を確認します。 | [evidence-model.md](references/research/evidence-model.md)、[rrm.md](references/research/rrm.md)。中心的な主張の重要な関係を復元できるようにします。 |
+| G4-V：設計前の原図の取得・採否 | アクセス可能で主要な主張を支える情報源の図、表、方法図、グラフを確認し、採用候補の切り抜きと来歴、候補が示す関係を保持します。 | 発表資料で [figure-extraction.md](references/production/figure-extraction.md)、[evidence-visual-contract.md](references/production/evidence-visual-contract.md)、[reconstruction-review.md](references/production/reconstruction-review.md)。読者向けの最終解釈やページ順は決定しません。 |
+| G4-P：制作前の形成的なプロットレビュー | 読者の理解・判断、問い、統合案、根拠の境界、実行可能な範囲を示し、物語・文献・反証・検索の十分さ・主張と図の関係を確認します。中心結論を支える研究内比較と図の観察を詳細プロットで確定し、条件に基づく評価を局所の回答へつなぎます。 | 主張を担う発表資料で、プロットが制作に使える段階または主要な構成・主張・図の経路が変わったときに [storyline-plot.md](references/presentation/storyline-plot.md)、[review-rubric.md](references/workflow/review-rubric.md)。表紙だけの資料や図を用いないレビューには適用しません。 |
+| G4-P内のG4-PD：読者向け設計の記録 | `reader_visual_job`、`reader_layout_route`、境界の見え方、意味を変える項目、理解の進展を必要に応じて記録します。図の来歴や解釈の本文を複製しません。 | [presentation-build-contract.md](references/production/presentation-build-contract.md)。任意のVDDR記録で、独立した状態ではありません。試作は範囲を定めた表示確認です。 |
+| G5：統合と読者向け成果物の制作 | 主張、概念、機序、比較、境界、矛盾、不足を軸に統合します。現行プロット、G4-Vの採否、該当するG4-Pの判断・修復、G4-PDを受け取り、制作します。 | 発表資料では [presentation-build-contract.md](references/production/presentation-build-contract.md)。再構成には [reconstruction-review.md](references/production/reconstruction-review.md)。情報源を順に要約するだけの構成にしません。 |
+| G6：検証と受け渡し | 構造化された事前検査、実際の成果物の検査、意味・表示・情報源への忠実性のレビューを分けて実施します。中心的・数値的・境界的・高リスクの項目と忠実性を要する図、事前に定めた通常項目の標本を確認します。 | [review-rubric.md](references/workflow/review-rubric.md)、[visual-review.md](references/production/visual-review.md)。必要な独立検証には [verification.md](references/workflow/verification.md)。読者向け成果物と監査資料を分けて渡します。 |
 
 ### 発表資料の状態と例外
 
@@ -78,13 +78,17 @@ G5の決定論的な制作・品質状態と、G6の独立した意味・表示�
 
 ## 追加資料を読む条件
 
-- レビュー方法・検索・評価・統合を設計する場合は [survey-methods.md](references/survey-methods.md)、委任する場合は [management-workflow.md](references/management-workflow.md) を読みます。
-- 分野固有の概念混同、解釈の誤り、検索漏れ、過大な主張が起き得る場合に分野別モジュールを読みます。HCIにおける説明・帰属・AIの主体性には [hci-stance-attribution.md](references/hci-stance-attribution.md) を使います。変わりやすい文献候補はタスク時に再確認します。
+- レビュー方法・検索・評価・統合を設計する場合は [survey-methods.md](references/research/survey-methods.md)、委任する場合は [management-workflow.md](references/workflow/management-workflow.md) を読みます。
+- 分野固有の概念混同、解釈の誤り、検索漏れ、過大な主張が起き得る場合に分野別モジュールを読みます。HCIにおける説明・帰属・AIの主体性には [hci-stance-attribution.md](references/research/hci-stance-attribution.md) を使います。変わりやすい文献候補はタスク時に再確認します。
 - 発表資料ではプロットと合否基準を読み、原図・再構成を検討する場合は採用・抽出と比較の契約を読みます。実際の表示確認には表示レビューを使います。
-- 発表資料のG4-P・G4-PD・G5で設計を検討する場合は [survey-design-analysis.md](references/survey-design-analysis.md)、スライドの型を選ぶ場合は [survey-slide-templates.md](references/survey-slide-templates.md)、外部の設計資料を採用する場合は [design-resource-map.md](references/design-resource-map.md) を参照します。
-- 研究紹介の要約、方法・機構の説明、比較評価を詳細プロットへ書く段階から [research-slide-writing.md](references/research-slide-writing.md) を参照します。中心命題と根拠の関係を具体化し、主張の範囲を保って重複を整理します。
-- 参照資料のテンポ、案内、図の表現、出典配置を意図的に採用する場合だけ、[miru-style-profile.md](references/miru-style-profile.md) などのプロファイルを読みます。測定値はそのプロファイルの既定値で、普遍的な合否値ではありません。
+- 発表資料のG4-P・G4-PD・G5で設計を検討する場合は [survey-design-analysis.md](references/presentation/survey-design-analysis.md)、スライドの型を選ぶ場合は [survey-slide-templates.md](references/presentation/survey-slide-templates.md)、外部の設計資料を採用する場合は [design-resource-map.md](references/presentation/design-resource-map.md) を参照します。
+- 研究紹介の要約、方法・機構の説明、比較評価を詳細プロットへ書く段階から [research-slide-writing.md](references/writing/research-slide-writing.md) を参照します。中心命題と根拠の関係を具体化し、主張の範囲を保って重複を整理します。
+- 参照資料のテンポ、案内、図の表現、出典配置を意図的に採用する場合だけ、[miru-style-profile.md](references/presentation/miru-style-profile.md) などのプロファイルを読みます。測定値はそのプロファイルの既定値で、普遍的な合否値ではありません。
 - 日本語・CJKを含むPDF、PPTX、画像、Office、SVG、ブラウザ表示を変換・画像化する場合は、制作前またはG6で固定版の [japanese-font-rendering](skills/japanese-font-rendering/SKILL.md) を読みます。文脈別の手順でフォントの字形範囲とレンダラーからの利用可否を確認し、文字抽出に加えて実際の字形を検証します。対応する手順がない場合は同スキルの範囲を定めた試行を行い、最小の成功手順または未解決結果と失敗した条件を同スキルの文脈ログへ残します。配布版ではこの固定版を同梱ガイドとして読みます。
-- スクリプトやレンダラーの実行環境を準備する場合は [環境手順](references/evaluation-environment.md)、スキルの配布用ZIPを作る場合は [配布手順](references/packaging.md) を読みます。文献調査のために評価コーパスや開発ログを取得する必要はありません。
+- スクリプトやレンダラーの実行環境を準備する場合は [環境手順](docs/evaluation-environment.md)、スキルの配布用ZIPを作る場合は [配布手順](docs/packaging.md) を読みます。文献調査のために評価コーパスや開発ログを取得する必要はありません。
 
-繰り返す不具合は [incident-log.md](references/incident-log.md) の一般化した失敗パターンと照合します。個別ラウンドの履歴を本スキルへ追記せず、必要な定義・手順・検査の改善へ戻してください。
+構成・見出しを決める際は[文書機能と調査の意義](references/writing/document-functions.md)を参照し、発表の少数の中心的知見を、定義・説明・案内・根拠確認のページで支えます。目次や参考文献にも新しい学術的主張を要求しません。
+
+文章の作成・推敲では[同梱のevidence-based-writing](skills/evidence-based-writing/SKILL.md)を読み、[語句単位の推敲](references/writing/modifiers-and-scope.md)を制作前と実表示の確認時に運用します。曖昧な述語や重複した修飾は[表現の事例集](references/writing/expression-alternatives.md)で意図別の候補を検討します。
+
+繰り返す不具合は [incident-log.md](references/workflow/incident-log.md) の一般化した失敗パターンと照合します。個別ラウンドの履歴を本スキルへ追記せず、必要な定義・手順・検査の改善へ戻してください。

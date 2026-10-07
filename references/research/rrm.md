@@ -4,7 +4,9 @@
 
 Researcher Reading Model（RRM）は、情報源を読んで文献調査の主張へつなぐ際に、保持すべき意味の関係を整理するモデルです。読解、根拠抽出、主張、ストーリーライン・プロット、図の選択、読者向け表現に共通の観点を与えます。本書は六つの観点、必要な関係を復元できる条件、調査側の解釈の条件を定義します。
 
-これは本スキルの作業上のモデルです。研究者の認知過程を実証した心理学的法則ではなく、六項目の必須フォーム、得点、独立した工程、章やスライドの順序も定めません。プロットの六つの文献質問は分析の問い、[根拠モデル](evidence-model.md) は対象と関係、[ストーリーライン・プロット](storyline-plot.md) は物語の記録を定め、RRMはそれらにまたがる意味を点検します。
+これは本スキルの作業上のモデルです。研究者の認知過程を実証した心理学的法則ではなく、六項目の必須フォーム、得点、独立した工程、章やスライドの順序も定めません。プロットの六つの文献質問は分析の問い、[根拠モデル](evidence-model.md) は対象と関係、[ストーリーライン・プロット](../presentation/storyline-plot.md) は物語の記録を定め、RRMはそれらにまたがる意味を点検します。
+
+要約、導入・目的、先行研究、手法、結果、分析、考察、結論、参考文献、付録の機能とRRMとの対応は[文書機能](../writing/document-functions.md)に整理しています。意味の読解観点と、発表内の説明・案内の役割を区別し、全ページに新たな外部価値を求めません。
 
 ## 六つの読解観点
 
@@ -51,7 +53,7 @@ Researcher Reading Model（RRM）は、情報源を読んで文献調査の主�
 | `Figure` | 操作・結果・境界の確認 | 図が確認可能にする関係と出典箇所 |
 | `Next` | `synthesis_next` | 次の問い・行動 |
 
-プロットの所有責任、行の修復、`Figure` と既存の保存キー `figure_relation` の対応は [storyline-plot.md](storyline-plot.md) を参照してください。
+プロットの所有責任、行の修復、`Figure` と既存の保存キー `figure_relation` の対応は [storyline-plot.md](../presentation/storyline-plot.md) を参照してください。
 
 ### 根拠・主張・図の記録先
 
@@ -61,11 +63,11 @@ Researcher Reading Model（RRM）は、情報源を読んで文献調査の主�
 
 | 担当範囲 | 確認する関係 | 定義・手順の参照先 |
 |---|---|---|
-| G4-V | 情報源の図がどの関係を示す候補か。来歴と忠実性は確認できるか。 | [figure-extraction.md](figure-extraction.md)、[reconstruction-review.md](reconstruction-review.md) |
-| G4-P | プロット・主張・RRM・候補図が、読者の理解につながるか。 | [storyline-plot.md](storyline-plot.md)、[review-rubric.md](review-rubric.md) |
-| G4-P内のG4-PD | 採用する `reader_visual_job` と `reader_layout_route`、境界の見え方、理解の進展 | [presentation-build-contract.md](presentation-build-contract.md) |
-| G5 | 主張の意味を保って読者向け成果物を制作する | [presentation-build-contract.md](presentation-build-contract.md) |
-| G6 | レンダリングされた成果物で意味を確認できるか | [visual-review.md](visual-review.md)、[review-rubric.md](review-rubric.md) |
+| G4-V | 情報源の図がどの関係を示す候補か。来歴と忠実性は確認できるか。 | [figure-extraction.md](../production/figure-extraction.md)、[reconstruction-review.md](../production/reconstruction-review.md) |
+| G4-P | プロット・主張・RRM・候補図が、読者の理解につながるか。 | [storyline-plot.md](../presentation/storyline-plot.md)、[review-rubric.md](../workflow/review-rubric.md) |
+| G4-P内のG4-PD | 採用する `reader_visual_job` と `reader_layout_route`、境界の見え方、理解の進展 | [presentation-build-contract.md](../production/presentation-build-contract.md) |
+| G5 | 主張の意味を保って読者向け成果物を制作する | [presentation-build-contract.md](../production/presentation-build-contract.md) |
+| G6 | レンダリングされた成果物で意味を確認できるか | [visual-review.md](../production/visual-review.md)、[review-rubric.md](../workflow/review-rubric.md) |
 
 G4-PDはG4-P内の任意記録で、独立した工程や品質門ではありません。図の来歴を再収集したり、解釈・読者向け表現を複製したりする場所にもなりません。
 
@@ -108,7 +110,7 @@ G4-PDはG4-P内の任意記録で、独立した工程や品質門ではあり�
 
 中心的なスライドには主要な認知上の役割を一つ定め、題名と図からその役割が分かるようにします。この役割は一論文・一図の制限ではなく、同じ問いに答える複数研究・複数図を含められます。六観点の表を役割選択の参考にできますが、観点ごとにスライドを作る必要はありません。比較の同時性、説明の不足、可読性を検討して、G4-PDで `reader`（通常）、`dense`（密だが確認可能）、`split`（連携した分割）を選び、図の形式は別に選びます。
 
-レイアウト前に、本文が述べる命題と、図が追加で確認可能にする関係を説明します。図が小さすぎる、切り抜きで条件が失われる、連続するページに新しい関係がない場合は、必要な研究情報を保って配置・拡大・連携する詳細ページを検討し、寄与しない要素を整理します。異なる課題・データ・尺度の結果を並べる場合は、比較可能な部分と条件差を示し、図の見た目だけで優劣を評価しません。具体的な本文・図の除去テストと合否基準は [review-rubric.md](review-rubric.md) を参照してください。
+レイアウト前に、本文が述べる命題と、図が追加で確認可能にする関係を説明します。図が小さすぎる、切り抜きで条件が失われる、連続するページに新しい関係がない場合は、必要な研究情報を保って配置・拡大・連携する詳細ページを検討し、寄与しない要素を整理します。異なる課題・データ・尺度の結果を並べる場合は、比較可能な部分と条件差を示し、図の見た目だけで優劣を評価しません。具体的な本文・図の除去テストと合否基準は [review-rubric.md](../workflow/review-rubric.md) を参照してください。
 
 レビューでは、中心的・高リスクの主張について、対象・操作・結果・境界が復元できるか、結果と解釈が区別できるかを、読者向け成果物から監査資料の順に確認します。オブジェクト数、OCR、類似度、リンクの存在だけでは意味の保持を判定できません。決定論的検査と意味・表示・情報源への忠実性の評価は分けます。
 

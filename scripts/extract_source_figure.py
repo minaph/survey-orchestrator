@@ -505,7 +505,7 @@ def pdf_command(args: argparse.Namespace) -> int:
         raise RuntimeError(
             "pdf mode requires PyMuPDF (fitz); run `devbox run setup` then "
             "`devbox run python scripts/extract_source_figure.py ...`; "
-            "see references/evaluation-environment.md"
+            "see docs/evaluation-environment.md"
         ) from exc
     if not args.output:
         raise RuntimeError("--output is required")

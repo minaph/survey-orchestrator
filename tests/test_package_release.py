@@ -47,6 +47,8 @@ class PackageReleaseTests(unittest.TestCase):
         self.git(self.root, "init", "-q")
         self.git(self.root, "submodule", "add", "-q", str(upstream), package.FONT_SKILL)
         self.write("references/font.md", f"[Font](../{package.FONT_SKILL}/SKILL.md)\n".encode())
+        self.git(self.root, "submodule", "add", "-q", str(upstream), package.WRITING_SKILL)
+        self.write("references/writing.md", f"[Writing](../{package.WRITING_SKILL}/SKILL.md)\n".encode())
         self.output = Path(self.temporary.name) / "release.zip"
 
     def git(self, directory: Path, *arguments: str) -> str:
@@ -70,10 +72,12 @@ class PackageReleaseTests(unittest.TestCase):
         ):
             self.write(unwanted, b"excluded")
         expected = set(package.RUNTIME_FILES) | {
-            "references/guide.md", "references/font.md", "assets/miru-reference-excerpts/sample.png",
+            "references/guide.md", "references/font.md", "references/writing.md", "assets/miru-reference-excerpts/sample.png",
             f"{package.FONT_SKILL}/GUIDE.md", f"{package.FONT_SKILL}/references/contexts.md",
             f"{package.FONT_SKILL}/references/knowledge-log.md", f"{package.FONT_SKILL}/assets/icon.svg",
             f"{package.FONT_SKILL}/provenance.json",
+            f"{package.WRITING_SKILL}/GUIDE.md", f"{package.WRITING_SKILL}/references/contexts.md",
+            f"{package.WRITING_SKILL}/references/knowledge-log.md", f"{package.WRITING_SKILL}/provenance.json",
         }
         for layout in ("folder", "flat"):
             with self.subTest(layout=layout):
@@ -170,6 +174,16 @@ class PackageReleaseTests(unittest.TestCase):
         self.write(f"{package.FONT_SKILL}/references/contexts.md", b"new committed recipe")
         self.git(dependency, "add", ".")
         self.git(dependency, "commit", "-qm", "new font revision")
+        with self.assertRaisesRegex(package.PackageError, "pin mismatch"):
+            package.build_archive(self.root, self.output)
+
+    def test_writing_dependency_has_independent_pin_and_clean_checks(self) -> None:
+        dependency = self.root / package.WRITING_SKILL
+        self.write(f"{package.WRITING_SKILL}/references/contexts.md", b"new writing guidance")
+        with self.assertRaisesRegex(package.PackageError, "submodule is dirty"):
+            package.build_archive(self.root, self.output)
+        self.git(dependency, "add", ".")
+        self.git(dependency, "commit", "-qm", "writing update")
         with self.assertRaisesRegex(package.PackageError, "pin mismatch"):
             package.build_archive(self.root, self.output)
 

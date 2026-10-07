@@ -18,6 +18,7 @@ import zipfile
 ARCHIVE_ROOT = "survey-orchestrator"
 RUNTIME_FILES = (
     "SKILL.md", "agents/openai.yaml", "devbox.json", "devbox.lock", "requirements.txt",
+    "docs/evaluation-environment.md", "docs/packaging.md",
     "scripts/check_deck_quality.py", "scripts/check_evidence_visual_contract.py",
     "scripts/check_review_record.py", "scripts/check_storyline_plot.py",
     "scripts/extract_source_figure.py", "scripts/manifest_visuals.py",
@@ -33,6 +34,8 @@ EXCLUDED_PARTS = {"__pycache__", "cache", "tmp", "evaluations", "corpus", "logs"
 MARKDOWN_LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 FONT_SKILL = "skills/japanese-font-rendering"
 FONT_FILES = ("SKILL.md", "references/contexts.md", "references/knowledge-log.md", "assets/icon.svg")
+WRITING_SKILL = "skills/evidence-based-writing"
+DEPENDENCIES = {FONT_SKILL: FONT_FILES, WRITING_SKILL: ("SKILL.md",)}
 FRONTMATTER = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
 
 
@@ -70,51 +73,51 @@ def _git(root: Path, *args: str) -> str:
     return result.stdout.strip()
 
 
-def _bundle_font_skill(root: Path, files: dict[str, bytes]) -> None:
-    dependency = root / FONT_SKILL
+def _bundle_skill(root: Path, files: dict[str, bytes], skill: str, required: tuple[str, ...]) -> None:
+    dependency = root / skill
     if dependency.is_symlink() or not (dependency / ".git").is_file():
-        raise PackageError(f"font submodule is not initialized: {FONT_SKILL}")
-    entries = _git(root, "ls-files", "--stage", "--", FONT_SKILL).splitlines()
+        raise PackageError(f"dependency submodule is not initialized: {skill}")
+    entries = _git(root, "ls-files", "--stage", "--", skill).splitlines()
     if len(entries) != 1:
-        raise PackageError(f"font dependency is not a pinned submodule: {FONT_SKILL}")
+        raise PackageError(f"dependency is not a pinned submodule: {skill}")
     metadata, path = entries[0].split("\t", 1)
     mode, revision, stage = metadata.split()
-    if mode != "160000" or stage != "0" or path != FONT_SKILL:
-        raise PackageError(f"font dependency is not a pinned submodule: {FONT_SKILL}")
+    if mode != "160000" or stage != "0" or path != skill:
+        raise PackageError(f"dependency is not a pinned submodule: {skill}")
     if Path(_git(dependency, "rev-parse", "--show-toplevel")).resolve() != dependency.resolve():
-        raise PackageError(f"font submodule is not initialized: {FONT_SKILL}")
+        raise PackageError(f"dependency submodule is not initialized: {skill}")
     if _git(dependency, "rev-parse", "HEAD") != revision:
-        raise PackageError(f"font submodule pin mismatch: {FONT_SKILL}")
+        raise PackageError(f"dependency submodule pin mismatch: {skill}")
     if _git(dependency, "status", "--porcelain", "--untracked-files=all"):
-        raise PackageError(f"font submodule is dirty: {FONT_SKILL}")
+        raise PackageError(f"dependency submodule is dirty: {skill}")
     reference_files = {
         path for path in _git(dependency, "ls-files", "-z", "--", "references").split("\0")
         if path and PurePosixPath(path).suffix in {".md", ".yaml", ".json"}
     }
-    for relative in sorted(set(FONT_FILES) | reference_files):
-        content = _read_runtime_file(root, f"{FONT_SKILL}/{relative}")
-        destination = f"{FONT_SKILL}/{relative}"
+    for relative in sorted(set(required) | reference_files):
+        content = _read_runtime_file(root, f"{skill}/{relative}")
+        destination = f"{skill}/{relative}"
         if relative == "SKILL.md":
             text = content.decode("utf-8")
             match = FRONTMATTER.match(text)
             if not match:
-                raise PackageError("font skill has no YAML frontmatter")
+                raise PackageError("dependency skill has no YAML frontmatter")
             content = text[match.end():].encode("utf-8")
-            destination = f"{FONT_SKILL}/GUIDE.md"
+            destination = f"{skill}/GUIDE.md"
         files[destination] = content
-    files[f"{FONT_SKILL}/provenance.json"] = (json.dumps({
-        "repository": "https://github.com/minaph/japanese-font-rendering",
+    files[f"{skill}/provenance.json"] = (json.dumps({
+        "repository": f"https://github.com/minaph/{PurePosixPath(skill).name}",
         "revision": revision,
         "entrypoint": "GUIDE.md",
         "transformation": "SKILL.md renamed; YAML frontmatter removed; body preserved",
     }, indent=2) + "\n").encode("utf-8")
     for path, content in files.items():
         if PurePosixPath(path).suffix == ".md":
-            files[path] = content.replace(f"{FONT_SKILL}/SKILL.md".encode(), f"{FONT_SKILL}/GUIDE.md".encode())
+            files[path] = content.replace(f"{skill}/SKILL.md".encode(), f"{skill}/GUIDE.md".encode())
 
 
 def collect_runtime_files(root: Path) -> dict[str, bytes]:
-    """Allowlist parent files and verify the Git pin of the font dependency."""
+    """Allowlist parent files and verify the Git pins of bundled dependencies."""
     root = root.resolve()
     files = {path: _read_runtime_file(root, path) for path in RUNTIME_FILES}
     for directory, extensions in RUNTIME_TREES.items():
@@ -129,7 +132,8 @@ def collect_runtime_files(root: Path) -> dict[str, bytes]:
                 raise PackageError(f"runtime path cannot be a symlink: {relative}")
             if source.is_file() and source.suffix in extensions:
                 files[relative.as_posix()] = _read_runtime_file(root, relative.as_posix())
-    _bundle_font_skill(root, files)
+    for skill, required in DEPENDENCIES.items():
+        _bundle_skill(root, files, skill, required)
     validate_runtime_files(files)
     return files
 
@@ -203,7 +207,7 @@ def build_archive(root: Path, output: Path, layout: str = "folder") -> Path:
         raise PackageError(f"archive output must be a .zip file: {output}")
     if output.is_relative_to(root):
         relative = output.relative_to(root)
-        if relative.parts[0] in {".git", "references", "scripts", "assets", "agents", "skills"}:
+        if relative.parts[0] in {".git", "references", "scripts", "assets", "agents", "skills", "docs"}:
             raise PackageError(f"archive output cannot overwrite a runtime directory: {output}")
     files = collect_runtime_files(root)
     output.parent.mkdir(parents=True, exist_ok=True)
