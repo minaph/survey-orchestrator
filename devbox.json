@@ -13,6 +13,8 @@
     "scripts": {
       "setup": "sh scripts/setup_python_env.sh",
       "check-env": ".venv/bin/python scripts/check_evaluation_environment.py",
+      "build": "python3 scripts/package_release.py",
+      "build-flat": "python3 scripts/package_release.py --layout flat --output dist/survey-orchestrator-flat.zip",
       "test": "test -d tests && .venv/bin/python -m unittest discover -s tests"
     }
   }

@@ -19,8 +19,8 @@ DevboxはPythonとPDF/PPTX検査に必要な依存を管理します。以降の
 ## 配布ビルド
 
 ```sh
-devbox run python scripts/package_release.py
-devbox run python scripts/package_release.py --layout flat --output dist/survey-orchestrator-flat.zip
+devbox run build
+devbox run build-flat
 ```
 
 ZIPには本体、参照文書、作例、実行スクリプト、環境定義、日本語描画・執筆スキルのガイドを同梱します。展開先で利用する場合も環境準備が必要です。同梱範囲と依存コミットの確認は[配布手順](docs/packaging.md)を参照してください。

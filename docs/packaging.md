@@ -4,8 +4,8 @@
 
 ```bash
 git submodule update --init --recursive
-python scripts/package_release.py
-python scripts/package_release.py --layout flat --output dist/survey-orchestrator-flat.zip
+devbox run build
+devbox run build-flat
 ```
 
 通常のZIPには `survey-orchestrator/SKILL.md` が入り、`flat` では `SKILL.md` がZIP直下に入ります。利用先が要求する構造を選んでください。展開後のスキル内には `SKILL.md` が一つだけあり、参照資料は相対パスで読めます。子スキルの取得やGitは配布版の利用には必要ありません。チェッカーなどを実行する場合は、展開先で環境手順を実施します。Devbox、Python環境、フォントやレンダラーの実体をZIPへ埋め込むものではありません。ZIPの再ビルドは、Gitの固定版を検証できるリポジトリで行います。
